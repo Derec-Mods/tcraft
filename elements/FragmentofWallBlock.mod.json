@@ -22,8 +22,8 @@
     "Mz": 1.0,
     "name": "Fragment of the Wall",
     "specialInfo": [],
-    "hardness": 1.9999999999999998,
-    "resistance": 10.0,
+    "hardness": 50.0,
+    "resistance": 100.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "No creative tab entry"

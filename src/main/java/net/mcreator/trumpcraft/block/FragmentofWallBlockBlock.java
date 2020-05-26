@@ -46,8 +46,8 @@ public class FragmentofWallBlockBlock extends TrumpcraftModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(1.9999999999999998f, 10f).lightValue(0)
-					.harvestLevel(1).harvestTool(ToolType.PICKAXE));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(50f, 100f).lightValue(0).harvestLevel(1)
+					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("fragmentofwallblock");
 		}
 
