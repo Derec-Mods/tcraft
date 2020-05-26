@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": ""
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": "CUSTOM:Bullet"
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": ""
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": "CUSTOM:Bullet"
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": "CUSTOM:Bullet"
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": "CUSTOM:Bullet"
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": ""
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": "CUSTOM:Bullet"
+        "value": "CUSTOM:TechFragment"
       },
       {
-        "value": ""
+        "value": "CUSTOM:TechFragment"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:WarSpark"
+      "value": "CUSTOM:WarBlock"
     },
-    "name": "sparkofwarcraftingrecipe",
+    "name": "war_block_recipe",
     "namespace": "mod"
   }
 }

@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "trumpcraft:awp"
+    },
+    "title": {
+      "translate": "advancements.timeto_snipe.title"
+    },
+    "description": {
+      "translate": "advancements.timeto_snipe.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "timeto_snipe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "trumpcraft:awp",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 3
+  },
+  "parent": "minecraft:adventure/shoot_arrow"
+}

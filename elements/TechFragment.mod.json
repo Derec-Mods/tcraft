@@ -3,13 +3,13 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "igniter",
+    "texture": "techfragment",
     "customModelName": "Normal",
-    "name": "Spark of War Debug Tool",
+    "name": "Forgotten Tech Fragment",
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "MISC"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -18,13 +18,12 @@
     "stayInGridWhenCrafting": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "specialInfo": [],
+    "specialInfo": [
+      "What's this?"
+    ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "SparkofWarRightClickedOnBlock"
-    }
+    "inventoryStackSize": 64
   }
 }

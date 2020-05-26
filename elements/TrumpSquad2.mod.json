@@ -6,6 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "trumpsquad2.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -18,6 +19,9 @@
     "spawnEggDotColor": {
       "value": -1,
       "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -83,7 +87,7 @@
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
     "whenMobDies": {
-      "name": "HexIncrement"
+      "name": "IncrementTrumpSoldiersKilled"
     },
     "hasAI": true,
     "aiBase": "(none)",

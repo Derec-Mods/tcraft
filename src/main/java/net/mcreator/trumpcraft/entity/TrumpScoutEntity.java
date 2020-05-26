@@ -14,8 +14,10 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -25,6 +27,7 @@ import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -34,8 +37,10 @@ import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
+import net.minecraft.block.BlockState;
 
-import net.mcreator.trumpcraft.item.MoneyItem;
+import net.mcreator.trumpcraft.procedures.IncrementTrumpSoldiersKilledProcedure;
+import net.mcreator.trumpcraft.item.TechFragmentItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 @TrumpcraftModElements.ModElement.Tag
@@ -88,13 +93,15 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 			super(type, world);
 			experienceValue = 5;
 			setNoAI(false);
+			this.moveController = new FlyingMovementController(this, 10, true);
+			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
 
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
 			this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1.1));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
 			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(4, new SwimGoal(this));
 		}
@@ -106,7 +113,7 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
-			this.entityDropItem(new ItemStack(MoneyItem.block, (int) (1)));
+			this.entityDropItem(new ItemStack(TechFragmentItem.block, (int) (1)));
 		}
 
 		@Override
@@ -130,6 +137,26 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 		}
 
 		@Override
+		public boolean onLivingFall(float l, float d) {
+			return false;
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			int x = (int) this.getPosX();
+			int y = (int) this.getPosY();
+			int z = (int) this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("world", world);
+				IncrementTrumpSoldiersKilledProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -141,6 +168,23 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
+				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
+			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.4);
+		}
+
+		@Override
+		protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+		}
+
+		@Override
+		public void setNoGravity(boolean ignored) {
+			super.setNoGravity(true);
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			this.setNoGravity(true);
 		}
 	}
 }

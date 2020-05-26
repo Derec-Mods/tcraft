@@ -38,7 +38,7 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.trumpcraft.procedures.DropRocketsProcedure;
+import net.mcreator.trumpcraft.procedures.IncrementTrumpSoldiersKilledProcedure;
 import net.mcreator.trumpcraft.item.RocketItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -167,8 +167,8 @@ public class ArmoredTrumpSoldierEntity extends TrumpcraftModElements.ModElement 
 			Entity entity = this;
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				DropRocketsProcedure.executeProcedure($_dependencies);
+				$_dependencies.put("world", world);
+				IncrementTrumpSoldiersKilledProcedure.executeProcedure($_dependencies);
 			}
 		}
 

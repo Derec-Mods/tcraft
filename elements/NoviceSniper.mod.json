@@ -18,7 +18,7 @@
     "rewardXP": 5,
     "achievementType": "task",
     "parent": {
-      "value": "No parent: root"
+      "value": "CUSTOM:TimetoSnipe"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"136\" y=\"30\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }

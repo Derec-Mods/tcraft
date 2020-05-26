@@ -61,5 +61,14 @@
         "stream": false
       }
     ]
+  },
+  "pistolfire": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:pistol_fire",
+        "stream": false
+      }
+    ]
   }
 }

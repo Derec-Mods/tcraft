@@ -39,7 +39,7 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
-import net.mcreator.trumpcraft.procedures.HexIncrementProcedure;
+import net.mcreator.trumpcraft.procedures.IncrementTrumpSoldiersKilledProcedure;
 import net.mcreator.trumpcraft.item.TrumpsquadarmorItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -174,7 +174,7 @@ public class TrumpSquad2Entity extends TrumpcraftModElements.ModElement {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("world", world);
-				HexIncrementProcedure.executeProcedure($_dependencies);
+				IncrementTrumpSoldiersKilledProcedure.executeProcedure($_dependencies);
 			}
 		}
 

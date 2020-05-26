@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "ENTITY": 44,
+    "DIMENSION": 2,
     "GUI": 9,
-    "DIMENSION": 2
+    "ENTITY": 44
   },
   "mod_elements": [
     {
@@ -952,22 +952,6 @@
       "name": "TrumpIncrement",
       "type": "procedure",
       "sortid": 84,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "HexIncrement",
-      "type": "procedure",
-      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1991,6 +1975,68 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "money_squid"
+    },
+    {
+      "name": "TimetoSnipe",
+      "type": "achievement",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "timeto_snipe"
+    },
+    {
+      "name": "IncrementTrumpSoldiersKilled",
+      "type": "procedure",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "increment_trump_soldiers_killed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AssaultRifle",
+      "type": "gun",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "assault_rifle"
+    },
+    {
+      "name": "TechFragment",
+      "type": "item",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tech_fragment"
+    },
+    {
+      "name": "WarBlockRecipe",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "war_block_recipe"
+    },
+    {
+      "name": "WarSpark",
+      "type": "tool",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "war_spark"
     }
   ],
   "variable_elements": [
@@ -2107,6 +2153,12 @@
       "type": "string",
       "scope": "map",
       "value": "Locked"
+    },
+    {
+      "name": "Snipes",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
     }
   ],
   "sound_elements": [
@@ -2144,6 +2196,11 @@
       "name": "attattack",
       "file": "att",
       "category": "master"
+    },
+    {
+      "name": "pistolfire",
+      "file": "pistol_fire",
+      "category": "master"
     }
   ],
   "language_map": {
@@ -2151,31 +2208,33 @@
       "item.pistol.name": "Pistol",
       "item.trumpcraft.hexsquadarmorlegs": "Hex Offensive Leggings",
       "item.trumpcraft_114.liquidmoney_bucket": "LiquidMoney Bucket",
-      "item.trumpcraft_114.hexspecalistarmorlegs": "Hex Specalist Leggings",
       "advancements.hexsidefirst.title": "First Blood (Hex)",
+      "item.trumpcraft_114.hexspecalistarmorlegs": "Hex Specalist Leggings",
       "advancements.mademinecraftgreatagain.title": "We Made Minecraft Great Again",
       "block.trumpcraft.moneyslab": "Money Slab",
-      "item.trumpcraft.warground": "unused",
       "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
+      "item.trumpcraft.warground": "unused",
       "entity.trumpcraft.livingbomb": "Mobile Tnt",
       "item.trumpcraft.m57pilum": "M57 Pilum",
       "item.trumpcraft_114.antitrumptool": "ATT",
       "item.trumpcraft.failedgolem": "Failed Golem Spawn Egg",
       "item.money.name": "Money",
       "item.trumpcraft_114.trumpscout": "Trump Scout Spawn Egg",
-      "advancements.youfool.title": "Switzerland",
       "entity.trumpcraft.money_squid": "Money Squid",
+      "advancements.youfool.title": "Switzerland",
       "item.trumpcraft_114.magashotgun": "MAGA Shotgun",
-      "item.hexspecalistarmorhelmet.name": "Hex Specalist Helmet",
       "entity.trumpwannabe.name": "Trump Wannabe",
+      "item.hexspecalistarmorhelmet.name": "Hex Specalist Helmet",
       "item.trumpcraft.burger": "Burger",
       "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
+      "item.trumpcraft.war_spark": "Spark of War",
       "entity.armoredtrumpsoldier.name": "Armored Trump Soldier",
       "item.trumpcraft.trumpsoldier": "Trump Soldier Spawn Egg",
       "item.rocket.name": "Rocket",
+      "advancements.timeto_snipe.descr": "You got your sniper rifle",
       "entity.deathsquadgolem.name": "Death Squad Golem",
-      "item.trumpcraft_114.moneycutter": "Money Cutter",
       "item.trumpcraft_114.armoredtrumpsoldier": "Armored Trump Soldier Spawn Egg",
+      "item.trumpcraft_114.moneycutter": "Money Cutter",
       "block.trumpcraft_114.fragmentofwallblock": "Fragment of the Wall",
       "item.awp.name": "AWP",
       "item.trumpsquadarmorboots.name": "Trump Squad Boots",
@@ -2199,6 +2258,7 @@
       "item.trumpcraft.deathsquadgolem": "Death Squad Golem Spawn Egg",
       "item.moneycutter.name": "Money Cutter",
       "block.trumpcraft_114.moneytrapdoor": "Money Trap Door",
+      "advancements.timeto_snipe.title": "Time to Snipe!",
       "entity.trumpsquad3.name": "Trump Squad(3)",
       "item.wallmariaaudiorecording2.name": "Wall Maria 2",
       "entity.trumpcraft.trumpsoldier": "Trump Soldier",
@@ -2326,6 +2386,7 @@
       "item.trumpcraft.wallmariaaudiorecording2": "Wall Maria 2",
       "item.trumpcraft_114.hexsquadarmorbody": "Hex Offensive Plate",
       "item.trumpcraft.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "item.trumpcraft.assault_rifle": "Assault Rifle",
       "item.trumpcraft.sasha": "The Official Spawn Egg",
       "item.trumpcraft_114.realintrounlock": "IntroTest",
       "item.antitrumptool.name": "ATT",
@@ -2360,7 +2421,7 @@
       "entity.trumpcraft_114.vlad": "Vlad",
       "item.trumpcraft_114.moneysword": "Money Sword",
       "entity.trumpcraft_114.livingbomb": "Mobile Tnt",
-      "item.trumpcraft.sparkofwar": "Spark of War",
+      "item.trumpcraft.sparkofwar": "Spark of War Debug Tool",
       "item.trumpcraft.awp": "AWP",
       "item.trumpcraft.trumpnade": "Trump Grenade",
       "entity.trumpsoldier.name": "Trump Soldier",
@@ -2381,6 +2442,7 @@
       "entity.trumpcraft.armoredtrumpsoldier": "Armored Trump Soldier",
       "item.trumpcraft.trumpsquadarmorhelmet": "Trump Squad Helmet",
       "advancements.weneedtobuildawall.descr": "We need to go dee- I mean build a wall",
+      "item.trumpcraft.tech_fragment": "Forgotten Tech Fragment",
       "entity.trumpcraft.trumpwannabe": "Trump Wannabe",
       "block.trumpcraft_114.converter": "Converter",
       "advancements.trumpsidefirst.descr": "Kill a hex soldier",

@@ -63,6 +63,8 @@ public class TrumpcraftModElements {
 				new net.minecraft.util.SoundEvent(new ResourceLocation("trumpcraft", "theevadeath")));
 		sounds.put(new ResourceLocation("trumpcraft", "attattack"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("trumpcraft", "attattack")));
+		sounds.put(new ResourceLocation("trumpcraft", "pistolfire"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("trumpcraft", "pistolfire")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("trumpcraft").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

@@ -17,13 +17,13 @@
     "shootConstantly": false,
     "usageCount": 100,
     "actionSound": {
-      "value": "block.dispenser.dispense"
+      "value": "CUSTOM:pistolfire"
     },
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 1.0,
-    "bulletDamage": 1.0,
+    "bulletDamage": 2.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,

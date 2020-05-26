@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -20,7 +22,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -32,21 +33,23 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 import java.util.Random;
+import java.util.List;
 
 @TrumpcraftModElements.ModElement.Tag
-public class PistolItem extends TrumpcraftModElements.ModElement {
-	@ObjectHolder("trumpcraft:pistol")
+public class AssaultRifleItem extends TrumpcraftModElements.ModElement {
+	@ObjectHolder("trumpcraft:assault_rifle")
 	public static final Item block = null;
-	@ObjectHolder("trumpcraft:entitybulletpistol")
+	@ObjectHolder("trumpcraft:entitybulletassault_rifle")
 	public static final EntityType arrow = null;
-	public PistolItem(TrumpcraftModElements instance) {
-		super(instance, 18);
+	public AssaultRifleItem(TrumpcraftModElements instance) {
+		super(instance, 160);
 	}
 
 	@Override
@@ -54,7 +57,7 @@ public class PistolItem extends TrumpcraftModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletpistol").setRegistryName("entitybulletpistol"));
+				.size(0.5f, 0.5f)).build("entitybulletassault_rifle").setRegistryName("entitybulletassault_rifle"));
 	}
 
 	@Override
@@ -65,8 +68,8 @@ public class PistolItem extends TrumpcraftModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(ItemGroup.COMBAT).maxDamage(100));
-			setRegistryName("pistol");
+			super(new Item.Properties().group(null).maxDamage(100));
+			setRegistryName("assault_rifle");
 		}
 
 		@Override
@@ -78,6 +81,12 @@ public class PistolItem extends TrumpcraftModElements.ModElement {
 		public ActionResult<ItemStack> onItemRightClick(World world, PlayerEntity entity, Hand hand) {
 			entity.setActiveHand(hand);
 			return new ActionResult(ActionResultType.SUCCESS, entity.getHeldItem(hand));
+		}
+
+		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Test"));
 		}
 
 		@Override
@@ -98,7 +107,7 @@ public class PistolItem extends TrumpcraftModElements.ModElement {
 					}
 				}
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 2, 0);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 5, 5);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
@@ -187,8 +196,8 @@ public class PistolItem extends TrumpcraftModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("trumpcraft:pistolfire")),
-				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("trumpcraft:awp")), SoundCategory.PLAYERS,
+				1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
@@ -205,8 +214,8 @@ public class PistolItem extends TrumpcraftModElements.ModElement {
 		int y = (int) entity.getPosY();
 		int z = (int) entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("trumpcraft:pistolfire")),
-				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("trumpcraft:awp")), SoundCategory.PLAYERS,
+				1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

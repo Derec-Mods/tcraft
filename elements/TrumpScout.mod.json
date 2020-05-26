@@ -6,6 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "trumpscout.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -18,6 +19,9 @@
     "spawnEggDotColor": {
       "value": -16101757,
       "falpha": 0.0
+    },
+    "creativeTab": {
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",
@@ -49,7 +53,7 @@
     "health": 10,
     "xpAmount": 5,
     "waterMob": false,
-    "flyingMob": false,
+    "flyingMob": true,
     "disableCollisions": false,
     "ridable": false,
     "canControlForward": false,
@@ -63,7 +67,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": "CUSTOM:Money"
+      "value": "CUSTOM:TechFragment"
     },
     "livingSound": {
       "value": "entity.bat.ambient"
@@ -82,9 +86,12 @@
     "particleSpawningRadious": 0.5,
     "particleAmount": 4,
     "particleSpawningCondition": "ALWAYS",
+    "whenMobDies": {
+      "name": "IncrementTrumpSoldiersKilled"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><next><block type=\"wander\"><field name=\"speed\">1.1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_action\"><field name=\"callhelp\">FALSE</field><next><block type=\"wander\"><field name=\"speed\">0.8</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "breedTriggerItems": [],
     "ranged": false,

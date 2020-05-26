@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "trumpcraft:awp"
     },
@@ -22,5 +21,6 @@
   },
   "rewards": {
     "experience": 5
-  }
+  },
+  "parent": "trumpcraft:timeto_snipe"
 }

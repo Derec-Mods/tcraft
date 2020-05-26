@@ -9,7 +9,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.BlockState;
@@ -31,7 +30,7 @@ public class SparkofWarItem extends TrumpcraftModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxStackSize(1));
+			super(new Item.Properties().group(null).maxStackSize(1));
 			setRegistryName("sparkofwar");
 		}
 
