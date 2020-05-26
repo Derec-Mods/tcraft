@@ -55,8 +55,8 @@ public class PlaceAirProcedure extends TrumpcraftModElements.ModElement {
 				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 						.getTemplateDefaulted(new ResourceLocation("trumpcraft", "safezone1"));
 				if (template != null) {
-					template.addBlocksToWorldChunk(world, new BlockPos((int) x, (int) y, (int) z), new PlacementSettings().setRotation(Rotation.NONE)
-							.setMirror(Mirror.NONE).setChunk((ChunkPos) null).setIgnoreEntities(false));
+					template.addBlocksToWorldChunk(world, new BlockPos((int) (x - 2), (int) (y - 1), (int) (z - 2)), new PlacementSettings()
+							.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk((ChunkPos) null).setIgnoreEntities(false));
 				}
 			}
 			entity.getPersistentData().putBoolean("JustTeleportedToID", (false));

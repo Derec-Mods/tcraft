@@ -57,7 +57,7 @@ public class MoneySquidEntity extends TrumpcraftModElements.ModElement {
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.WATER_CREATURE)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-				.size(1f, 0.7000000000000001f)).build("money_squid").setRegistryName("money_squid");
+				.size(1f, 1.2000000000000002f)).build("money_squid").setRegistryName("money_squid");
 		elements.entities.add(() -> entity);
 		elements.items.add(
 				() -> new SpawnEggItem(entity, -12956595, -16724941, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("money_squid"));

@@ -22,9 +22,13 @@ import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
+import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
@@ -100,10 +104,13 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
-			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(4, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
+			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(7, new SwimGoal(this));
 		}
 
 		@Override
@@ -142,6 +149,17 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 		}
 
 		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.FALL)
+				return false;
+			if (source == DamageSource.CACTUS)
+				return false;
+			if (source == DamageSource.DROWN)
+				return false;
+			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
 		public void onDeath(DamageSource source) {
 			super.onDeath(source);
 			int x = (int) this.getPosX();
@@ -167,7 +185,7 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0.1);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
-			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(2);
 			if (this.getAttribute(SharedMonsterAttributes.FLYING_SPEED) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
 			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.4);

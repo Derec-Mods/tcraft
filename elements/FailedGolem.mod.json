@@ -7,9 +7,9 @@
     "mobModelName": "Modelig",
     "mobModelTexture": "golemm.png",
     "mobModelGlowTexture": "",
-    "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelWidth": 3.0,
+    "modelHeight": 5.0,
+    "modelShadowSize": 0.6,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": false,
     "spawnEggBaseColor": {
@@ -100,8 +100,8 @@
     "doesDespawnWhenIdle": true,
     "spawningProbability": 20,
     "mobSpawningType": "monster",
-    "minNumberOfMobsPerGroup": 3,
-    "maxNumberOfMobsPerGroup": 30,
+    "minNumberOfMobsPerGroup": 1,
+    "maxNumberOfMobsPerGroup": 3,
     "restrictionBiomes": [
       {
         "value": "CUSTOM:WarTornPlains"

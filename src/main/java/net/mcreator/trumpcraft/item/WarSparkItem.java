@@ -51,6 +51,7 @@ public class WarSparkItem extends TrumpcraftModElements.ModElement {
 					$_dependencies.put("x", x);
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
 					SparkofWarRightClickedOnBlockProcedure.executeProcedure($_dependencies);
 				}
