@@ -49,11 +49,11 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
-		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.OCEAN, BiomeDictionary.Type.WATER);
+		BiomeDictionary.addTypes(biome, BiomeDictionary.Type.OCEAN, BiomeDictionary.Type.WATER, BiomeDictionary.Type.WET);
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.15f).temperature(0.5f).precipitation(Biome.RainType.NONE)
+			super(new Biome.Builder().downfall(0f).depth(0.3f).scale(0.25f).temperature(0.5f).precipitation(Biome.RainType.NONE)
 					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(LiquidMoneyBlock.block.getDefaultState(),
 							MoneyBlockBlock.block.getDefaultState(), MoneyBlockBlock.block.getDefaultState())));

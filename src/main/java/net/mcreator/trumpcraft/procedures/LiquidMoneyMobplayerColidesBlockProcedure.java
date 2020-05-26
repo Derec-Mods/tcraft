@@ -18,9 +18,7 @@ public class LiquidMoneyMobplayerColidesBlockProcedure extends TrumpcraftModElem
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if ((entity instanceof SquidEntity)) {
-			entity.remove();
-		} else {
+		if ((!(entity instanceof SquidEntity))) {
 			entity.attackEntityFrom(DamageSource.GENERIC, (float) 1);
 		}
 	}

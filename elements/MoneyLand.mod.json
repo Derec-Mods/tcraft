@@ -55,6 +55,9 @@
     "biomeWeight": 10,
     "biomeType": "WARM",
     "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "biomeDictionaryTypes": [
       "PLAINS",
       "HILLS",

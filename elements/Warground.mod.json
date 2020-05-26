@@ -38,7 +38,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.DIRT#1"
+      "value": "Blocks.STONE#0"
     },
     "fluidBlock": {
       "value": "CUSTOM:LiquidMoney"

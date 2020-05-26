@@ -190,7 +190,7 @@ public class WargroundDimension extends TrumpcraftModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return Blocks.COARSE_DIRT.getDefaultState();
+					return Blocks.STONE.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
@@ -225,7 +225,7 @@ public class WargroundDimension extends TrumpcraftModElements.ModElement {
 			for (Biome biome : this.biomes) {
 				biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 					{
-						carvableBlocks = ImmutableSet.of(Blocks.COARSE_DIRT.getDefaultState().getBlock(),
+						carvableBlocks = ImmutableSet.of(Blocks.STONE.getDefaultState().getBlock(),
 								biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 								biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 					}

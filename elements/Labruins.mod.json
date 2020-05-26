@@ -55,6 +55,9 @@
     "biomeWeight": 5,
     "biomeType": "ICY",
     "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "biomeDictionaryTypes": [
       "COLD",
       "SPARSE",

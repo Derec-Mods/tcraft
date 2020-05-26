@@ -49,15 +49,19 @@
     "cactiPerChunk": 0,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.15000000000000002,
+    "baseHeight": 0.30000000000000004,
+    "heightVariation": 0.25,
     "spawnBiome": false,
-    "biomeWeight": 5,
+    "biomeWeight": 3,
     "biomeType": "WARM",
     "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "biomeDictionaryTypes": [
       "OCEAN",
-      "WATER"
+      "WATER",
+      "WET"
     ],
     "spawnList": []
   }

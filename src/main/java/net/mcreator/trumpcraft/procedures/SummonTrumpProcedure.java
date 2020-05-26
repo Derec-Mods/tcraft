@@ -39,16 +39,18 @@ public class SummonTrumpProcedure extends TrumpcraftModElements.ModElement {
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		{
-			MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
-			if (mcserv != null)
-				mcserv.getPlayerList().sendMessage(new StringTextComponent("We will make Minecraft great again"));
-		}
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
-		if (!world.isRemote) {
-			Entity entityToSpawn = new TheTrumpEntity.CustomEntity(TheTrumpEntity.entity, world);
-			entityToSpawn.setLocationAndAngles(x, y, z, world.rand.nextFloat() * 360F, 0);
-			world.addEntity(entityToSpawn);
+		if ((!(world.isRemote))) {
+			{
+				MinecraftServer mcserv = ServerLifecycleHooks.getCurrentServer();
+				if (mcserv != null)
+					mcserv.getPlayerList().sendMessage(new StringTextComponent("We will make Minecraft great again"));
+			}
+			world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+			if (!world.isRemote) {
+				Entity entityToSpawn = new TheTrumpEntity.CustomEntity(TheTrumpEntity.entity, world);
+				entityToSpawn.setLocationAndAngles(x, y, z, world.rand.nextFloat() * 360F, 0);
+				world.addEntity(entityToSpawn);
+			}
 		}
 	}
 }
