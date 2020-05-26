@@ -38,6 +38,7 @@ public class MURICAItem extends Item {
 			int z = pos.getZ();
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("world", world);
 				MURICAPortalTriggerUsedProcedure.executeProcedure($_dependencies);
 			}
 			itemstack.damageItem(1, entity, c -> c.sendBreakAnimation(context.getHand()));

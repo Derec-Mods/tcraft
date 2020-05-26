@@ -12,12 +12,14 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
+import net.minecraft.potion.Effects;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.network.play.server.SPlayerAbilitiesPacket;
 import net.minecraft.network.play.server.SPlaySoundEventPacket;
 import net.minecraft.network.play.server.SPlayEntityEffectPacket;
 import net.minecraft.network.play.server.SChangeGameStatePacket;
 import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.Blocks;
 
@@ -61,6 +63,8 @@ public class SparkofWarRightClickedOnBlockProcedure extends TrumpcraftModElement
 		World world = (World) dependencies.get("world");
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == WarBlockBlock.block.getDefaultState().getBlock())) {
 			if (((entity.dimension.getId()) == 0)) {
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 15, (int) 50, (false), (false)));
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
@@ -85,10 +89,16 @@ public class SparkofWarRightClickedOnBlockProcedure extends TrumpcraftModElement
 								Collections.emptySet());
 					}
 				}
-				world.setBlockState(new BlockPos((int) (entity.getPosX()), (int) (entity.getPosY()), (int) (entity.getPosZ())),
-						Blocks.AIR.getDefaultState(), 3);
-				world.setBlockState(new BlockPos((int) (entity.getPosX()), (int) ((entity.getPosY()) + 1), (int) (entity.getPosZ())),
-						Blocks.AIR.getDefaultState(), 3);
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("world", world);
+					$_dependencies.put("x", (int) (x));
+					$_dependencies.put("y", (int) (y));
+					$_dependencies.put("z", (int) (z));
+					PlaceAirProcedure.executeProcedure($_dependencies);
+				}
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.AIR.getDefaultState(), 3);
 				if (!world.isRemote) {
 					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 							.getTemplateDefaulted(new ResourceLocation("trumpcraft", "safezone1"));
@@ -98,6 +108,8 @@ public class SparkofWarRightClickedOnBlockProcedure extends TrumpcraftModElement
 					}
 				}
 			} else if (((entity.dimension.getId()) == (WargroundDimension.type.getId()))) {
+				if (entity instanceof LivingEntity)
+					((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.ABSORPTION, (int) 15, (int) 50, (false), (false)));
 				{
 					Entity _ent = entity;
 					if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {
@@ -122,10 +134,16 @@ public class SparkofWarRightClickedOnBlockProcedure extends TrumpcraftModElement
 								Collections.emptySet());
 					}
 				}
-				world.setBlockState(new BlockPos((int) (entity.getPosX()), (int) (entity.getPosY()), (int) (entity.getPosZ())),
-						Blocks.AIR.getDefaultState(), 3);
-				world.setBlockState(new BlockPos((int) (entity.getPosX()), (int) ((entity.getPosY()) + 1), (int) (entity.getPosZ())),
-						Blocks.AIR.getDefaultState(), 3);
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("world", world);
+					$_dependencies.put("x", (int) (x));
+					$_dependencies.put("y", (int) (y));
+					$_dependencies.put("z", (int) (z));
+					PlaceAirProcedure.executeProcedure($_dependencies);
+				}
+				world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
+				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), Blocks.AIR.getDefaultState(), 3);
 				if (!world.isRemote) {
 					Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
 							.getTemplateDefaulted(new ResourceLocation("trumpcraft", "safezone1"));
