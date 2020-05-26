@@ -1,0 +1,43 @@
+{
+  "_fv": 8,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "hexsquadhelm",
+    "enableBody": true,
+    "textureBody": "hexsquadchest",
+    "enableLeggings": true,
+    "textureLeggings": "hexsquadlegging",
+    "enableBoots": true,
+    "textureBoots": "hexsquadboots",
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "armorTextureFile": "trump_",
+    "helmetName": "Hex Offensive Helmet",
+    "bodyName": "Hex Offensive Plate",
+    "leggingsName": "Hex Offensive Leggings",
+    "bootsName": "Hex Offensive Boots",
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 45,
+    "damageValueHelmet": 5,
+    "damageValueBody": 7,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 1.5
+  }
+}

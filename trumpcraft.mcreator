@@ -1,0 +1,2404 @@
+{
+  "id_map": {
+    "ENTITY": 44,
+    "GUI": 9,
+    "DIMENSION": 2
+  },
+  "mod_elements": [
+    {
+      "name": "Trump",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 1,
+        "1": 2
+      },
+      "registry_name": "trumpwannabe"
+    },
+    {
+      "name": "Money",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyBlock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Moneycrafting",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WarBlock",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LiquidMoneyMobplayerColidesBlock",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Warzone",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrumpSoldier",
+      "type": "mob",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3,
+        "1": 4
+      }
+    },
+    {
+      "name": "Warground",
+      "type": "dimension",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 1
+      }
+    },
+    {
+      "name": "MoneyLake",
+      "type": "biome",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyLand",
+      "type": "biome",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Thankyourandomcitizen",
+      "type": "mob",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 5,
+        "1": 6
+      }
+    },
+    {
+      "name": "MURICAPortalTriggerUsed",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "MURICA",
+      "type": "dimension",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "1": 2
+      }
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BulletCraft",
+      "type": "recipe",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Pistol",
+      "type": "gun",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 7
+      }
+    },
+    {
+      "name": "TrumpShelter",
+      "type": "structure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Trumpshelter2",
+      "type": "structure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrumpShelter3",
+      "type": "structure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Highway1",
+      "type": "structure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AWP",
+      "type": "gun",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 8
+      }
+    },
+    {
+      "name": "Bunker4",
+      "type": "structure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SummonTrump",
+      "type": "procedure",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FragmentofWallBlock",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyBlockBack",
+      "type": "recipe",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins2",
+      "type": "structure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RealRuins2",
+      "type": "structure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Iftrump",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntiTrumpTool",
+      "type": "gun",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 9
+      }
+    },
+    {
+      "name": "Burgerfoodeaten",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Burger",
+      "type": "food",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Trumpsquadarmor",
+      "type": "armor",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Explode",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LivingBomb",
+      "type": "mob",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 10,
+        "1": 11
+      }
+    },
+    {
+      "name": "ConverterOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Converter",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EmeraldBlockConvert",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpSquad1",
+      "type": "mob",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 12,
+        "1": 13
+      }
+    },
+    {
+      "name": "TrumpSquad2",
+      "type": "mob",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 14,
+        "1": 15
+      }
+    },
+    {
+      "name": "M57PilumBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "M57Pilum",
+      "type": "gun",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 16
+      }
+    },
+    {
+      "name": "Rocket",
+      "type": "item",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RocketCraft",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrumpSquad3",
+      "type": "mob",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 17,
+        "1": 18
+      }
+    },
+    {
+      "name": "Ruins3",
+      "type": "structure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins4",
+      "type": "structure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins5",
+      "type": "structure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins6",
+      "type": "structure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins7",
+      "type": "structure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins8",
+      "type": "structure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins9",
+      "type": "structure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WarTornPlains",
+      "type": "biome",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DropRockets",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ArmoredTrumpSoldier",
+      "type": "mob",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 19,
+        "1": 20
+      }
+    },
+    {
+      "name": "MoneyBlockPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoneyCutter",
+      "type": "tool",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TestSubject1",
+      "type": "mob",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 21,
+        "1": 22
+      }
+    },
+    {
+      "name": "TestSubject",
+      "type": "mob",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 23,
+        "1": 24
+      }
+    },
+    {
+      "name": "Spike",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MAGAShotgun",
+      "type": "gun",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 25
+      }
+    },
+    {
+      "name": "MAGAShotgunRangedItemUsed",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TestSubject3",
+      "type": "mob",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 26,
+        "1": 27
+      }
+    },
+    {
+      "name": "LabRuins1",
+      "type": "structure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Labruins2",
+      "type": "structure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LabRuins3",
+      "type": "structure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LabRuins4",
+      "type": "structure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LabRuins5",
+      "type": "structure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Lab1",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WeNeedToBuildAWall",
+      "type": "achievement",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MadeMinecraftGreatAgain",
+      "type": "achievement",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WeMadeSocietyGreatAgain",
+      "type": "achievement",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "KilledTrump",
+      "type": "procedure",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DestroyedHex",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PathAchivements",
+      "type": "procedure",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpSummonSquad75",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheTrump",
+      "type": "mob",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 28,
+        "1": 29
+      }
+    },
+    {
+      "name": "TestSubject4",
+      "type": "mob",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 30,
+        "1": 31
+      }
+    },
+    {
+      "name": "Trumpsidefirst",
+      "type": "achievement",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Hexsidefirst",
+      "type": "achievement",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrumpIncrement",
+      "type": "procedure",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexIncrement",
+      "type": "procedure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YouFool",
+      "type": "achievement",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SwissArmyKnife",
+      "type": "tool",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins10",
+      "type": "structure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins11",
+      "type": "structure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Ruins12",
+      "type": "structure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Farm1",
+      "type": "structure",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Farm2",
+      "type": "structure",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Labruins",
+      "type": "biome",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Tree1",
+      "type": "structure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Sparkofwarcraftingrecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SparkofWarRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SparkofWar",
+      "type": "item",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TrumpScout",
+      "type": "mob",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 32,
+        "1": 33
+      }
+    },
+    {
+      "name": "MoneySword",
+      "type": "tool",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneySwordCraft",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Tree2",
+      "type": "structure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Sasha",
+      "type": "mob",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 34,
+        "1": 35
+      }
+    },
+    {
+      "name": "Eva",
+      "type": "mob",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 36,
+        "1": 37
+      }
+    },
+    {
+      "name": "LabRuins6",
+      "type": "structure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Stats",
+      "type": "gui",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 2
+      }
+    },
+    {
+      "name": "OpenStatsOnKeyPressed",
+      "type": "procedure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenStats",
+      "type": "keybind",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "StatsCommand",
+      "type": "command",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ConverterGUI",
+      "type": "gui",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 3
+      }
+    },
+    {
+      "name": "ConverterGUIOnButtonClickedOnButtonClicked",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpIncrementOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheFnatic",
+      "type": "mob",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 38,
+        "1": 39
+      }
+    },
+    {
+      "name": "HexSquadArmor",
+      "type": "armor",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "RealPageOne",
+      "type": "gui",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 4
+      }
+    },
+    {
+      "name": "Gotopage1",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpBook1",
+      "type": "gui",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 5
+      }
+    },
+    {
+      "name": "OpenTrumpBook",
+      "type": "procedure",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trumpbook",
+      "type": "command",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "TableOfContents1",
+      "type": "gui",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 6
+      }
+    },
+    {
+      "name": "NadeCountDown",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NadeTimer",
+      "type": "procedure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TrumpNade",
+      "type": "gun",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 40
+      }
+    },
+    {
+      "name": "NadeExplode",
+      "type": "procedure",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Page2",
+      "type": "gui",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 7
+      }
+    },
+    {
+      "name": "GotoPage2",
+      "type": "procedure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckPages",
+      "type": "procedure",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenFakeIntro",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenContents1",
+      "type": "procedure",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMaria1Used",
+      "type": "procedure",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMariaAudioRecording",
+      "type": "item",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Lore",
+      "type": "tab",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "WallMariaAudioRecording2RightClickedInAir",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMariaAudioRecording2",
+      "type": "item",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "RealPageOneOnButtonClicked",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "WallMariaPart2GUI",
+      "type": "gui",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 8
+      }
+    },
+    {
+      "name": "RealIntroUnlock",
+      "type": "item",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "UnlockedPage1",
+      "type": "procedure",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexSoldierPledgeRightClick",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexSoldierPledge",
+      "type": "item",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "DeathSquadGolem",
+      "type": "mob",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 41,
+        "1": 42
+      }
+    },
+    {
+      "name": "GotoWallMariaPart2",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenHexPledge",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexPledge",
+      "type": "gui",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 9
+      }
+    },
+    {
+      "name": "Vlad",
+      "type": "mob",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 43,
+        "1": 44
+      }
+    },
+    {
+      "name": "HexSpecalistArmor",
+      "type": "armor",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "HexBeforeAttack1",
+      "type": "item",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "HexBeforeAttack1RightClicked",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoneypackPickaxe",
+      "type": "tool",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneypackPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneypackPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LiquidMoney",
+      "type": "fluid",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyFence",
+      "type": "block",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneySlab",
+      "type": "block",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyWall",
+      "type": "block",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneySlabCraft",
+      "type": "recipe",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyStairs",
+      "type": "block",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyTrapDoor",
+      "type": "block",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MoneyChair",
+      "type": "block",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "FailedGolem",
+      "type": "mob",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "KilledTheTrump",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "KilledTheHex",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "TrumpSoldiersKilled",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "HexSoldiersKilled",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ChaoticNeutral",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "HasTrumpBeenKilled",
+      "type": "string",
+      "scope": "map",
+      "value": " "
+    },
+    {
+      "name": "HasHexBeenKilled",
+      "type": "string",
+      "scope": "map",
+      "value": " "
+    },
+    {
+      "name": "TrumpStage",
+      "type": "number",
+      "scope": "map",
+      "value": "1"
+    },
+    {
+      "name": "hasopenedbook",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Page1",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "Page2",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "Page3",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "UnlockedPage1",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "UnlockedWallMariaPatrol1",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "UnlockedWallMariaPatrol2",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "UnlockedHexSoldierPledge",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "HexSoldierPledge",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "UnlockedHexBeforeAttack1",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "BeforeAttack1",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "awp",
+      "file": "awp",
+      "category": "master"
+    },
+    {
+      "name": "magashotgun",
+      "file": "magashotgun",
+      "category": "master"
+    },
+    {
+      "name": "armoreddeath",
+      "file": "armoreddeath",
+      "category": "master"
+    },
+    {
+      "name": "hail",
+      "file": "trumpdeath",
+      "category": "master"
+    },
+    {
+      "name": "pilumlaunch",
+      "file": "pilumlaunch",
+      "category": "master"
+    },
+    {
+      "name": "theevadeath",
+      "file": "theevadeath",
+      "category": "master"
+    },
+    {
+      "name": "attattack",
+      "file": "att",
+      "category": "master"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.pistol.name": "Pistol",
+      "item.trumpcraft.hexsquadarmorlegs": "Hex Offensive Leggings",
+      "item.trumpcraft_114.liquidmoney_bucket": "LiquidMoney Bucket",
+      "advancements.hexsidefirst.title": "First Blood (Hex)",
+      "item.trumpcraft_114.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "advancements.mademinecraftgreatagain.title": "We Made Minecraft Great Again",
+      "block.trumpcraft.moneyslab": "Money Slab",
+      "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
+      "item.trumpcraft.warground": "unused",
+      "entity.trumpcraft.livingbomb": "Mobile Tnt",
+      "item.trumpcraft.m57pilum": "M57 Pilum",
+      "item.trumpcraft_114.antitrumptool": "ATT",
+      "item.trumpcraft.failedgolem": "Failed Golem Spawn Egg",
+      "item.money.name": "Money",
+      "item.trumpcraft_114.trumpscout": "Trump Scout Spawn Egg",
+      "advancements.youfool.title": "Switzerland",
+      "item.trumpcraft_114.magashotgun": "MAGA Shotgun",
+      "entity.trumpwannabe.name": "Trump Wannabe",
+      "item.hexspecalistarmorhelmet.name": "Hex Specalist Helmet",
+      "item.trumpcraft.burger": "Burger",
+      "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
+      "entity.armoredtrumpsoldier.name": "Armored Trump Soldier",
+      "item.trumpcraft.trumpsoldier": "Trump Soldier Spawn Egg",
+      "item.rocket.name": "Rocket",
+      "entity.deathsquadgolem.name": "Death Squad Golem",
+      "item.trumpcraft_114.armoredtrumpsoldier": "Armored Trump Soldier Spawn Egg",
+      "item.trumpcraft_114.moneycutter": "Money Cutter",
+      "block.trumpcraft_114.fragmentofwallblock": "Fragment of the Wall",
+      "item.awp.name": "AWP",
+      "item.trumpsquadarmorboots.name": "Trump Squad Boots",
+      "item.trumpcraft_114.testsubject3": "TestSubject3 Spawn Egg",
+      "item.trumpcraft_114.trumpnade": "Trump Grenade",
+      "item.trumpcraft_114.testsubject4": "Test Subject 4 Spawn Egg",
+      "item.trumpcraft.armoredtrumpsoldier": "Armored Trump Soldier Spawn Egg",
+      "block.trumpcraft_114.moneychair": "Money Chair",
+      "entity.trumpcraft.deathsquadgolem": "Death Squad Golem",
+      "entity.testsubject4.name": "Test Subject 4",
+      "item.trumpcraft_114.burger": "Burger",
+      "item.trumpcraft_114.testsubject1": "TestSubject3 Spawn Egg",
+      "advancements.trumpsidefirst.title": "First Blood (Trump)",
+      "entity.trumpcraft.eva": "The EVA",
+      "item.trumpcraft_114.hexspecalistarmorhelmet": "Hex Specalist Helmet",
+      "entity.trumpcraft_114.testsubject1": "TestSubject3",
+      "item.trumpcraft_114.trumpsoldier": "Trump Soldier Spawn Egg",
+      "block.trumpcraft_114.moneywall": "Money Wall",
+      "item.trumpcraft.pistol": "Pistol",
+      "item.trumpcraft_114.sasha": "The Official Spawn Egg",
+      "item.trumpcraft.deathsquadgolem": "Death Squad Golem Spawn Egg",
+      "item.moneycutter.name": "Money Cutter",
+      "block.trumpcraft_114.moneytrapdoor": "Money Trap Door",
+      "entity.trumpsquad3.name": "Trump Squad(3)",
+      "item.wallmariaaudiorecording2.name": "Wall Maria 2",
+      "entity.trumpcraft.trumpsoldier": "Trump Soldier",
+      "item.trumpcraft_114.hexsquadarmorboots": "Hex Offensive Boots",
+      "item.trumpcraft_114.hexbeforeattack1": "Before the Fall 1",
+      "item.trumpcraft.hexsquadarmorhelmet": "Hex Offensive Helmet",
+      "item.trumpcraft.trumpsquadarmorlegs": "Trump Squad Leggings",
+      "entity.trumpsquad2.name": "Trump Squad(2)",
+      "item.trumpcraft_114.trumpsquadarmorhelmet": "Trump Squad Helmet",
+      "block.trumpcraft.moneywall": "Money Wall",
+      "entity.trumpscout.name": "Trump Scout",
+      "item.trumpcraft_114.swissarmyknife": "Swiss Army Knife",
+      "item.trumpcraft_114.hexspecalistarmorbody": "Hex Specalist Body",
+      "entity.trumpcraft.thefnatic": "The Fanatic",
+      "entity.trumpcraft.trumpsquad2": "Trump Squad(2)",
+      "entity.trumpcraft.trumpsquad1": "Trump Squad(1)",
+      "entity.trumpcraft.trumpsquad3": "Trump Squad(3)",
+      "item.sparkofwar.name": "Spark of War",
+      "item.trumpcraft.trumpscout": "Trump Scout Spawn Egg",
+      "item.swissarmyknife.name": "Swiss Army Knife",
+      "block.trumpcraft.moneyfence": "Money Fence",
+      "item.trumpcraft.testsubject": "TestSubject1 Spawn Egg",
+      "item.trumpcraft_114.m57pilum": "M57 Pilum",
+      "item.trumpcraft.hexsquadarmorbody": "Hex Offensive Plate",
+      "advancements.youfool.descr": "Who\u0027s side are you on?...",
+      "biome.trumpcraft_114.warzone": "Warzone",
+      "entity.trumpcraft_114.testsubject4": "Test Subject 4",
+      "block.trumpcraft.warblock": "War Block",
+      "entity.trumpcraft_114.testsubject3": "TestSubject3",
+      "item.trumpcraft_114.pistol": "Pistol",
+      "block.trumpcraft.moneytrapdoor": "Money Trap Door",
+      "entity.sasha.name": "The Official",
+      "entity.trumpsquad1.name": "Trump Squad(1)",
+      "tile.fragmentofwallblock.name": "Fragment of the Wall",
+      "item.trumpcraft_114.thetrump": "Donald Trump Spawn Egg",
+      "item.trumpcraft_114.wallmariaaudiorecording2": "Wall Maria 2",
+      "entity.trumpcraft.testsubject4": "Test Subject 4",
+      "entity.trumpcraft.testsubject3": "TestSubject3",
+      "item.trumpcraft.thankyourandomcitizen": "Random Citizen Spawn Egg",
+      "entity.trumpcraft.testsubject1": "TestSubject3",
+      "biome.trumpcraft.wartornplains": "War Torn Plains",
+      "item.trumpcraft_114.trumpsquad1": "Trump Squad(1) Spawn Egg",
+      "item.trumpcraft_114.trumpsquad2": "Trump Squad(2) Spawn Egg",
+      "item.trumpcraft_114.trumpsquad3": "Trump Squad(3) Spawn Egg",
+      "item.trumpsquadarmorbody.name": "Trump Squad Plate",
+      "item.magashotgun.name": "MAGA Shotgun",
+      "item.hexspecalistarmorlegs.name": "Hex Specalist Leggings",
+      "item.hexsquadarmorbody.name": "Hex Offensive Plate",
+      "item.trumpcraft.hexbeforeattack1": "Before the Fall 1",
+      "biome.trumpcraft.labruins": "Lab Ruins",
+      "tile.moneyblock.name": "Block of Money",
+      "biome.trumpcraft.moneyland": "Murica",
+      "entity.trumpcraft.vlad": "Vlad",
+      "item.trumpcraft_114.livingbomb": "Mobile Tnt Spawn Egg",
+      "entity.trumpcraft_114.thefnatic": "The Fanatic",
+      "item.trumpcraft_114.bullet": "Bullet",
+      "item.trumpcraft.moneycutter": "Money Cutter",
+      "entity.trumpcraft.failedgolem": "Failed Golem",
+      "tile.converter.name": "Converter",
+      "entity.trumpcraft_114.sasha": "The Official",
+      "item.trumpcraft.hexspecalistarmorbody": "Hex Specalist Body",
+      "item.moneysword.name": "Money Sword",
+      "item.trumpcraft_114.hexsquadarmorlegs": "Hex Offensive Leggings",
+      "biome.trumpcraft_114.moneyland": "Murica",
+      "item.trumpcraft.hexspecalistarmorhelmet": "Hex Specalist Helmet",
+      "item.trumpcraft_114.warground": "unused",
+      "entity.testsubject3.name": "TestSubject3",
+      "block.trumpcraft.converter": "Converter",
+      "item.trumpcraft_114.deathsquadgolem": "Death Squad Golem Spawn Egg",
+      "item.wallmariaaudiorecording.name": "Wall Maria 1",
+      "block.trumpcraft_114.moneyblock": "Block of Money",
+      "item.trumpcraft.moneypackpickaxe": "Money Pickaxe",
+      "item.hexsquadarmorlegs.name": "Hex Offensive Leggings",
+      "item.hexspecalistarmorbody.name": "Hex Specalist Body",
+      "block.trumpcraft_114.moneyfence": "Money Fence",
+      "item.trumpcraft.testsubject1": "TestSubject3 Spawn Egg",
+      "item.trumpcraft_114.awp": "AWP",
+      "item.trumpcraft.testsubject3": "TestSubject3 Spawn Egg",
+      "entity.trumpcraft_114.thetrump": "Donald Trump",
+      "entity.trumpcraft.thankyourandomcitizen": "Random Citizen",
+      "item.trumpcraft.testsubject4": "Test Subject 4 Spawn Egg",
+      "item.trumpsquadarmorlegs.name": "Trump Squad Leggings",
+      "item.trumpcraft_114.sparkofwar": "Spark of War",
+      "advancements.wemadesocietygreatagain.descr": "You sided with the allies. Society is saved thanks to you! #161616161616161",
+      "item.trumpcraft_114.trumpsquadarmorbody": "Trump Squad Plate",
+      "entity.trumpcraft_114.trumpsquad1": "Trump Squad(1)",
+      "block.trumpcraft_114.warblock": "War Block",
+      "entity.trumpcraft_114.trumpsquad2": "Trump Squad(2)",
+      "entity.trumpcraft_114.trumpsquad3": "Trump Squad(3)",
+      "item.trumpcraft.trumpsquadarmorbody": "Trump Squad Plate",
+      "item.trumpcraft.thetrump": "Donald Trump Spawn Egg",
+      "item.trumpcraft_114.thankyourandomcitizen": "Random Citizen Spawn Egg",
+      "item.trumpcraft_114.trumpsquadarmorboots": "Trump Squad Boots",
+      "item.realintrounlock.name": "IntroTest",
+      "entity.thetrump.name": "Donald Trump",
+      "biome.trumpcraft_114.labruins": "Lab Ruins",
+      "entity.thefnatic.name": "The Fanatic",
+      "item.trumpcraft_114.murica": "Flag",
+      "item.hexsoldierpledge.name": "Hex Soldier Pledge",
+      "entity.trumpcraft.sasha": "The Official",
+      "block.trumpcraft.moneyblock": "Block of Money",
+      "entity.testsubject1.name": "TestSubject3",
+      "item.warground.name": "unused",
+      "entity.trumpcraft_114.deathsquadgolem": "Death Squad Golem",
+      "item.trumpcraft.trumpwannabe": "Trump Wannabe Spawn Egg",
+      "key.mcreator.openstats": "Open Stats",
+      "block.trumpcraft.moneystairs": "Money Stairs",
+      "entity.testsubject.name": "TestSubject1",
+      "item.hexbeforeattack1.name": "Before the Fall 1",
+      "item.trumpcraft_114.vlad": "Vlad Spawn Egg",
+      "item.trumpcraft_114.rocket": "Rocket",
+      "item.trumpcraft_114.trumpwannabe": "Trump Wannabe Spawn Egg",
+      "tile.warblock.name": "War Block",
+      "biome.trumpcraft_114.moneylake": "Money Lake",
+      "entity.trumpcraft_114.armoredtrumpsoldier": "Armored Trump Soldier",
+      "item.trumpcraft.moneysword": "Money Sword",
+      "entity.trumpcraft_114.trumpscout": "Trump Scout",
+      "item.trumpcraft_114.money": "Money",
+      "item.trumpcraft.swissarmyknife": "Swiss Army Knife",
+      "entity.thankyourandomcitizen.name": "Random Citizen",
+      "item.trumpcraft_114.hexspecalistarmorboots": "Hex Specalist Boots",
+      "item.trumpcraft.liquidmoney_bucket": "LiquidMoney Bucket",
+      "advancements.weneedtobuildawall.title": "We Need To Build A Wall",
+      "item.trumpcraft.wallmariaaudiorecording2": "Wall Maria 2",
+      "item.trumpcraft_114.hexsquadarmorbody": "Hex Offensive Plate",
+      "item.trumpcraft.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "item.trumpcraft.sasha": "The Official Spawn Egg",
+      "item.trumpcraft_114.realintrounlock": "IntroTest",
+      "item.antitrumptool.name": "ATT",
+      "item.trumpcraft.hexsquadarmorboots": "Hex Offensive Boots",
+      "entity.trumpcraft_114.eva": "The EVA",
+      "item.trumpcraft_114.hexsquadarmorhelmet": "Hex Offensive Helmet",
+      "item.trumpcraft.hexsoldierpledge": "Hex Soldier Pledge",
+      "item.trumpsquadarmorhelmet.name": "Trump Squad Helmet",
+      "entity.trumpcraft_114.trumpsoldier": "Trump Soldier",
+      "entity.eva.name": "The EVA",
+      "biome.trumpcraft.moneylake": "Money Lake",
+      "item.trumpcraft.livingbomb": "Mobile Tnt Spawn Egg",
+      "item.bullet.name": "Bullet",
+      "entity.trumpcraft.thetrump": "Donald Trump",
+      "fluid.liquidmoney": "LiquidMoney",
+      "item.trumpnade.name": "Trump Grenade",
+      "item.trumpcraft.wallmariaaudiorecording": "Wall Maria 1",
+      "item.trumpcraft.eva": "The EVA Spawn Egg",
+      "item.trumpcraft.rocket": "Rocket",
+      "item.trumpcraft_114.trumpsquadarmorlegs": "Trump Squad Leggings",
+      "block.trumpcraft_114.moneystairs": "Money Stairs",
+      "entity.livingbomb.name": "Mobile Tnt",
+      "item.trumpcraft.money": "Money",
+      "item.hexsquadarmorboots.name": "Hex Offensive Boots",
+      "itemGroup.tablore": "Lore",
+      "item.trumpcraft_114.thefnatic": "The Fanatic Spawn Egg",
+      "item.trumpcraft.realintrounlock": "IntroTest",
+      "item.murica.name": "Flag",
+      "entity.trumpcraft_114.trumpwannabe": "Trump Wannabe",
+      "advancements.hexsidefirst.descr": "You\u0027ve killed 16 Trump soldiers",
+      "entity.trumpcraft_114.vlad": "Vlad",
+      "item.trumpcraft_114.moneysword": "Money Sword",
+      "entity.trumpcraft_114.livingbomb": "Mobile Tnt",
+      "item.trumpcraft.sparkofwar": "Spark of War",
+      "item.trumpcraft.awp": "AWP",
+      "item.trumpcraft.trumpnade": "Trump Grenade",
+      "entity.trumpsoldier.name": "Trump Soldier",
+      "item.trumpcraft.vlad": "Vlad Spawn Egg",
+      "item.trumpcraft_114.eva": "The EVA Spawn Egg",
+      "advancements.wemadesocietygreatagain.title": "We Made Society Great Again",
+      "item.trumpcraft.bullet": "Bullet",
+      "entity.trumpcraft_114.thankyourandomcitizen": "Random Citizen",
+      "advancements.mademinecraftgreatagain.descr": "You sided with Trump. Minecraft is great again, thanks to you!",
+      "entity.vlad.name": "Vlad",
+      "item.burger.name": "Burger",
+      "item.trumpcraft_114.wallmariaaudiorecording": "Wall Maria 1",
+      "entity.trumpcraft.trumpscout": "Trump Scout",
+      "item.trumpcraft.trumpsquadarmorboots": "Trump Squad Boots",
+      "block.trumpcraft.moneychair": "Money Chair",
+      "block.trumpcraft.fragmentofwallblock": "Fragment of the Wall",
+      "entity.trumpcraft.armoredtrumpsoldier": "Armored Trump Soldier",
+      "item.trumpcraft.trumpsquadarmorhelmet": "Trump Squad Helmet",
+      "advancements.weneedtobuildawall.descr": "We need to go dee- I mean build a wall",
+      "entity.trumpcraft.trumpwannabe": "Trump Wannabe",
+      "block.trumpcraft_114.converter": "Converter",
+      "advancements.trumpsidefirst.descr": "Kill a hex soldier",
+      "item.m57pilum.name": "M57 Pilum",
+      "entity.trumpcraft.testsubject": "TestSubject1",
+      "item.trumpcraft.thefnatic": "The Fanatic Spawn Egg",
+      "item.trumpcraft.antitrumptool": "ATT",
+      "biome.trumpcraft_114.wartornplains": "War Torn Plains",
+      "item.trumpcraft.trumpsquad3": "Trump Squad(3) Spawn Egg",
+      "item.trumpcraft.trumpsquad2": "Trump Squad(2) Spawn Egg",
+      "item.trumpcraft.trumpsquad1": "Trump Squad(1) Spawn Egg",
+      "item.trumpcraft.murica": "Flag",
+      "entity.trumpcraft_114.testsubject": "TestSubject1",
+      "item.hexspecalistarmorboots.name": "Hex Specalist Boots",
+      "item.hexsquadarmorhelmet.name": "Hex Offensive Helmet",
+      "item.trumpcraft_114.testsubject": "TestSubject1 Spawn Egg",
+      "item.trumpcraft.hexspecalistarmorboots": "Hex Specalist Boots",
+      "biome.trumpcraft.warzone": "Warzone",
+      "block.trumpcraft_114.moneyslab": "Money Slab",
+      "item.trumpcraft.magashotgun": "MAGA Shotgun"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "trumpcraft",
+    "modName": "Trumpcraft",
+    "version": "6.0.1.0",
+    "description": "We\u0027ll make Minecraft great again",
+    "author": "DereC_",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "image",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.trumpcraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000322116
+}

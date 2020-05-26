@@ -1,0 +1,84 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 352,
+    "height": 390,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpskin.png",
+          "name": "trumpskin.png",
+          "x": 524,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpcraft.png",
+          "name": "trumpcraft.png",
+          "x": 254,
+          "y": 49
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 234,
+          "height": 40,
+          "name": "Back",
+          "x": 300,
+          "y": 384
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Link to Lorebook",
+          "onClick": {
+            "name": "RealPageOneOnButtonClicked"
+          },
+          "width": 234,
+          "height": 40,
+          "name": "Link to Lorebook",
+          "x": 264,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Choose a side...",
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "name": "Choose a side...",
+          "x": 264,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "or kill them all",
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "name": "or kill them all",
+          "x": 264,
+          "y": 186
+        }
+      }
+    ]
+  }
+}

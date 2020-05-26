@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "trumpcraft:blocks/money",
+    "top": "trumpcraft:blocks/money",
+    "side": "trumpcraft:blocks/money"
+  }
+}

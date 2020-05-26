@@ -1,0 +1,30 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "trumpcraft:bullet"
+    },
+    "3": {
+      "item": "trumpcraft:bullet"
+    },
+    "4": {
+      "item": "trumpcraft:bullet"
+    },
+    "5": {
+      "item": "trumpcraft:bullet"
+    },
+    "7": {
+      "item": "trumpcraft:bullet"
+    }
+  },
+  "result": {
+    "item": "trumpcraft:sparkofwar",
+    "count": 1
+  }
+}

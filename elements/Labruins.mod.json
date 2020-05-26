@@ -1,0 +1,78 @@
+{
+  "_fv": 8,
+  "_type": "biome",
+  "definition": {
+    "groundBlock": {
+      "value": "Blocks.STONE"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.STONE"
+    },
+    "generateLakes": true,
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 1,
+    "spawnVines": false,
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "customColors": false,
+    "airColor": {
+      "value": -7490817,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16725210,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16776961,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 0,
+    "grassPerChunk": 3,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 1,
+    "bigMushroomsChunk": 1,
+    "sandPathcesPerChunk": 1,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 1,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.19999999999999998,
+    "spawnBiome": false,
+    "biomeWeight": 5,
+    "biomeType": "ICY",
+    "biomeCategory": "NONE",
+    "biomeDictionaryTypes": [
+      "COLD",
+      "SPARSE",
+      "RARE"
+    ],
+    "spawnList": [
+      {
+        "value": "CUSTOM:TestSubject1"
+      },
+      {
+        "value": "CUSTOM:TestSubject"
+      },
+      {
+        "value": "CUSTOM:TestSubject3"
+      },
+      {
+        "value": "CUSTOM:TestSubject4"
+      }
+    ]
+  }
+}

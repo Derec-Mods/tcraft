@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "glass": "glass",
+        "obsidian": "endframe_top",
+        "beacon": "moneyblock"
+      },
+      "name": "default"
+    }
+  }
+}

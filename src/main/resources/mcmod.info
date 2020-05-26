@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "trumpcraft_114",
+    "name": "Trumpcraft",
+    "description": "We'll make Minecraft great again",
+    "version": "5.0.2.0",
+    "credits": "DereC",
+    "logoFile": "assets/trumpcraft_114/textures/image.png",
+    "mcversion": "1.14.4",
+    "url": "https://www.curseforge.com/minecraft/mc-mods/trumpcraft",
+    "updateUrl": "",
+    "authorList": [
+      "DereC_"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": [],
+    "useDependencyInformation": "true"
+  }
+]

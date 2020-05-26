@@ -1,0 +1,56 @@
+{
+  "_fv": 8,
+  "_type": "dimension",
+  "definition": {
+    "portalFrame": {
+      "value": "CUSTOM:MoneyBlock"
+    },
+    "portalParticles": {
+      "value": "VILLAGER_HAPPY"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": ""
+    },
+    "igniterName": "Flag",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "usaflag",
+    "portalTexture": "usaflag",
+    "enablePortal": true,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:MoneyLand"
+      },
+      {
+        "value": "CUSTOM:MoneyLake"
+      },
+      {
+        "value": "plains"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.GRASS"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_WATER"
+    },
+    "airColor": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "whenPortaTriggerlUsed": {
+      "name": "MURICAPortalTriggerUsed"
+    }
+  }
+}

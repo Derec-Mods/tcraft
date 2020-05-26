@@ -1,0 +1,7 @@
+{
+  "_fv": 8,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">No additional trigger</field><next><block type=\"controls_if\"><value name=\"IF0\"><block type=\"variables_get_logic\"><field name=\"VAR\">global:UnlockedWallMariaPatrol1</field></block></value><statement name=\"DO0\"><block type=\"entity_open_gui\"><field name=\"guiname\">Page2</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"x\"><block type=\"coord_x\"/></value><value name=\"y\"><block type=\"coord_y\"/></value><value name=\"z\"><block type=\"coord_z\"/></value></block></statement></block></next></block></xml>"
+  }
+}

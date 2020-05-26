@@ -1,0 +1,13 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "trumpcraft:moneyblock"
+    }
+  ],
+  "result": {
+    "item": "trumpcraft:money",
+    "count": 9
+  }
+}

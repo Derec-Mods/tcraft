@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "trumpcraft:blocks/moneyblocktop",
+    "particle": "trumpcraft:blocks/moneyblocktop"
+  }
+}

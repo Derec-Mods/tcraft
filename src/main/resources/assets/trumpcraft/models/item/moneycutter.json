@@ -1,0 +1,10 @@
+{
+  "parent": "trumpcraft:custom/moneycut",
+  "textures": {
+    "0": "trumpcraft:blocks/moneyblock",
+    "1": "trumpcraft:blocks/moneyblock",
+    "2": "trumpcraft:blocks/moneyblock",
+    "3": "trumpcraft:blocks/moneyblock",
+    "4": "trumpcraft:blocks/moneyblock"
+  }
+}

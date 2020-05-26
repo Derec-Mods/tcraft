@@ -1,0 +1,25 @@
+{
+  "_fv": 8,
+  "_type": "fluid",
+  "definition": {
+    "name": "LiquidMoney",
+    "textureStill": "liquidmoneystill",
+    "textureFlowing": "liquidmoney",
+    "luminosity": 3,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "type": "WATER",
+    "generateBucket": false,
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "spawnWorldTypes": [
+      "CUSTOM:Warground",
+      "CUSTOM:MURICA"
+    ],
+    "onEntityCollides": {
+      "name": "LiquidMoneyMobplayerColidesBlock"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 8,
+  "_type": "tab",
+  "definition": {
+    "name": "Lore",
+    "icon": {
+      "value": "CUSTOM:RealIntroUnlock"
+    },
+    "showSearch": true
+  }
+}

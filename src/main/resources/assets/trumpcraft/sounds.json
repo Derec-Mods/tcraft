@@ -1,0 +1,65 @@
+{
+  "awp": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:awp",
+        "stream": false
+      }
+    ]
+  },
+  "magashotgun": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:magashotgun",
+        "stream": false
+      }
+    ]
+  },
+  "armoreddeath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:armoreddeath",
+        "stream": false
+      }
+    ]
+  },
+  "hail": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:trumpdeath",
+        "stream": false
+      }
+    ]
+  },
+  "pilumlaunch": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:pilumlaunch",
+        "stream": false
+      }
+    ]
+  },
+  "theevadeath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:theevadeath",
+        "stream": false
+      }
+    ]
+  },
+  "attattack": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "trumpcraft:att",
+        "stream": false
+      }
+    ]
+  }
+}

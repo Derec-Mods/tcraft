@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "trumpcraft:pistol"
+    },
+    "title": {
+      "translate": "advancements.hexsidefirst.title"
+    },
+    "description": {
+      "translate": "advancements.hexsidefirst.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "hexsidefirst": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "trumpcraft:weneedtobuildawall"
+}

@@ -1,0 +1,13 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  ],
+  "result": {
+    "item": "trumpcraft:bullet",
+    "count": 1
+  }
+}

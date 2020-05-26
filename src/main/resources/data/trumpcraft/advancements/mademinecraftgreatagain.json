@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:grass_path"
+    },
+    "title": {
+      "translate": "advancements.mademinecraftgreatagain.title"
+    },
+    "description": {
+      "translate": "advancements.mademinecraftgreatagain.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "mademinecraftgreatagain": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "parent": "trumpcraft:weneedtobuildawall"
+}

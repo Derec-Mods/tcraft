@@ -1,0 +1,42 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "trumpcraft:money"
+    },
+    "1": {
+      "item": "trumpcraft:money"
+    },
+    "2": {
+      "item": "trumpcraft:money"
+    },
+    "3": {
+      "item": "trumpcraft:money"
+    },
+    "4": {
+      "item": "trumpcraft:money"
+    },
+    "5": {
+      "item": "trumpcraft:money"
+    },
+    "6": {
+      "item": "trumpcraft:money"
+    },
+    "7": {
+      "item": "trumpcraft:money"
+    },
+    "8": {
+      "item": "trumpcraft:money"
+    }
+  },
+  "result": {
+    "item": "trumpcraft:moneyblock",
+    "count": 1
+  }
+}

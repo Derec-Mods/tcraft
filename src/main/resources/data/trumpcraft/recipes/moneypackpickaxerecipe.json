@@ -1,0 +1,30 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "trumpcraft:moneyblock"
+    },
+    "1": {
+      "item": "trumpcraft:moneyblock"
+    },
+    "2": {
+      "item": "trumpcraft:moneyblock"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "trumpcraft:moneypackpickaxe",
+    "count": 1
+  }
+}

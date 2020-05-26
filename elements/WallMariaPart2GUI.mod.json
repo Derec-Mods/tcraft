@@ -1,0 +1,260 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 400,
+    "height": 390,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 324,
+          "height": 40,
+          "name": "Back",
+          "x": 264,
+          "y": 384
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Wall Maria Patrol Part 2",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Wall Maria Patrol Part 2",
+          "x": 264,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "AI LOG",
+          "color": {
+            "value": -10040065,
+            "falpha": 0.0
+          },
+          "name": "AI LOG",
+          "x": 264,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "new to the table this time",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "new to the table this time",
+          "x": 264,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "There are alarms everywhere",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "There are alarms everywhere",
+          "x": 264,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "\"SECTOR S42 IS UNDER ATTACK!\"",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "\"SECTOR S42 IS UNDER ATTACK!\"",
+          "x": 264,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "\"THIS IS NOT A DRILL! ALL UNITS,",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "\"THIS IS NOT A DRILL! ALL UNITS,",
+          "x": 264,
+          "y": 348
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "THE ENEMY IS SCALING THE WALL!\"",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "THE ENEMY IS SCALING THE WALL!\"",
+          "x": 264,
+          "y": 366
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The roar of their bombers tears",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "The roar of their bombers tears",
+          "x": 264,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Interesting...it appears that",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Interesting...it appears that",
+          "x": 264,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "our enemy has brought something",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "our enemy has brought something",
+          "x": 264,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "through the sky. This is not good",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "through the sky. This is not good",
+          "x": 264,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The walls were always meant to be",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "The walls were always meant to be",
+          "x": 264,
+          "y": 222
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "more deterrents than actual walls",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "more deterrents than actual walls",
+          "x": 264,
+          "y": 240
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "anyway. Now the enemy is at our",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "anyway. Now the enemy is at our",
+          "x": 264,
+          "y": 258
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "gates with a new weapon",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "gates with a new weapon",
+          "x": 264,
+          "y": 276
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "A victory for us is very slim",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "A victory for us is very slim",
+          "x": 264,
+          "y": 294
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "But they choose to fight anyway",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "But they choose to fight anyway",
+          "x": 264,
+          "y": 312
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Very well. I'll cooperate.",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Very well. I'll cooperate.",
+          "x": 264,
+          "y": 330
+        }
+      }
+    ]
+  }
+}

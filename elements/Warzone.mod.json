@@ -1,0 +1,65 @@
+{
+  "_fv": 8,
+  "_type": "biome",
+  "definition": {
+    "groundBlock": {
+      "value": "Blocks.DIRT#1"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.STONEBRICK"
+    },
+    "generateLakes": true,
+    "treeType": 1,
+    "vanillaTreeType": "Birch trees",
+    "minHeight": 10,
+    "spawnVines": true,
+    "treeVines": {
+      "value": "Blocks.FLOWING_LAVA"
+    },
+    "treeStem": {
+      "value": "Blocks.SANDSTONE"
+    },
+    "treeBranch": {
+      "value": "Blocks.STONE"
+    },
+    "treeFruits": {
+      "value": "Blocks.NETHERRACK"
+    },
+    "customColors": true,
+    "airColor": {
+      "value": -10877177,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -12505853,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -2457592,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 1,
+    "grassPerChunk": 3,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 1,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 1.0,
+    "spawnBiome": false,
+    "biomeWeight": 20,
+    "biomeType": "DESERT",
+    "biomeCategory": "NONE",
+    "biomeDictionaryTypes": [
+      "HOT",
+      "DEAD",
+      "WASTELAND"
+    ],
+    "spawnList": []
+  }
+}

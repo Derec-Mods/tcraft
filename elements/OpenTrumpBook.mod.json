@@ -1,0 +1,7 @@
+{
+  "_fv": 8,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">No additional trigger</field><next><block type=\"controls_if\"><mutation else=\"1\"/><value name=\"IF0\"><block type=\"logic_negate\"><value name=\"BOOL\"><block type=\"variables_get_logic\"><field name=\"VAR\">global:hasopenedbook</field></block></value></block></value><statement name=\"DO0\"><block type=\"entity_open_gui\"><field name=\"guiname\">TrumpBook1</field><next><block type=\"variables_set_logic\"><field name=\"VAR\">global:hasopenedbook</field><value name=\"VAL\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block></next><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"x\"><block type=\"coord_x\"/></value><value name=\"y\"><block type=\"coord_y\"/></value><value name=\"z\"><block type=\"coord_z\"/></value></block></statement><statement name=\"ELSE\"><block type=\"call_procedure\"><field name=\"procedure\">OpenContents1</field></block></statement></block></next></block></xml>"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 8,
+  "_type": "structure",
+  "definition": {
+    "structure": "bunker",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 650,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": -3,
+    "spawnWorldTypes": [
+      "CUSTOM:Warground"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Warzone"
+      },
+      {
+        "value": "plains"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

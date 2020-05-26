@@ -1,0 +1,51 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      },
+      {
+        "value": "CUSTOM:Money"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MoneyBlock"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "moneycrafting",
+    "namespace": "mod"
+  }
+}

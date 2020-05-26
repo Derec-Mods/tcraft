@@ -1,0 +1,100 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 500,
+    "height": 345,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Trump Allies Slain",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Trump Allies Slain",
+          "x": 264,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Hex Allies Slain",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Hex Allies Slain",
+          "x": 264,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:TrumpSoldiersKilled>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:TrumpSoldiersKilled>",
+          "x": 264,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:HexSoldiersKilled>",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "<VAR:HexSoldiersKilled>",
+          "x": 264,
+          "y": 168
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpskin.png",
+          "name": "trumpskin.png",
+          "x": 464,
+          "y": 231
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpsoldierskin.png",
+          "name": "trumpsoldierskin.png",
+          "x": 574,
+          "y": 113
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hexskin1.png",
+          "name": "hexskin1.png",
+          "x": 300,
+          "y": 200
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hexsalute.png",
+          "name": "hexsalute.png",
+          "x": 193,
+          "y": 224
+        }
+      }
+    ]
+  }
+}

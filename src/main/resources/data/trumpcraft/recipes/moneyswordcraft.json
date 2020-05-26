@@ -1,0 +1,19 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "trumpcraft:money"
+    },
+    {
+      "item": "trumpcraft:money"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+  "result": {
+    "item": "trumpcraft:moneysword",
+    "count": 1
+  }
+}

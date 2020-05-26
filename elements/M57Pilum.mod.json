@@ -1,0 +1,42 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "rpg",
+    "customModelName": "Normal",
+    "name": "M57 Pilum",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Rocket"
+    },
+    "shootConstantly": false,
+    "usageCount": 25,
+    "actionSound": {
+      "value": "CUSTOM:pilumlaunch"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.3,
+    "bulletDamage": 5.5,
+    "bulletKnockback": 7,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Rocket"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "M57PilumBulletHitsBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "M57PilumBulletHitsBlock"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bullet"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bullet"
+      },
+      {
+        "value": "CUSTOM:Bullet"
+      },
+      {
+        "value": "CUSTOM:Bullet"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Bullet"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SparkofWar"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "sparkofwarcraftingrecipe",
+    "namespace": "mod"
+  }
+}

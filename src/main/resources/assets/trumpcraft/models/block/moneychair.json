@@ -1,0 +1,8 @@
+{
+  "parent": "trumpcraft:custom/chair",
+  "textures": {
+    "all": "trumpcraft:blocks/money",
+    "particle": "trumpcraft:blocks/money",
+    "2": "trumpcraft:blocks/money"
+  }
+}

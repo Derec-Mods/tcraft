@@ -1,0 +1,273 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 510,
+    "height": 480,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "PLEDGE TO THE HEX, THE COALITION,",
+          "color": {
+            "value": -16724737,
+            "falpha": 0.0
+          },
+          "name": "PLEDGE TO THE HEX, THE COALITION,",
+          "x": 264,
+          "y": 6
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "AND THE SIXTEENTH LEGION",
+          "color": {
+            "value": -16724737,
+            "falpha": 0.0
+          },
+          "name": "AND THE SIXTEENTH LEGION",
+          "x": 300,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "\"I swear to the sixteenth this sacred oath to",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "\"I swear to the sixteenth this sacred oath to",
+          "x": 182,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "the Leaders of the 16th Legion, the Big 6, and",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "the Leaders of the 16th Legion, the Big 6, and",
+          "x": 182,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "to the people.” ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "to the people.” ",
+          "x": 182,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "“I shall give unconditional obedience, and as a",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "“I shall give unconditional obedience, and as a",
+          "x": 182,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "brave soldier I shall at all times be prepared ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "brave soldier I shall at all times be prepared ",
+          "x": 182,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "to give my life for this cause.”",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "to give my life for this cause.”",
+          "x": 182,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "“I declare that I renounce all allegiance and",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "“I declare that I renounce all allegiance and",
+          "x": 182,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "fidelity to any foreign figure, state, or ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "fidelity to any foreign figure, state, or ",
+          "x": 182,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "sovereignty of whom or which I was a subject of.”",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "sovereignty of whom or which I was a subject of.”",
+          "x": 182,
+          "y": 222
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "“I will support and defend the 16th against ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "“I will support and defend the 16th against ",
+          "x": 182,
+          "y": 258
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "all enemies, Trump related or foreign.” ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "all enemies, Trump related or foreign.” ",
+          "x": 182,
+          "y": 276
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "“I will bear arms on behalf of the 16th; I will ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "“I will bear arms on behalf of the 16th; I will ",
+          "x": 182,
+          "y": 312
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "perform service in the Armed Forces of the Hex;",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "perform service in the Armed Forces of the Hex;",
+          "x": 182,
+          "y": 330
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I will perform work of organizational importance” ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "I will perform work of organizational importance” ",
+          "x": 182,
+          "y": 348
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "“I take this responsibility freely without any ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "“I take this responsibility freely without any ",
+          "x": 182,
+          "y": 384
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "mental reservation or purpose of evasion.",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "mental reservation or purpose of evasion.",
+          "x": 182,
+          "y": 402
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Glory to the sixteenth.” ",
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "name": "Glory to the sixteenth.” ",
+          "x": 318,
+          "y": 420
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 288,
+          "height": 40,
+          "name": "Back",
+          "x": 284,
+          "y": 438
+        }
+      }
+    ]
+  }
+}

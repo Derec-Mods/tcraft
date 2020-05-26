@@ -1,0 +1,77 @@
+{
+  "_fv": 8,
+  "_type": "biome",
+  "definition": {
+    "groundBlock": {
+      "value": "CUSTOM:MoneyBlock"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.EMERALD_BLOCK"
+    },
+    "generateLakes": true,
+    "treeType": 1,
+    "vanillaTreeType": "Default",
+    "minHeight": 7,
+    "spawnVines": true,
+    "treeVines": {
+      "value": "Blocks.DIAMOND_BLOCK"
+    },
+    "treeStem": {
+      "value": "Blocks.EMERALD_ORE"
+    },
+    "treeBranch": {
+      "value": "Blocks.EMERALD_BLOCK"
+    },
+    "treeFruits": {
+      "value": "Blocks.DIAMOND_ORE"
+    },
+    "customColors": false,
+    "airColor": {
+      "value": -5916161,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -13261999,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -14329397,
+      "falpha": 0.0
+    },
+    "treesPerChunk": 3,
+    "grassPerChunk": 0,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
+    "bigMushroomsChunk": 0,
+    "sandPathcesPerChunk": 0,
+    "gravelPatchesPerChunk": 0,
+    "reedsPerChunk": 0,
+    "cactiPerChunk": 0,
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "spawnBiome": false,
+    "biomeWeight": 10,
+    "biomeType": "WARM",
+    "biomeCategory": "NONE",
+    "biomeDictionaryTypes": [
+      "PLAINS",
+      "HILLS",
+      "MAGICAL",
+      "DENSE",
+      "LUSH"
+    ],
+    "spawnList": [
+      {
+        "value": "CUSTOM:Trump"
+      },
+      {
+        "value": "CUSTOM:TrumpSoldier"
+      },
+      {
+        "value": "CUSTOM:Thankyourandomcitizen"
+      }
+    ]
+  }
+}

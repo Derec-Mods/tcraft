@@ -1,0 +1,39 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "name": "Slot #0",
+          "x": 318,
+          "y": 96
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Convert!",
+          "onClick": {
+            "name": "ConverterGUIOnButtonClickedOnButtonClicked"
+          },
+          "width": 160,
+          "height": 40,
+          "name": "Convert!",
+          "x": 372,
+          "y": 96
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 500,
+    "height": 450,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "So, you want to hear",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "So, you want to hear",
+          "x": 290,
+          "y": 24
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "another story, eh?",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "another story, eh?",
+          "x": 290,
+          "y": 42
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "One where the fate of Pan-",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "One where the fate of Pan-",
+          "x": 290,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "oops. Wrong story",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "oops. Wrong story",
+          "x": 290,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "(channeling my",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "(channeling my",
+          "x": 290,
+          "y": 96
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "nonexistent improv skills)",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "nonexistent improv skills)",
+          "x": 290,
+          "y": 114
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Aight. Here we go. 4th wall will not break anymore after this line",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Aight. Here we go. 4th wall will not break anymore after this line",
+          "x": 120,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "oh, so you DO wanna hear a story",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "oh, so you DO wanna hear a story",
+          "x": 290,
+          "y": 330
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I'm gonna assume you're",
+          "color": {
+            "value": -16764058,
+            "falpha": 0.0
+          },
+          "name": "I'm gonna assume you're",
+          "x": 290,
+          "y": 150
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "someone who got that joke",
+          "color": {
+            "value": -16764058,
+            "falpha": 0.0
+          },
+          "name": "someone who got that joke",
+          "x": 290,
+          "y": 168
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "then turn the page",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "then turn the page",
+          "x": 256,
+          "y": 369
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "there's a budget",
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "name": "there's a budget",
+          "x": 422,
+          "y": 395
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "so... since I've wasted",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "so... since I've wasted",
+          "x": 290,
+          "y": 186
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "most of the page I'll just",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "most of the page I'll just",
+          "x": 290,
+          "y": 204
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "introduce myself with this line",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "introduce myself with this line",
+          "x": 290,
+          "y": 222
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "i'm the dev. Aka your narrator",
+          "color": {
+            "value": -16750900,
+            "falpha": 0.0
+          },
+          "name": "i'm the dev. Aka your narrator",
+          "x": 290,
+          "y": 258
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I tell the story",
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "name": "I tell the story",
+          "x": 290,
+          "y": 294
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "I'm also bad at that",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "I'm also bad at that",
+          "x": 290,
+          "y": 312
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "for your convenience",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 400,
+          "height": 40,
+          "name": "for your convenience",
+          "x": 229,
+          "y": 417
+        }
+      }
+    ]
+  }
+}

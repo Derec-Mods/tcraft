@@ -1,0 +1,14 @@
+{
+  "parent": "trumpcraft:custom/awp",
+  "textures": {
+    "0": "trumpcraft:blocks/la",
+    "1": "trumpcraft:blocks/lb",
+    "2": "trumpcraft:blocks/lc",
+    "3": "trumpcraft:blocks/ld",
+    "4": "trumpcraft:blocks/le",
+    "5": "trumpcraft:blocks/lf",
+    "6": "trumpcraft:blocks/lg",
+    "7": "trumpcraft:blocks/lh",
+    "10": "trumpcraft:blocks/li"
+  }
+}

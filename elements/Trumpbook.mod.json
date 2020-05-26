@@ -1,0 +1,10 @@
+{
+  "_fv": 8,
+  "_type": "command",
+  "definition": {
+    "commandName": "book",
+    "onCommandExecuted": {
+      "name": "OpenTrumpBook"
+    }
+  }
+}

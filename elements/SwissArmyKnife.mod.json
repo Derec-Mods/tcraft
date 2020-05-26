@@ -1,0 +1,53 @@
+{
+  "_fv": 8,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "swissknifeopen",
+    "customModelName": "Normal",
+    "name": "Swiss Army Knife",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 6.0,
+    "attackSpeed": 2.8,
+    "enchantability": 5,
+    "damageVsEntity": 7.0,
+    "usageCount": 131,
+    "blocksAffected": [
+      {
+        "value": "Blocks.WEB"
+      },
+      {
+        "value": "Blocks.DOUBLE_PLANT"
+      },
+      {
+        "value": "Blocks.RED_FLOWER"
+      },
+      {
+        "value": "Blocks.LEAVES"
+      },
+      {
+        "value": "Blocks.LEAVES2"
+      },
+      {
+        "value": "Blocks.WATERLILY"
+      },
+      {
+        "value": "Blocks.VINE"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SwissArmyKnife"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "trumpcraft:custom/beacon",
+  "textures": {
+    "all": "trumpcraft:blocks/beacon",
+    "particle": "trumpcraft:blocks/beacon",
+    "glass": "trumpcraft:blocks/glass",
+    "obsidian": "trumpcraft:blocks/endframe_top",
+    "beacon": "trumpcraft:blocks/moneyblock"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "_fv": 8,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"http://www.w3.org/1999/xhtml\"><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">No additional trigger</field><next><block type=\"entity_despawn\"><next><block type=\"spawn_entity\"><field name=\"entity\">EntityTNTPrimed</field><value name=\"x\"><block type=\"coord_x\"/></value><value name=\"y\"><block type=\"coord_y\"/></value><value name=\"z\"><block type=\"coord_z\"/></value></block></next><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></xml>"
+  }
+}

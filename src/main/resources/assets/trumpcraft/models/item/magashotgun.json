@@ -1,0 +1,6 @@
+{
+  "parent": "trumpcraft:custom/shotgun2",
+  "textures": {
+    "0": "trumpcraft:blocks/maga"
+  }
+}

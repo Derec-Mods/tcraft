@@ -1,0 +1,34 @@
+{
+  "_fv": 8,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "trumpaudio",
+    "customModelName": "Normal",
+    "name": "Wall Maria 1",
+    "creativeTab": {
+      "value": "CUSTOM:Lore"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "stayInGridWhenCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 5.0,
+    "specialInfo": [
+      "That day..."
+    ],
+    "hasGlow": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "WallMaria1Used"
+    },
+    "onRightClickedOnBlock": {
+      "name": "WallMaria1Used"
+    }
+  }
+}
