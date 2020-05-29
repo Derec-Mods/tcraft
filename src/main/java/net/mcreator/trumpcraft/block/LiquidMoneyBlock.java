@@ -21,24 +21,20 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.dimension.DimensionType;
 import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FlowingFluid;
-import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.FlowingFluidBlock;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.trumpcraft.world.dimension.WargroundDimension;
 import net.mcreator.trumpcraft.world.dimension.MURICADimension;
-import net.mcreator.trumpcraft.procedures.LiquidMoneyMobplayerColidesBlockProcedure;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 import java.util.Random;
@@ -79,18 +75,6 @@ public class LiquidMoneyBlock extends TrumpcraftModElements.ModElement {
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("liquidmoney");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("liquidmoney_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
-			@Override
-			public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-				super.onEntityCollision(state, world, pos, entity);
-				int x = pos.getX();
-				int y = pos.getY();
-				int z = pos.getZ();
-				{
-					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("entity", entity);
-					LiquidMoneyMobplayerColidesBlockProcedure.executeProcedure($_dependencies);
-				}
-			}
 		}.setRegistryName("liquidmoney"));
 	}
 

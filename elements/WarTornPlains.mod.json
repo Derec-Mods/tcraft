@@ -3,7 +3,7 @@
   "_type": "biome",
   "definition": {
     "groundBlock": {
-      "value": "Blocks.DIRT"
+      "value": "Blocks.DIRT#1"
     },
     "undergroundBlock": {
       "value": "Blocks.STONE"

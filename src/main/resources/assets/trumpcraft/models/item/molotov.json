@@ -1,0 +1,7 @@
+{
+  "parent": "trumpcraft:custom/molotov",
+  "textures": {
+    "fire": "trumpcraft:blocks/fireanimation",
+    "bottle": "trumpcraft:blocks/bottle"
+  }
+}

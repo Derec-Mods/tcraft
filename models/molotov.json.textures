@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "fire": "fireanimation",
+        "bottle": "bottle"
+      },
+      "name": "default"
+    }
+  }
+}

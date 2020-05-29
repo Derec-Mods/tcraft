@@ -1,0 +1,46 @@
+{
+  "_fv": 8,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.GLOWSTONE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:MoneyBlock"
+      },
+      {
+        "value": "Blocks.BEACON"
+      },
+      {
+        "value": "CUSTOM:MoneyBlock"
+      },
+      {
+        "value": "CUSTOM:TechFragment"
+      },
+      {
+        "value": "Blocks.EMERALD_BLOCK"
+      },
+      {
+        "value": "CUSTOM:TechFragment"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Converter"
+    },
+    "name": "converter_recipe",
+    "namespace": "mod"
+  }
+}

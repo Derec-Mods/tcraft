@@ -23,6 +23,7 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
+import net.minecraft.entity.ai.goal.RangedAttackGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -30,6 +31,8 @@ import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LookAtGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.IRangedAttackMob;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
@@ -41,6 +44,7 @@ import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.mcreator.trumpcraft.procedures.IncrementTrumpSoldiersKilledProcedure;
 import net.mcreator.trumpcraft.item.TrumpsquadarmorItem;
+import net.mcreator.trumpcraft.item.PistolItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 @TrumpcraftModElements.ModElement.Tag
@@ -71,9 +75,11 @@ public class TrumpSquad1Entity extends TrumpcraftModElements.ModElement {
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:wartornplains")))
 				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:labruins")))
+				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
-			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 5, 9));
+			biome.getSpawns(EntityClassification.MONSTER).add(new Biome.SpawnListEntry(entity, 20, 1, 5));
 		}
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				MonsterEntity::canMonsterSpawn);
@@ -94,7 +100,7 @@ public class TrumpSquad1Entity extends TrumpcraftModElements.ModElement {
 			return customRender;
 		});
 	}
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends MonsterEntity implements IRangedAttackMob {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -120,6 +126,7 @@ public class TrumpSquad1Entity extends TrumpcraftModElements.ModElement {
 			this.goalSelector.addGoal(6, new RandomWalkingGoal(this, 1));
 			this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(8, new SwimGoal(this));
+			this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25D, 20, 10.0F));
 		}
 
 		@Override
@@ -191,6 +198,10 @@ public class TrumpSquad1Entity extends TrumpcraftModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+		}
+
+		public void attackEntityWithRangedAttack(LivingEntity target, float flval) {
+			PistolItem.shoot(this, target);
 		}
 	}
 }

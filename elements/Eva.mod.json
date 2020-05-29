@@ -6,6 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Modeltheeva",
     "mobModelTexture": "theeva.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.7,
     "modelHeight": 2.5,
     "modelShadowSize": 0.7,
@@ -69,10 +70,10 @@
       "value": "Items.IRON_INGOT"
     },
     "livingSound": {
-      "value": ""
+      "value": "entity.enderdragon.ambient"
     },
     "hurtSound": {
-      "value": "game.neutral.hurt"
+      "value": "entity.enderdragon.hurt"
     },
     "deathSound": {
       "value": "CUSTOM:theevadeath"

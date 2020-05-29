@@ -6,7 +6,9 @@
     "texture": "emerald_sword",
     "customModelName": "Normal",
     "name": "Money Sword",
-    "specialInfo": [],
+    "specialInfo": [
+      "Freshly folded money"
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -16,7 +18,7 @@
     "attackSpeed": 2.8,
     "enchantability": 10,
     "damageVsEntity": 4.5,
-    "usageCount": 42,
+    "usageCount": 32,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [

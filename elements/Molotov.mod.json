@@ -1,0 +1,47 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "missingtexture",
+    "customModelName": "molotov:default",
+    "name": "Molotov Cocktail",
+    "specialInfo": [
+      "That $400 better be put to good use"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 1,
+    "actionSound": {
+      "value": "item.firecharge.use"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MolotovRangedItemUsed"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Molotov"
+    },
+    "bulletModel": "Modelmolotov",
+    "customBulletModelTexture": "bottle.png",
+    "onBulletHitsBlock": {
+      "name": "NadeExplode"
+    },
+    "onBulletHitsEntity": {
+      "name": "NadeExplode"
+    }
+  }
+}

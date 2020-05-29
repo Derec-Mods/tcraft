@@ -99,7 +99,7 @@ public class MAGAShotgunItem extends TrumpcraftModElements.ModElement {
 					}
 				}
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 2.5, 1);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.6f, 5, 0);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;

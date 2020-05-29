@@ -1,0 +1,44 @@
+{
+  "_fv": 8,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "fnaticweapon",
+    "customModelName": "Normal",
+    "name": "The Fnatic's Weapon",
+    "specialInfo": [
+      "No. It's not from Terraria."
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 4000,
+    "actionSound": {
+      "value": "item.firecharge.use"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 3,
+    "bulletParticles": true,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Items.FIRE_CHARGE"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "FnaticWeaponBulletHitsPlayer"
+    },
+    "onBulletHitsPlayer": {
+      "name": "FnaticWeaponBulletHitsPlayer"
+    }
+  }
+}

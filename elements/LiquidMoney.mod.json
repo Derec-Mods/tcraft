@@ -17,9 +17,6 @@
     "spawnWorldTypes": [
       "CUSTOM:Warground",
       "CUSTOM:MURICA"
-    ],
-    "onEntityCollides": {
-      "name": "LiquidMoneyMobplayerColidesBlock"
-    }
+    ]
   }
 }

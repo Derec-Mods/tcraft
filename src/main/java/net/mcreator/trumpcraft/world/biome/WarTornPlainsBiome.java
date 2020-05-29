@@ -57,8 +57,9 @@ public class WarTornPlainsBiome extends TrumpcraftModElements.ModElement {
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0f).depth(0.01f).scale(1f).temperature(0.5f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011).surfaceBuilder(SurfaceBuilder.DEFAULT,
-							new SurfaceBuilderConfig(Blocks.DIRT.getDefaultState(), Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState())));
+					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
+					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.COARSE_DIRT.getDefaultState(),
+							Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState())));
 			setRegistryName("wartornplains");
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addStructures(this);
@@ -74,12 +75,12 @@ public class WarTornPlainsBiome extends TrumpcraftModElements.ModElement {
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
-									Lists.newArrayList(Blocks.DIRT.getDefaultState(), Blocks.STONE.getDefaultState())))
+									Lists.newArrayList(Blocks.COARSE_DIRT.getDefaultState(), Blocks.STONE.getDefaultState())))
 							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(1))));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
-									Lists.newArrayList(Blocks.DIRT.getDefaultState(), Blocks.STONE.getDefaultState())))
+									Lists.newArrayList(Blocks.COARSE_DIRT.getDefaultState(), Blocks.STONE.getDefaultState())))
 							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(1))));
 		}
 	}
@@ -121,8 +122,8 @@ public class WarTornPlainsBiome extends TrumpcraftModElements.ModElement {
 				} else {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
-					if (!((ground == Blocks.DIRT.getDefaultState().getBlock() || ground == Blocks.STONE.getDefaultState().getBlock())
-							&& (ground2 == Blocks.DIRT.getDefaultState().getBlock() || ground2 == Blocks.STONE.getDefaultState().getBlock())))
+					if (!((ground == Blocks.COARSE_DIRT.getDefaultState().getBlock() || ground == Blocks.STONE.getDefaultState().getBlock())
+							&& (ground2 == Blocks.COARSE_DIRT.getDefaultState().getBlock() || ground2 == Blocks.STONE.getDefaultState().getBlock())))
 						return false;
 					BlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
@@ -186,7 +187,7 @@ public class WarTornPlainsBiome extends TrumpcraftModElements.ModElement {
 
 		private boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.SOUL_SAND.getDefaultState().getBlock()
-					|| blockType == Blocks.SOUL_SAND.getDefaultState().getBlock() || blockType == Blocks.DIRT.getDefaultState().getBlock()
+					|| blockType == Blocks.SOUL_SAND.getDefaultState().getBlock() || blockType == Blocks.COARSE_DIRT.getDefaultState().getBlock()
 					|| blockType == Blocks.STONE.getDefaultState().getBlock();
 		}
 

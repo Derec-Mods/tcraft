@@ -1,0 +1,36 @@
+{
+  "group": "trumpcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:glowstone"
+    },
+    "3": {
+      "item": "trumpcraft:moneyblock"
+    },
+    "4": {
+      "item": "minecraft:beacon"
+    },
+    "5": {
+      "item": "trumpcraft:moneyblock"
+    },
+    "6": {
+      "item": "trumpcraft:tech_fragment"
+    },
+    "7": {
+      "item": "minecraft:emerald_block"
+    },
+    "8": {
+      "item": "trumpcraft:tech_fragment"
+    }
+  },
+  "result": {
+    "item": "trumpcraft:converter",
+    "count": 1
+  }
+}

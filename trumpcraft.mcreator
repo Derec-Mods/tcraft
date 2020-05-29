@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "DIMENSION": 2,
+    "ENTITY": 44,
     "GUI": 9,
-    "ENTITY": 44
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -649,10 +649,6 @@
       "ids": {},
       "metadata": {
         "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
           {
             "name": "x",
             "type": "int"
@@ -2079,6 +2075,92 @@
           }
         ]
       }
+    },
+    {
+      "name": "MolotovRangedItemUsed",
+      "type": "procedure",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "molotov_ranged_item_used",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Molotov",
+      "type": "gun",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "molotov"
+    },
+    {
+      "name": "ConverterRecipe",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "converter_recipe"
+    },
+    {
+      "name": "FnaticWeaponBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnatic_weapon_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FnaticWeapon",
+      "type": "gun",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fnatic_weapon"
+    },
+    {
+      "name": "DemoUnit",
+      "type": "mob",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demo_unit"
     }
   ],
   "variable_elements": [
@@ -2250,26 +2332,26 @@
       "item.pistol.name": "Pistol",
       "item.trumpcraft.hexsquadarmorlegs": "Hex Offensive Leggings",
       "item.trumpcraft_114.liquidmoney_bucket": "LiquidMoney Bucket",
-      "advancements.hexsidefirst.title": "First Blood (Hex)",
       "item.trumpcraft_114.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "advancements.hexsidefirst.title": "First Blood (Hex)",
       "advancements.mademinecraftgreatagain.title": "We Made Minecraft Great Again",
       "block.trumpcraft.moneyslab": "Money Slab",
-      "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
       "item.trumpcraft.warground": "unused",
+      "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
       "entity.trumpcraft.livingbomb": "Mobile Tnt",
       "item.trumpcraft.m57pilum": "M57 Pilum",
       "item.trumpcraft_114.antitrumptool": "ATT",
       "item.trumpcraft.failedgolem": "Failed Golem Spawn Egg",
       "item.money.name": "Money",
       "item.trumpcraft_114.trumpscout": "Trump Scout Spawn Egg",
-      "entity.trumpcraft.money_squid": "Money Squid",
       "advancements.youfool.title": "Switzerland",
+      "entity.trumpcraft.money_squid": "Money Squid",
       "item.trumpcraft_114.magashotgun": "MAGA Shotgun",
-      "entity.trumpwannabe.name": "Trump Wannabe",
       "item.hexspecalistarmorhelmet.name": "Hex Specalist Helmet",
+      "entity.trumpwannabe.name": "Trump Wannabe",
       "item.trumpcraft.burger": "Burger",
-      "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
       "item.trumpcraft.war_spark": "Spark of War",
+      "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
       "entity.armoredtrumpsoldier.name": "Armored Trump Soldier",
       "item.trumpcraft.trumpsoldier": "Trump Soldier Spawn Egg",
       "item.rocket.name": "Rocket",
@@ -2296,6 +2378,7 @@
       "item.trumpcraft_114.trumpsoldier": "Trump Soldier Spawn Egg",
       "block.trumpcraft_114.moneywall": "Money Wall",
       "item.trumpcraft.pistol": "Pistol",
+      "item.trumpcraft.fnatic_weapon": "The Fnatic\u0027s Weapon",
       "item.trumpcraft_114.sasha": "The Official Spawn Egg",
       "item.trumpcraft.deathsquadgolem": "Death Squad Golem Spawn Egg",
       "item.moneycutter.name": "Money Cutter",
@@ -2373,6 +2456,7 @@
       "item.trumpcraft_114.deathsquadgolem": "Death Squad Golem Spawn Egg",
       "item.wallmariaaudiorecording.name": "Wall Maria 1",
       "block.trumpcraft_114.moneyblock": "Block of Money",
+      "item.trumpcraft.demo_unit": "Demo Unit Spawn Egg",
       "item.trumpcraft.moneypackpickaxe": "Money Pickaxe",
       "item.hexsquadarmorlegs.name": "Hex Offensive Leggings",
       "item.hexspecalistarmorbody.name": "Hex Specalist Body",
@@ -2391,6 +2475,7 @@
       "block.trumpcraft_114.warblock": "War Block",
       "entity.trumpcraft_114.trumpsquad2": "Trump Squad(2)",
       "entity.trumpcraft_114.trumpsquad3": "Trump Squad(3)",
+      "entity.trumpcraft.demo_unit": "Demo Unit",
       "item.trumpcraft.trumpsquadarmorbody": "Trump Squad Plate",
       "item.trumpcraft.thetrump": "Donald Trump Spawn Egg",
       "item.trumpcraft_114.thankyourandomcitizen": "Random Citizen Spawn Egg",
@@ -2428,6 +2513,7 @@
       "item.trumpcraft.wallmariaaudiorecording2": "Wall Maria 2",
       "item.trumpcraft_114.hexsquadarmorbody": "Hex Offensive Plate",
       "item.trumpcraft.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "item.trumpcraft.molotov": "Molotov Cocktail",
       "item.trumpcraft.assault_rifle": "Assault Rifle",
       "item.trumpcraft.sasha": "The Official Spawn Egg",
       "item.trumpcraft_114.realintrounlock": "IntroTest",

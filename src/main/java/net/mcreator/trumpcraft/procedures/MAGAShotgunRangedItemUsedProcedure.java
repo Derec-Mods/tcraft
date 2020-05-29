@@ -27,9 +27,9 @@ public class MAGAShotgunRangedItemUsedProcedure extends TrumpcraftModElements.Mo
 		for (int index0 = 0; index0 < (int) (5); index0++) {
 			if (!world.isRemote && entity instanceof LivingEntity) {
 				ArrowEntity entityToSpawn = new ArrowEntity(world, (LivingEntity) entity);
-				entityToSpawn.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, (float) 1, 0);
-				entityToSpawn.setDamage((float) 2.5);
-				entityToSpawn.setKnockbackStrength((int) 1);
+				entityToSpawn.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, (float) 0.6, 0);
+				entityToSpawn.setDamage((float) 3);
+				entityToSpawn.setKnockbackStrength((int) 0);
 				world.addEntity(entityToSpawn);
 			}
 		}
