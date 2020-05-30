@@ -1,6 +1,8 @@
 {
-  "parent": "item/generated",
+  "parent": "trumpcraft:custom/bullet",
   "textures": {
-    "layer0": "trumpcraft:items/bullet2"
+    "0": "trumpcraft:blocks/bullettexture",
+    "1": "trumpcraft:blocks/bullettexture",
+    "2": "trumpcraft:blocks/bullettexture"
   }
 }

@@ -25,7 +25,7 @@
     "onRangedItemUsed": {
       "name": "MAGAShotgunRangedItemUsed"
     },
-    "bulletPower": 0.6,
+    "bulletPower": 1.0,
     "bulletDamage": 5.0,
     "bulletKnockback": 0,
     "bulletParticles": false,

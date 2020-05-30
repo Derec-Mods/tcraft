@@ -98,7 +98,7 @@ public class AWPItem extends TrumpcraftModElements.ModElement {
 					}
 				}
 				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.5f, 10, 3);
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 3f, 10, 3);
 					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 					if (entity.abilities.isCreativeMode) {
 						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;

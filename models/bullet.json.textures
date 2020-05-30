@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bullettexture",
+        "1": "bullettexture",
+        "2": "bullettexture"
+      },
+      "name": "default"
+    }
+  }
+}

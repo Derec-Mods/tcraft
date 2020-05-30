@@ -2,9 +2,9 @@
   "_fv": 8,
   "_type": "item",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "bullet2",
-    "customModelName": "Normal",
+    "customModelName": "bullet:default",
     "name": "Bullet",
     "creativeTab": {
       "value": "COMBAT"
@@ -20,6 +20,7 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64
   }

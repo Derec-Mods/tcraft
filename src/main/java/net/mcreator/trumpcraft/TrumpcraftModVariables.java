@@ -15,6 +15,7 @@ import net.minecraft.client.Minecraft;
 import java.util.function.Supplier;
 
 public class TrumpcraftModVariables {
+	public static boolean isscope = false;
 	public static class WorldVariables extends WorldSavedData {
 		public static final String DATA_NAME = "trumpcraft_worldvars";
 		public WorldVariables() {

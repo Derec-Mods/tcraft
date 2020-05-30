@@ -1,9 +1,8 @@
 {
-  "forge_marker": 1,
-  "parent": "forge:item/default",
-  "loader": "forge:obj",
-  "model": "trumpcraft:models/item/ar.obj",
+  "parent": "trumpcraft:custom/assault_rifle",
   "textures": {
-    "particle": "trumpcraft:items/missingtexture"
+    "11": "trumpcraft:blocks/money",
+    "1": "trumpcraft:blocks/moneyblocktop",
+    "missing": "trumpcraft:blocks/moneyblocktop"
   }
 }

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "money",
+        "1": "moneyblocktop",
+        "missing": "moneyblocktop"
+      },
+      "name": "default"
+    }
+  }
+}

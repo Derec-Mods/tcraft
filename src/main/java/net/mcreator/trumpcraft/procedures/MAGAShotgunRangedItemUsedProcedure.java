@@ -1,11 +1,13 @@
 package net.mcreator.trumpcraft.procedures;
 
 import net.minecraft.world.World;
-import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.trumpcraft.item.MAGAShotgunItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
+
+import java.util.Random;
 
 @TrumpcraftModElements.ModElement.Tag
 public class MAGAShotgunRangedItemUsedProcedure extends TrumpcraftModElements.ModElement {
@@ -26,11 +28,7 @@ public class MAGAShotgunRangedItemUsedProcedure extends TrumpcraftModElements.Mo
 		World world = (World) dependencies.get("world");
 		for (int index0 = 0; index0 < (int) (5); index0++) {
 			if (!world.isRemote && entity instanceof LivingEntity) {
-				ArrowEntity entityToSpawn = new ArrowEntity(world, (LivingEntity) entity);
-				entityToSpawn.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, (float) 0.6, 0);
-				entityToSpawn.setDamage((float) 3);
-				entityToSpawn.setKnockbackStrength((int) 0);
-				world.addEntity(entityToSpawn);
+				MAGAShotgunItem.shoot(world, (LivingEntity) entity, new Random(), 1, (float) 5, (int) 0);
 			}
 		}
 	}

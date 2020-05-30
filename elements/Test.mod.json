@@ -1,0 +1,12 @@
+{
+  "_fv": 8,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "conditionxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"condition_input\" deletable=\"false\" x=\"-108\" y=\"85\"><value name=\"CONDITION\"><block type=\"variables_get_logic\"><field name=\"VAR\">global:isscope</field></block></value></block></xml>",
+    "components": [],
+    "baseTexture": "battleriflescope.png",
+    "baseTextureW": 420,
+    "baseTextureH": 250
+  }
+}

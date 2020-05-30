@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "ENTITY": 44,
     "GUI": 9,
+    "ENTITY": 44,
     "DIMENSION": 2
   },
   "mod_elements": [
@@ -2161,6 +2161,85 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "demo_unit"
+    },
+    {
+      "name": "TgmCommandExecuted",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tgm_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tgm",
+      "type": "command",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tgm"
+    },
+    {
+      "name": "Rail1",
+      "type": "structure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_1"
+    },
+    {
+      "name": "Rail2",
+      "type": "structure",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_2"
+    },
+    {
+      "name": "Rail3",
+      "type": "structure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rail_3"
+    },
+    {
+      "name": "Test",
+      "type": "overlay",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    },
+    {
+      "name": "CheckScope",
+      "type": "procedure",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "check_scope",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2283,6 +2362,12 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "isscope",
+      "type": "logic",
+      "scope": "global",
+      "value": "false"
     }
   ],
   "sound_elements": [

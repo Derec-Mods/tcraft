@@ -15,6 +15,8 @@ import net.minecraft.world.World;
 import net.minecraft.world.BossInfo;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
+import net.minecraft.item.ItemStack;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -29,12 +31,22 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.model.BipedModel;
+import net.minecraft.client.renderer.entity.layers.LayerRenderer;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
+import net.minecraft.client.renderer.entity.IEntityRenderer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
 
 import net.mcreator.trumpcraft.procedures.DestroyedHexProcedure;
+import net.mcreator.trumpcraft.item.MoneySwordItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @TrumpcraftModElements.ModElement.Tag
 public class SashaEntity extends TrumpcraftModElements.ModElement {
@@ -63,6 +75,7 @@ public class SashaEntity extends TrumpcraftModElements.ModElement {
 				}
 			};
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
+			customRender.addLayer(new GlowingLayer<>(customRender));
 			return customRender;
 		});
 	}
@@ -76,6 +89,7 @@ public class SashaEntity extends TrumpcraftModElements.ModElement {
 			experienceValue = 50;
 			setNoAI(false);
 			enablePersistence();
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(MoneySwordItem.block, (int) (1)));
 		}
 
 		@Override
@@ -102,6 +116,7 @@ public class SashaEntity extends TrumpcraftModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(MoneySwordItem.block, (int) (1)));
 		}
 
 		@Override
@@ -185,6 +200,19 @@ public class SashaEntity extends TrumpcraftModElements.ModElement {
 		public void updateAITasks() {
 			super.updateAITasks();
 			this.bossInfo.setPercent(this.getHealth() / this.getMaxHealth());
+		}
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	private static class GlowingLayer<T extends Entity, M extends EntityModel<T>> extends LayerRenderer<T, M> {
+		public GlowingLayer(IEntityRenderer<T, M> er) {
+			super(er);
+		}
+
+		public void render(MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn, int packedLightIn, T entitylivingbaseIn, float limbSwing,
+				float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
+			IVertexBuilder ivertexbuilder = bufferIn.getBuffer(RenderType.getEyes(new ResourceLocation("trumpcraft:textures/theoffical.png")));
+			this.getEntityModel().render(matrixStackIn, ivertexbuilder, 15728640, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		}
 	}
 }

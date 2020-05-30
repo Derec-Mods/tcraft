@@ -6,6 +6,7 @@
     "mobLabel": "",
     "mobModelName": "Biped",
     "mobModelTexture": "theoffical.png",
+    "mobModelGlowTexture": "theoffical.png",
     "modelWidth": 0.6,
     "modelHeight": 1.9000000000000001,
     "modelShadowSize": 0.5,
@@ -19,11 +20,14 @@
       "value": -1,
       "falpha": 0.0
     },
+    "creativeTab": {
+      "value": "MISC"
+    },
     "isBoss": true,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": ""
+      "value": "CUSTOM:MoneySword"
     },
     "equipmentOffHand": {
       "value": ""
@@ -63,7 +67,7 @@
     "immuneToPotions": false,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:MoneySword"
     },
     "livingSound": {
       "value": ""
