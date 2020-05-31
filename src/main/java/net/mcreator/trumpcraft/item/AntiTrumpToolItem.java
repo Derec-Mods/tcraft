@@ -32,7 +32,6 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
-import net.minecraft.block.Blocks;
 
 import net.mcreator.trumpcraft.procedures.IftrumpProcedure;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
@@ -89,7 +88,7 @@ public class AntiTrumpToolItem extends TrumpcraftModElements.ModElement {
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
-				ArrowCustomEntity entityarrow = shoot(world, entity, random, 0f, 0, 0);
+				ArrowCustomEntity entityarrow = shoot(world, entity, random, 3f, 0, 0);
 				itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
 				entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
 			}
@@ -122,7 +121,7 @@ public class AntiTrumpToolItem extends TrumpcraftModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Blocks.REDSTONE_WIRE, (int) (1));
+			return new ItemStack(HexSoldierPledgeItem.block, (int) (1));
 		}
 
 		@Override

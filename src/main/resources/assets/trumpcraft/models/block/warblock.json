@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "trumpcraft:blocks/blockofwar2",
-    "up": "trumpcraft:blocks/blockofwar2",
-    "north": "trumpcraft:blocks/blockofwar3",
+    "down": "trumpcraft:blocks/blockofwar3",
+    "up": "trumpcraft:blocks/blockofwar3",
+    "north": "trumpcraft:blocks/blockofwar1",
     "east": "trumpcraft:blocks/blockofwar1",
-    "south": "trumpcraft:blocks/blockofwar3",
+    "south": "trumpcraft:blocks/blockofwar1",
     "west": "trumpcraft:blocks/blockofwar1",
-    "particle": "trumpcraft:blocks/blockofwar2"
+    "particle": "trumpcraft:blocks/blockofwar3"
   }
 }

@@ -32,12 +32,21 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
-import net.minecraft.client.renderer.entity.SpriteRenderer;
-import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.renderer.model.ModelRenderer;
+import net.minecraft.client.renderer.entity.model.EntityModel;
+import net.minecraft.client.renderer.entity.EntityRendererManager;
+import net.minecraft.client.renderer.entity.EntityRenderer;
+import net.minecraft.client.renderer.Vector3f;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.IRenderTypeBuffer;
 
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 import java.util.Random;
+
+import com.mojang.blaze3d.vertex.IVertexBuilder;
+import com.mojang.blaze3d.matrix.MatrixStack;
 
 @TrumpcraftModElements.ModElement.Tag
 public class AWPItem extends TrumpcraftModElements.ModElement {
@@ -60,8 +69,7 @@ public class AWPItem extends TrumpcraftModElements.ModElement {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void init(FMLCommonSetupEvent event) {
-		RenderingRegistry.registerEntityRenderingHandler(arrow,
-				renderManager -> new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer()));
+		RenderingRegistry.registerEntityRenderingHandler(arrow, renderManager -> new CustomRender(renderManager));
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
@@ -175,6 +183,75 @@ public class AWPItem extends TrumpcraftModElements.ModElement {
 			}
 		}
 	}
+
+	public static class CustomRender extends EntityRenderer<ArrowCustomEntity> {
+		private static final ResourceLocation texture = new ResourceLocation("trumpcraft:textures/bullettexture.png");
+		public CustomRender(EntityRendererManager renderManager) {
+			super(renderManager);
+		}
+
+		@Override
+		public void render(ArrowCustomEntity entityIn, float entityYaw, float partialTicks, MatrixStack matrixStackIn, IRenderTypeBuffer bufferIn,
+				int packedLightIn) {
+			IVertexBuilder vb = bufferIn.getBuffer(RenderType.getEntityCutout(this.getEntityTexture(entityIn)));
+			matrixStackIn.push();
+			matrixStackIn.rotate(Vector3f.YP.rotationDegrees(MathHelper.lerp(partialTicks, entityIn.prevRotationYaw, entityIn.rotationYaw) - 90));
+			matrixStackIn.rotate(Vector3f.ZP.rotationDegrees(90 + MathHelper.lerp(partialTicks, entityIn.prevRotationPitch, entityIn.rotationPitch)));
+			EntityModel model = new Modelbullet();
+			model.render(matrixStackIn, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 0.0625f);
+			matrixStackIn.pop();
+			super.render(entityIn, entityYaw, partialTicks, matrixStackIn, bufferIn, packedLightIn);
+		}
+
+		@Override
+		public ResourceLocation getEntityTexture(ArrowCustomEntity entity) {
+			return texture;
+		}
+	}
+
+	// Made with Blockbench
+	// Paste this code into your mod.
+	public static class Modelbullet extends EntityModel<Entity> {
+		private final ModelRenderer bone;
+		public Modelbullet() {
+			textureWidth = 16;
+			textureHeight = 16;
+			bone = new ModelRenderer(this);
+			bone.setRotationPoint(0.0F, 24.0F, 0.0F);
+			addBoxHelper(bone, 0, 6, -3.0F, 6.0F, -3.0F, 6, 1, 6, 0.0F, false);
+			addBoxHelper(bone, 0, 5, -2.5F, 5.0F, -2.5F, 5, 1, 5, 0.0F, false);
+			addBoxHelper(bone, 0, 6, -3.0F, -5.0F, -3.0F, 6, 10, 6, 0.0F, false);
+			addBoxHelper(bone, 1, 2, -2.7F, -6.0F, -2.7F, 5, 1, 5, 0.0F, false);
+			addBoxHelper(bone, 1, 2, -2.2F, -7.0F, -2.2F, 4, 1, 4, 0.0F, false);
+			addBoxHelper(bone, 1, 2, -1.7F, -7.0F, -1.7F, 3, 0, 3, 0.0F, false);
+		}
+
+		@Override
+		public void render(MatrixStack ms, IVertexBuilder vb, int i1, int i2, float f1, float f2, float f3, float f4) {
+			bone.render(ms, vb, i1, i2, f1, f2, f3, f4);
+		}
+
+		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+		}
+	}
+	@OnlyIn(Dist.CLIENT)
+	public static void addBoxHelper(ModelRenderer renderer, int texU, int texV, float x, float y, float z, int dx, int dy, int dz, float delta) {
+		addBoxHelper(renderer, texU, texV, x, y, z, dx, dy, dz, delta, renderer.mirror);
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void addBoxHelper(ModelRenderer renderer, int texU, int texV, float x, float y, float z, int dx, int dy, int dz, float delta,
+			boolean mirror) {
+		renderer.mirror = mirror;
+		renderer.addBox("", x, y, z, dx, dy, dz, delta, texU, texV);
+	}
+
 	public static ArrowCustomEntity shoot(World world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);

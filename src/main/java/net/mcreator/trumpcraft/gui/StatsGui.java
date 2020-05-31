@@ -146,6 +146,8 @@ public class StatsGui extends TrumpcraftModElements.ModElement {
 			this.font.drawString("Hex Allies Slain", 44, 42, -16777216);
 			this.font.drawString("" + (TrumpcraftModVariables.MapVariables.get(world).TrumpSoldiersKilled) + "", 44, 24, -1);
 			this.font.drawString("" + (TrumpcraftModVariables.MapVariables.get(world).HexSoldiersKilled) + "", 44, 51, -1);
+			this.font.drawString("Evil Things Done", 161, 114, -8454143);
+			this.font.drawString("" + (TrumpcraftModVariables.MapVariables.get(world).CitizensKilled) + "", 179, 123, -12517376);
 		}
 
 		@Override

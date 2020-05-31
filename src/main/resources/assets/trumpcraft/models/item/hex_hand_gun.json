@@ -1,0 +1,7 @@
+{
+  "parent": "trumpcraft:custom/hexhandgun",
+  "textures": {
+    "1": "trumpcraft:blocks/techfragment",
+    "2": "trumpcraft:blocks/blockofwar1"
+  }
+}

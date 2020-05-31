@@ -94,6 +94,32 @@
           "x": 193,
           "y": 224
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Evil Things Done",
+          "color": {
+            "value": -8454143,
+            "falpha": 0.0
+          },
+          "name": "Evil Things Done",
+          "x": 498,
+          "y": 294
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:CitizensKilled>",
+          "color": {
+            "value": -12517376,
+            "falpha": 0.0
+          },
+          "name": "<VAR:CitizensKilled>",
+          "x": 534,
+          "y": 312
+        }
       }
     ]
   }

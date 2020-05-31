@@ -22,13 +22,13 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 0.0,
+    "bulletPower": 3.0,
     "bulletDamage": 0.0,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "Blocks.REDSTONE_WIRE"
+      "value": "CUSTOM:HexSoldierPledge"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",

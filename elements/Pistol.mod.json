@@ -15,7 +15,7 @@
       "value": "CUSTOM:Bullet"
     },
     "shootConstantly": false,
-    "usageCount": 100,
+    "usageCount": 45,
     "actionSound": {
       "value": "CUSTOM:pistolfire"
     },
@@ -23,14 +23,14 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "bulletPower": 1.0,
-    "bulletDamage": 2.0,
+    "bulletDamage": 2.5,
     "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "CUSTOM:Bullet"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "bulletModel": "Modelbullet",
+    "customBulletModelTexture": "bullettexture.png"
   }
 }

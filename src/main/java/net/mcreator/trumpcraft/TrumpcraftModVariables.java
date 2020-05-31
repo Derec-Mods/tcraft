@@ -75,6 +75,7 @@ public class TrumpcraftModVariables {
 		public boolean UnlockedHexBeforeAttack1 = false;
 		public String BeforeAttack1 = "Locked";
 		public double Snipes = 0;
+		public double CitizensKilled = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -105,6 +106,7 @@ public class TrumpcraftModVariables {
 			UnlockedHexBeforeAttack1 = nbt.getBoolean("UnlockedHexBeforeAttack1");
 			BeforeAttack1 = nbt.getString("BeforeAttack1");
 			Snipes = nbt.getDouble("Snipes");
+			CitizensKilled = nbt.getDouble("CitizensKilled");
 		}
 
 		@Override
@@ -129,6 +131,7 @@ public class TrumpcraftModVariables {
 			nbt.putBoolean("UnlockedHexBeforeAttack1", UnlockedHexBeforeAttack1);
 			nbt.putString("BeforeAttack1", BeforeAttack1);
 			nbt.putDouble("Snipes", Snipes);
+			nbt.putDouble("CitizensKilled", CitizensKilled);
 			return nbt;
 		}
 

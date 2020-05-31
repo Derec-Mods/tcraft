@@ -32,7 +32,7 @@
     ],
     "worldGenType": "Normal world gen",
     "mainFillerBlock": {
-      "value": "Blocks.GRASS"
+      "value": "CUSTOM:MoneyBlock"
     },
     "fluidBlock": {
       "value": "Blocks.FLOWING_WATER"
@@ -47,7 +47,7 @@
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "ALLOW",
-    "hasSkyLight": false,
+    "hasSkyLight": true,
     "imitateOverworldBehaviour": false,
     "whenPortaTriggerlUsed": {
       "name": "MURICAPortalTriggerUsed"

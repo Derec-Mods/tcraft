@@ -1,0 +1,8 @@
+{
+  "parent": "trumpcraft:custom/assault_rifle",
+  "textures": {
+    "11": "trumpcraft:blocks/money",
+    "1": "trumpcraft:blocks/moneyblocktop",
+    "missing": "trumpcraft:blocks/moneyblocktop"
+  }
+}

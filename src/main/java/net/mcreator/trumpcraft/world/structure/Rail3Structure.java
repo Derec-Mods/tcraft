@@ -60,8 +60,8 @@ public class Rail3Structure extends TrumpcraftModElements.ModElement {
 								.getTemplateDefaulted(new ResourceLocation("trumpcraft", "rail3"));
 						if (template == null)
 							return false;
-						Rotation rotation = Rotation.values()[random.nextInt(3)];
-						Mirror mirror = Mirror.values()[random.nextInt(2)];
+						Rotation rotation = Rotation.NONE;
+						Mirror mirror = Mirror.NONE;
 						BlockPos spawnTo = new BlockPos(i, j + -3, k);
 						template.addBlocksToWorldChunk(iworld, spawnTo,
 								new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)

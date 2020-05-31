@@ -38,10 +38,10 @@
     "bulletModel": "Modelmolotov",
     "customBulletModelTexture": "bottle.png",
     "onBulletHitsBlock": {
-      "name": "NadeExplode"
+      "name": "MolotovBulletHitsLivingEntity"
     },
     "onBulletHitsEntity": {
-      "name": "NadeExplode"
+      "name": "MolotovBulletHitsLivingEntity"
     }
   }
 }

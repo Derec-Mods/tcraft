@@ -37,6 +37,7 @@ import net.minecraft.client.renderer.entity.model.BipedModel;
 import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
+import net.mcreator.trumpcraft.procedures.IncrementCitizensKilledProcedure;
 import net.mcreator.trumpcraft.item.MoneyItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -135,6 +136,21 @@ public class ThankyourandomcitizenEntity extends TrumpcraftModElements.ModElemen
 		@Override
 		protected float getSoundVolume() {
 			return 1.0F;
+		}
+
+		@Override
+		public void onDeath(DamageSource source) {
+			super.onDeath(source);
+			int x = (int) this.getPosX();
+			int y = (int) this.getPosY();
+			int z = (int) this.getPosZ();
+			Entity sourceentity = source.getTrueSource();
+			Entity entity = this;
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("world", world);
+				IncrementCitizensKilledProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

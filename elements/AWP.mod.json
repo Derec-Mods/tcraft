@@ -30,7 +30,7 @@
     "bulletItemTexture": {
       "value": "CUSTOM:Bullet"
     },
-    "bulletModel": "Default",
-    "customBulletModelTexture": ""
+    "bulletModel": "Modelbullet",
+    "customBulletModelTexture": "bullettexture.png"
   }
 }

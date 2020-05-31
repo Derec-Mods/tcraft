@@ -42,8 +42,8 @@ import net.minecraft.client.renderer.Vector3f;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 
-import net.mcreator.trumpcraft.procedures.NadeExplodeProcedure;
 import net.mcreator.trumpcraft.procedures.MolotovRangedItemUsedProcedure;
+import net.mcreator.trumpcraft.procedures.MolotovBulletHitsLivingEntityProcedure;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 import java.util.Random;
@@ -171,7 +171,7 @@ public class MolotovItem extends TrumpcraftModElements.ModElement {
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				NadeExplodeProcedure.executeProcedure($_dependencies);
+				MolotovBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
 			}
 		}
 
@@ -190,7 +190,7 @@ public class MolotovItem extends TrumpcraftModElements.ModElement {
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					NadeExplodeProcedure.executeProcedure($_dependencies);
+					MolotovBulletHitsLivingEntityProcedure.executeProcedure($_dependencies);
 				}
 				this.remove();
 			}

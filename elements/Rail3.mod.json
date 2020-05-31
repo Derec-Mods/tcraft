@@ -3,7 +3,7 @@
   "_type": "structure",
   "definition": {
     "structure": "rail3",
-    "randomlyRotateStructure": true,
+    "randomlyRotateStructure": false,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 2500,
     "minCountPerChunk": 1,

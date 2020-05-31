@@ -28,9 +28,6 @@
         "value": "Blocks.RED_FLOWER"
       },
       {
-        "value": "Blocks.LEAVES"
-      },
-      {
         "value": "Blocks.LEAVES2"
       },
       {
@@ -38,6 +35,30 @@
       },
       {
         "value": "Blocks.VINE"
+      },
+      {
+        "value": "Blocks.LEAVES#0"
+      },
+      {
+        "value": "Blocks.LEAVES#1"
+      },
+      {
+        "value": "Blocks.LEAVES#2"
+      },
+      {
+        "value": "Blocks.LEAVES#3"
+      },
+      {
+        "value": "Blocks.LEAVES2"
+      },
+      {
+        "value": "Blocks.LEAVES2#0"
+      },
+      {
+        "value": "Blocks.LEAVES2#1"
+      },
+      {
+        "value": "Blocks.TALLGRASS"
       }
     ],
     "hasGlow": false,

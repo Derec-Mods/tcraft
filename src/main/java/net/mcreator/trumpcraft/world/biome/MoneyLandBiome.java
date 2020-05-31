@@ -31,6 +31,7 @@ import net.minecraft.block.Block;
 import net.mcreator.trumpcraft.entity.TrumpSoldierEntity;
 import net.mcreator.trumpcraft.entity.TrumpEntity;
 import net.mcreator.trumpcraft.entity.ThankyourandomcitizenEntity;
+import net.mcreator.trumpcraft.entity.AmericaManEntity;
 import net.mcreator.trumpcraft.block.MoneyBlockBlock;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -76,6 +77,7 @@ public class MoneyLandBiome extends TrumpcraftModElements.ModElement {
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(TrumpEntity.entity, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(TrumpSoldierEntity.entity, 15, 1, 5));
 			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(ThankyourandomcitizenEntity.entity, 15, 1, 5));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(AmericaManEntity.entity, 15, 1, 5));
 		}
 	}
 

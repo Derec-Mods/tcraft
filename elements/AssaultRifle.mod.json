@@ -4,7 +4,7 @@
   "definition": {
     "renderType": 1,
     "texture": "missingtexture",
-    "customModelName": "assault_rifle:default",
+    "customModelName": "realar:default",
     "name": "Assault Rifle",
     "specialInfo": [
       "Test"
@@ -24,9 +24,9 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
-    "bulletPower": 1.5,
-    "bulletDamage": 5.0,
-    "bulletKnockback": 2,
+    "bulletPower": 1.0,
+    "bulletDamage": 3.0,
+    "bulletKnockback": 0,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {

@@ -117,7 +117,7 @@ public class MURICADimension extends TrumpcraftModElements.ModElement {
 	@SubscribeEvent
 	public void onRegisterDimensionsEvent(RegisterDimensionsEvent event) {
 		if (DimensionType.byName(new ResourceLocation("trumpcraft:murica")) == null) {
-			DimensionManager.registerDimension(new ResourceLocation("trumpcraft:murica"), dimension, null, false);
+			DimensionManager.registerDimension(new ResourceLocation("trumpcraft:murica"), dimension, null, true);
 		}
 		type = DimensionType.byName(new ResourceLocation("trumpcraft:murica"));
 	}
@@ -715,7 +715,7 @@ public class MURICADimension extends TrumpcraftModElements.ModElement {
 		public ChunkProviderModded(IWorld world, BiomeProvider provider) {
 			super(world, provider, new OverworldGenSettings() {
 				public BlockState getDefaultBlock() {
-					return Blocks.GRASS_BLOCK.getDefaultState();
+					return MoneyBlockBlock.block.getDefaultState();
 				}
 
 				public BlockState getDefaultFluid() {
@@ -750,7 +750,7 @@ public class MURICADimension extends TrumpcraftModElements.ModElement {
 			for (Biome biome : this.biomes) {
 				biome.addCarver(GenerationStage.Carving.AIR, Biome.createCarver(new CaveWorldCarver(ProbabilityConfig::deserialize, 256) {
 					{
-						carvableBlocks = ImmutableSet.of(Blocks.GRASS_BLOCK.getDefaultState().getBlock(),
+						carvableBlocks = ImmutableSet.of(MoneyBlockBlock.block.getDefaultState().getBlock(),
 								biome.getSurfaceBuilder().getConfig().getTop().getBlock(),
 								biome.getSurfaceBuilder().getConfig().getUnder().getBlock());
 					}

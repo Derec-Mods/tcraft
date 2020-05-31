@@ -1,28 +1,7 @@
 {
   "variants": {
-    "facing=south": {
+    "": {
       "model": "trumpcraft:block/warblock"
-    },
-    "facing=north": {
-      "model": "trumpcraft:block/warblock"
-    },
-    "facing=east": {
-      "model": "trumpcraft:block/warblock",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "trumpcraft:block/warblock",
-      "x": 90
-    },
-    "facing=up": {
-      "model": "trumpcraft:block/warblock",
-      "x": 90,
-      "y": 90
-    },
-    "facing=down": {
-      "model": "trumpcraft:block/warblock",
-      "x": 90,
-      "y": 90
     }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:bullet",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:pistol",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

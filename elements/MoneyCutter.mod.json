@@ -3,7 +3,7 @@
   "_type": "tool",
   "definition": {
     "renderType": 1,
-    "texture": "missingtexture",
+    "texture": "trumpaxe",
     "customModelName": "moneycut:default",
     "name": "Money Cutter",
     "specialInfo": [],

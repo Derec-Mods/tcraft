@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "techfragment",
+        "2": "blockofwar1"
+      },
+      "name": "default"
+    }
+  }
+}

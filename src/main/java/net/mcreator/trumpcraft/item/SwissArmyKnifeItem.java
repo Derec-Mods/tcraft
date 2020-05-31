@@ -45,13 +45,27 @@ public class SwissArmyKnifeItem extends TrumpcraftModElements.ModElement {
 				return 6f;
 			if (blockstate.getBlock() == Blocks.POPPY.getDefaultState().getBlock())
 				return 6f;
-			if (blockstate.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock())
-				return 6f;
 			if (blockstate.getBlock() == Blocks.ACACIA_LEAVES.getDefaultState().getBlock())
 				return 6f;
 			if (blockstate.getBlock() == Blocks.LILY_PAD.getDefaultState().getBlock())
 				return 6f;
 			if (blockstate.getBlock() == Blocks.VINE.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.OAK_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.SPRUCE_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.BIRCH_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.JUNGLE_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.ACACIA_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.ACACIA_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.DARK_OAK_LEAVES.getDefaultState().getBlock())
+				return 6f;
+			if (blockstate.getBlock() == Blocks.GRASS.getDefaultState().getBlock())
 				return 6f;
 			return 0;
 		}

@@ -10,13 +10,12 @@ public static class Modelbullet extends ModelBase {
 
 		bone = new ModelRenderer(this);
 		bone.setRotationPoint(0.0F, 24.0F, 0.0F);
-		setRotationAngle(bone, 0.0F, 0.0F, -1.5708F);
-		bone.cubeList.add(new ModelBox(bone, 0, 6, 0.0F, 6.0F, -3.0F, 6, 1, 6, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 0, 5, 0.5F, 5.0F, -2.5F, 5, 1, 5, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 0, 6, 0.0F, -5.0F, -3.0F, 6, 10, 6, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 1, 2, 0.3F, -6.0F, -2.7F, 5, 1, 5, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 1, 2, 0.8F, -7.0F, -2.2F, 4, 1, 4, 0.0F, false));
-		bone.cubeList.add(new ModelBox(bone, 1, 2, 1.3F, -7.0F, -1.7F, 3, 0, 3, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 0, 6, -3.0F, 6.0F, -3.0F, 6, 1, 6, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 0, 5, -2.5F, 5.0F, -2.5F, 5, 1, 5, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 0, 6, -3.0F, -5.0F, -3.0F, 6, 10, 6, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 1, 2, -2.7F, -6.0F, -2.7F, 5, 1, 5, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 1, 2, -2.2F, -7.0F, -2.2F, 4, 1, 4, 0.0F, false));
+		bone.cubeList.add(new ModelBox(bone, 1, 2, -1.7F, -7.0F, -1.7F, 3, 0, 3, 0.0F, false));
 	}
 
 	@Override
