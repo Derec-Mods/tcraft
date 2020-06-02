@@ -14,7 +14,7 @@
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": ""
+      "value": "CUSTOM:Bullet"
     },
     "shootConstantly": false,
     "usageCount": 100,
@@ -26,7 +26,7 @@
     "damageVsEntity": 0.0,
     "bulletPower": 0.5,
     "bulletDamage": 3.5,
-    "bulletKnockback": 5,
+    "bulletKnockback": 1,
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {

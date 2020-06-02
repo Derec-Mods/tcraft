@@ -8,22 +8,22 @@
     "undergroundBlock": {
       "value": "CUSTOM:MoneyBlock"
     },
-    "generateLakes": true,
+    "generateLakes": false,
     "treeType": 1,
     "vanillaTreeType": "Default",
     "minHeight": 7,
     "spawnVines": true,
     "treeVines": {
-      "value": "Blocks.AIR"
-    },
-    "treeStem": {
       "value": "CUSTOM:LiquidMoney"
     },
+    "treeStem": {
+      "value": "CUSTOM:MoneyBlock"
+    },
     "treeBranch": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:LiquidMoney"
     },
     "treeFruits": {
-      "value": "Blocks.AIR"
+      "value": "CUSTOM:LiquidMoney"
     },
     "customColors": false,
     "airColor": {
@@ -50,7 +50,7 @@
     "rainingPossibility": 0.0,
     "temperature": 0.5,
     "baseHeight": 0.30000000000000004,
-    "heightVariation": 0.25,
+    "heightVariation": 0.35,
     "spawnBiome": false,
     "biomeWeight": 3,
     "biomeType": "WARM",

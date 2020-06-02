@@ -1,0 +1,76 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:pistol",
+          "weight": 100
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:pistol",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:swissarmyknife",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:bullet",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:money",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:m57pilum",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:awp",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:pistol",
+          "weight": 50
+        }
+      ]
+    }
+  ]
+}

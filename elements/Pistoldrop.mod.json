@@ -16,14 +16,14 @@
             "item": {
               "value": "CUSTOM:Bullet"
             },
-            "weight": 3
+            "weight": 75
           },
           {
             "type": "item",
             "item": {
               "value": "CUSTOM:Pistol"
             },
-            "weight": 1
+            "weight": 25
           }
         ]
       }

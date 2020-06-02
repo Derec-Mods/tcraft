@@ -53,7 +53,7 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 	}
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
-			super(new Biome.Builder().downfall(0f).depth(0.3f).scale(0.25f).temperature(0.5f).precipitation(Biome.RainType.NONE)
+			super(new Biome.Builder().downfall(0f).depth(0.3f).scale(0.35f).temperature(0.5f).precipitation(Biome.RainType.NONE)
 					.category(Biome.Category.NONE).waterColor(4159204).waterFogColor(329011)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(LiquidMoneyBlock.block.getDefaultState(),
 							MoneyBlockBlock.block.getDefaultState(), MoneyBlockBlock.block.getDefaultState())));
@@ -62,10 +62,9 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
-			DefaultBiomeFeatures.addLakes(this);
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
-					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(LiquidMoneyBlock.block.getDefaultState()),
-							new SimpleBlockStateProvider(Blocks.AIR.getDefaultState()))).baseHeight(7)
+					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(MoneyBlockBlock.block.getDefaultState()),
+							new SimpleBlockStateProvider(LiquidMoneyBlock.block.getDefaultState()))).baseHeight(7)
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 		}
@@ -126,9 +125,10 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
-												|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
+												|| state.isIn(BlockTags.LEAVES)
+												|| state.getBlock() == LiquidMoneyBlock.block.getDefaultState().getBlock()
+												|| state.getBlock() == LiquidMoneyBlock.block.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, LiquidMoneyBlock.block.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -137,19 +137,23 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, LiquidMoneyBlock.block.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, MoneyBlockBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
-									|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()) {
+									|| state.getBlock() == LiquidMoneyBlock.block.getDefaultState().getBlock()
+									|| state.getBlock() == LiquidMoneyBlock.block.getDefaultState().getBlock()) {
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.AIR.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), LiquidMoneyBlock.block.getDefaultState(),
+												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.AIR.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), LiquidMoneyBlock.block.getDefaultState(),
+												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.AIR.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), LiquidMoneyBlock.block.getDefaultState(),
+												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.AIR.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), LiquidMoneyBlock.block.getDefaultState(),
+												bbox);
 								}
 							}
 						}
@@ -159,7 +163,7 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()) {
+									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == LiquidMoneyBlock.block.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -182,7 +186,7 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.AIR.getDefaultState(), bbox);
+												LiquidMoneyBlock.block.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -198,17 +202,18 @@ public class MoneyLakeBiome extends TrumpcraftModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.AIR.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, LiquidMoneyBlock.block.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, LiquidMoneyBlock.block.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == LiquidMoneyBlock.block.getDefaultState().getBlock()
-					|| blockType == Blocks.AIR.getDefaultState().getBlock() || blockType == LiquidMoneyBlock.block.getDefaultState().getBlock()
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == MoneyBlockBlock.block.getDefaultState().getBlock()
+					|| blockType == LiquidMoneyBlock.block.getDefaultState().getBlock()
+					|| blockType == LiquidMoneyBlock.block.getDefaultState().getBlock()
 					|| blockType == MoneyBlockBlock.block.getDefaultState().getBlock();
 		}
 

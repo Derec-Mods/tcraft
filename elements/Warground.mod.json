@@ -27,9 +27,6 @@
         "value": "CUSTOM:MoneyLake"
       },
       {
-        "value": "desert"
-      },
-      {
         "value": "CUSTOM:WarTornPlains"
       },
       {
@@ -52,7 +49,7 @@
     "hasWeather": false,
     "isDark": false,
     "doesWaterVaporize": false,
-    "sleepResult": "ALLOW",
+    "sleepResult": "BED_EXPLODES",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": false
   }

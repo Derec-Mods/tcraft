@@ -47,6 +47,8 @@ public class TrumpShelterStructure extends TrumpcraftModElements.ModElement {
 				boolean dimensionCriteria = false;
 				if (dimensionType == WargroundDimension.type)
 					dimensionCriteria = true;
+				if (dimensionType == DimensionType.OVERWORLD)
+					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
 				if ((random.nextInt(1000000) + 1) <= 650) {
@@ -77,6 +79,12 @@ public class TrumpShelterStructure extends TrumpcraftModElements.ModElement {
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:warzone")))
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("plains")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:wartornplains")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:war_wastes")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:labruins")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;

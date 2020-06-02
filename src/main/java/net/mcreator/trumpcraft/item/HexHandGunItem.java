@@ -32,6 +32,8 @@ import net.minecraft.entity.IRendersAsItem;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.model.ModelRenderer;
@@ -105,9 +107,35 @@ public class HexHandGunItem extends TrumpcraftModElements.ModElement {
 		public void onPlayerStoppedUsing(ItemStack itemstack, World world, LivingEntity entityLiving, int timeLeft) {
 			if (!world.isRemote && entityLiving instanceof ServerPlayerEntity) {
 				ServerPlayerEntity entity = (ServerPlayerEntity) entityLiving;
-				ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.5f, 3.5, 5);
-				itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-				entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+				int slotID = -1;
+				for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
+					ItemStack stack = entity.inventory.mainInventory.get(i);
+					if (stack != null && stack.getItem() == new ItemStack(BulletItem.block, (int) (1)).getItem()) {
+						slotID = i;
+						break;
+					}
+				}
+				if (entity.abilities.isCreativeMode || EnchantmentHelper.getEnchantmentLevel(Enchantments.INFINITY, itemstack) > 0 || slotID != -1) {
+					ArrowCustomEntity entityarrow = shoot(world, entity, random, 0.5f, 3.5, 1);
+					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+					if (entity.abilities.isCreativeMode) {
+						entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
+					} else {
+						ItemStack stack = entity.inventory.getStackInSlot(slotID);
+						if (new ItemStack(BulletItem.block, (int) (1)).isDamageable()) {
+							if (stack.attemptDamageItem(1, random, entity)) {
+								stack.shrink(1);
+								stack.setDamage(0);
+								if (stack.isEmpty())
+									entity.inventory.deleteStack(stack);
+							}
+						} else {
+							stack.shrink(1);
+							if (stack.isEmpty())
+								entity.inventory.deleteStack(stack);
+						}
+					}
+				}
 			}
 		}
 	}
@@ -143,7 +171,7 @@ public class HexHandGunItem extends TrumpcraftModElements.ModElement {
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return null;
+			return new ItemStack(BulletItem.block, (int) (1));
 		}
 
 		@Override

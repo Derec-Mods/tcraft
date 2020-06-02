@@ -1,7 +1,7 @@
 {
   "id_map": {
-    "ENTITY": 44,
     "DIMENSION": 2,
+    "ENTITY": 44,
     "GUI": 9
   },
   "mod_elements": [
@@ -1030,14 +1030,6 @@
       "ids": {}
     },
     {
-      "name": "Tree1",
-      "type": "structure",
-      "sortid": 94,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Sparkofwarcraftingrecipe",
       "type": "recipe",
       "sortid": 95,
@@ -1104,14 +1096,6 @@
       "name": "MoneySwordCraft",
       "type": "recipe",
       "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Tree2",
-      "type": "structure",
-      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -2372,6 +2356,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "small_crater_3"
+    },
+    {
+      "name": "RocketLauncherDrop",
+      "type": "loottable",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_launcher_drop"
+    },
+    {
+      "name": "WarWastes",
+      "type": "biome",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "war_wastes"
+    },
+    {
+      "name": "MechRuins1",
+      "type": "structure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mech_ruins_1"
+    },
+    {
+      "name": "ArmoryChest",
+      "type": "loottable",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "armory_chest"
+    },
+    {
+      "name": "Bunker5",
+      "type": "structure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bunker_5"
     }
   ],
   "variable_elements": [
@@ -2555,26 +2584,26 @@
       "item.pistol.name": "Pistol",
       "item.trumpcraft.hexsquadarmorlegs": "Hex Offensive Leggings",
       "item.trumpcraft_114.liquidmoney_bucket": "LiquidMoney Bucket",
-      "advancements.hexsidefirst.title": "First Blood (Hex)",
       "item.trumpcraft_114.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "advancements.hexsidefirst.title": "First Blood (Hex)",
       "advancements.mademinecraftgreatagain.title": "We Made Minecraft Great Again",
       "block.trumpcraft.moneyslab": "Money Slab",
-      "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
       "item.trumpcraft.warground": "unused",
+      "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
       "entity.trumpcraft.livingbomb": "Mobile Tnt",
       "item.trumpcraft.m57pilum": "M57 Pilum",
       "item.trumpcraft_114.antitrumptool": "ATT",
       "item.trumpcraft.failedgolem": "Failed Golem Spawn Egg",
       "item.money.name": "Money",
       "item.trumpcraft_114.trumpscout": "Trump Scout Spawn Egg",
-      "entity.trumpcraft.money_squid": "Money Squid",
       "advancements.youfool.title": "Switzerland",
+      "entity.trumpcraft.money_squid": "Money Squid",
       "item.trumpcraft_114.magashotgun": "MAGA Shotgun",
-      "entity.trumpwannabe.name": "Trump Wannabe",
       "item.hexspecalistarmorhelmet.name": "Hex Specalist Helmet",
+      "entity.trumpwannabe.name": "Trump Wannabe",
       "item.trumpcraft.burger": "Burger",
-      "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
       "item.trumpcraft.war_spark": "Spark of War",
+      "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
       "entity.armoredtrumpsoldier.name": "Armored Trump Soldier",
       "item.trumpcraft.trumpsoldier": "Trump Soldier Spawn Egg",
       "item.rocket.name": "Rocket",

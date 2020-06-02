@@ -17,8 +17,10 @@ import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -41,6 +43,7 @@ import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
 import net.minecraft.client.renderer.entity.BipedRenderer;
 
 import net.mcreator.trumpcraft.procedures.IncrementTrumpSoldiersKilledProcedure;
+import net.mcreator.trumpcraft.item.RocketItem;
 import net.mcreator.trumpcraft.item.M57PilumItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -101,6 +104,7 @@ public class DemoUnitEntity extends TrumpcraftModElements.ModElement {
 			super(type, world);
 			experienceValue = 5;
 			setNoAI(false);
+			this.setItemStackToSlot(EquipmentSlotType.MAINHAND, new ItemStack(M57PilumItem.block, (int) (1)));
 		}
 
 		@Override
@@ -122,6 +126,7 @@ public class DemoUnitEntity extends TrumpcraftModElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(RocketItem.block, (int) (1)));
 		}
 
 		@Override

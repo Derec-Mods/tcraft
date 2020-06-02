@@ -31,9 +31,9 @@ import net.mcreator.trumpcraft.TrumpcraftModElements;
 import java.util.Random;
 
 @TrumpcraftModElements.ModElement.Tag
-public class SmallCrater3Structure extends TrumpcraftModElements.ModElement {
-	public SmallCrater3Structure(TrumpcraftModElements instance) {
-		super(instance, 186);
+public class MechRuins1Structure extends TrumpcraftModElements.ModElement {
+	public MechRuins1Structure(TrumpcraftModElements instance) {
+		super(instance, 189);
 	}
 
 	@Override
@@ -49,20 +49,20 @@ public class SmallCrater3Structure extends TrumpcraftModElements.ModElement {
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
-				if ((random.nextInt(1000000) + 1) <= 10000) {
-					int count = random.nextInt(2) + 1;
+				if ((random.nextInt(1000000) + 1) <= 7000) {
+					int count = random.nextInt(1) + 1;
 					for (int a = 0; a < count; a++) {
 						int i = ci + random.nextInt(16) + 8;
 						int k = ck + random.nextInt(16) + 8;
 						int j = iworld.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 						j -= 1;
 						Template template = ((ServerWorld) iworld.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("trumpcraft", "smallcrater3"));
+								.getTemplateDefaulted(new ResourceLocation("trumpcraft", "mechruins1"));
 						if (template == null)
 							return false;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i, j + -3, k);
+						BlockPos spawnTo = new BlockPos(i, j + -5, k);
 						template.addBlocksToWorldChunk(iworld, spawnTo,
 								new PlacementSettings().setRotation(rotation).setRandom(random).setMirror(mirror)
 										.addProcessor(BlockIgnoreStructureProcessor.STRUCTURE_BLOCK).setChunk((ChunkPos) null)
@@ -74,11 +74,9 @@ public class SmallCrater3Structure extends TrumpcraftModElements.ModElement {
 		};
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:wartornplains")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:labruins")))
-				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:warzone")))
+				biomeCriteria = true;
+			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:wartornplains")))
 				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:war_wastes")))
 				biomeCriteria = true;

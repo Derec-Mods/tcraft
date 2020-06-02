@@ -11,7 +11,8 @@
     "spawnLocation": "Ground",
     "spawnHeightOffset": -3,
     "spawnWorldTypes": [
-      "CUSTOM:Warground"
+      "CUSTOM:Warground",
+      "Surface"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [
@@ -20,6 +21,15 @@
       },
       {
         "value": "plains"
+      },
+      {
+        "value": "CUSTOM:WarTornPlains"
+      },
+      {
+        "value": "CUSTOM:WarWastes"
+      },
+      {
+        "value": "CUSTOM:Labruins"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

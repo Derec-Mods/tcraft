@@ -7,14 +7,27 @@
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 10000,
     "minCountPerChunk": 1,
-    "maxCountPerChunk": 3,
+    "maxCountPerChunk": 2,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -2,
+    "spawnHeightOffset": -3,
     "spawnWorldTypes": [
       "CUSTOM:Warground"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:WarTornPlains"
+      },
+      {
+        "value": "CUSTOM:Labruins"
+      },
+      {
+        "value": "CUSTOM:Warzone"
+      },
+      {
+        "value": "CUSTOM:WarWastes"
+      }
+    ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

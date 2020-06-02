@@ -88,7 +88,6 @@ public class WargroundDimension extends TrumpcraftModElements.ModElement {
 	public void init(FMLCommonSetupEvent event) {
 		dimensionBiomes = new Biome[]{ForgeRegistries.BIOMES.getValue(new ResourceLocation("trumpcraft:warzone")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("trumpcraft:moneylake")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("desert")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("trumpcraft:wartornplains")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("trumpcraft:labruins")),};
 	}
@@ -156,7 +155,7 @@ public class WargroundDimension extends TrumpcraftModElements.ModElement {
 
 		@Override
 		public SleepResult canSleepAt(PlayerEntity player, BlockPos pos) {
-			return SleepResult.ALLOW;
+			return SleepResult.BED_EXPLODES;
 		}
 
 		@Nullable

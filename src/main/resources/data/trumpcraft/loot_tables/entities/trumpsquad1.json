@@ -7,12 +7,12 @@
         {
           "type": "minecraft:item",
           "name": "trumpcraft:bullet",
-          "weight": 3
+          "weight": 75
         },
         {
           "type": "minecraft:item",
           "name": "trumpcraft:pistol",
-          "weight": 1
+          "weight": 25
         }
       ]
     }

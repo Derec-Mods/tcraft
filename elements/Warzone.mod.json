@@ -11,19 +11,19 @@
     "generateLakes": true,
     "treeType": 1,
     "vanillaTreeType": "Birch trees",
-    "minHeight": 10,
+    "minHeight": 7,
     "spawnVines": true,
     "treeVines": {
-      "value": "Blocks.FLOWING_LAVA"
+      "value": "Blocks.AIR"
     },
     "treeStem": {
-      "value": "Blocks.SANDSTONE"
+      "value": "Blocks.COBBLESTONE"
     },
     "treeBranch": {
-      "value": "Blocks.STONE"
+      "value": "Blocks.STONE#0"
     },
     "treeFruits": {
-      "value": "Blocks.NETHERRACK"
+      "value": "Blocks.FLOWING_LAVA"
     },
     "customColors": true,
     "airColor": {
@@ -35,15 +35,15 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -2457592,
+      "value": -16777216,
       "falpha": 0.0
     },
     "treesPerChunk": 1,
-    "grassPerChunk": 3,
+    "grassPerChunk": 0,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPathcesPerChunk": 0,
+    "sandPathcesPerChunk": 1,
     "gravelPatchesPerChunk": 1,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
@@ -55,6 +55,9 @@
     "biomeWeight": 20,
     "biomeType": "DESERT",
     "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
     "biomeDictionaryTypes": [
       "HOT",
       "DEAD",

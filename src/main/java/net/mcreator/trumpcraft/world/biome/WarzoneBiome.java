@@ -59,7 +59,7 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(1f).temperature(0.5f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(-2457592).waterFogColor(-2457592)
+					.category(Biome.Category.NONE).waterColor(-16777216).waterFogColor(-16777216)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.COARSE_DIRT.getDefaultState(),
 							Blocks.STONE_BRICKS.getDefaultState(), Blocks.STONE_BRICKS.getDefaultState())));
 			setRegistryName("warzone");
@@ -68,14 +68,17 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
 			DefaultBiomeFeatures.addLakes(this);
-			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
-					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(3))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 					new CustomTreeFeature()
-							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.SANDSTONE.getDefaultState()),
-									new SimpleBlockStateProvider(Blocks.STONE.getDefaultState()))).baseHeight(10)
+							.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.COBBLESTONE.getDefaultState()),
+									new SimpleBlockStateProvider(Blocks.STONE.getDefaultState()))).baseHeight(7)
 											.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 							.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
+			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
+					Feature.DISK
+							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
+									Lists.newArrayList(Blocks.COARSE_DIRT.getDefaultState(), Blocks.STONE_BRICKS.getDefaultState())))
+							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(1))));
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
@@ -113,7 +116,7 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
-			int height = rand.nextInt(5) + 10;
+			int height = rand.nextInt(5) + 7;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {
@@ -156,7 +159,7 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.LAVA.getDefaultState().getBlock()
+												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
 												|| state.getBlock() == Blocks.STONE.getDefaultState().getBlock()) {
 											setTreeBlockState(changedBlocks, world, blockpos, Blocks.STONE.getDefaultState(), bbox);
 										}
@@ -167,19 +170,19 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, Blocks.SANDSTONE.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, Blocks.COBBLESTONE.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.LAVA.getDefaultState().getBlock()
+									|| state.getBlock() == Blocks.AIR.getDefaultState().getBlock()
 									|| state.getBlock() == Blocks.STONE.getDefaultState().getBlock()) {
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.LAVA.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.AIR.getDefaultState(), bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.LAVA.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.AIR.getDefaultState(), bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.LAVA.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.AIR.getDefaultState(), bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.LAVA.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.AIR.getDefaultState(), bbox);
 								}
 							}
 						}
@@ -212,7 +215,7 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.NETHERRACK.getDefaultState(), bbox);
+												Blocks.LAVA.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -228,16 +231,16 @@ public class WarzoneBiome extends TrumpcraftModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.LAVA.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, Blocks.AIR.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.LAVA.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, Blocks.AIR.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.SANDSTONE.getDefaultState().getBlock()
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.COBBLESTONE.getDefaultState().getBlock()
 					|| blockType == Blocks.STONE.getDefaultState().getBlock() || blockType == Blocks.COARSE_DIRT.getDefaultState().getBlock()
 					|| blockType == Blocks.STONE_BRICKS.getDefaultState().getBlock();
 		}
