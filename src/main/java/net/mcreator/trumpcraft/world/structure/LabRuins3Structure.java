@@ -76,10 +76,6 @@ public class LabRuins3Structure extends TrumpcraftModElements.ModElement {
 			boolean biomeCriteria = false;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:labruins")))
 				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:warzone")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:wartornplains")))
-				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
 			biome.addFeature(GenerationStage.Decoration.SURFACE_STRUCTURES, feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)

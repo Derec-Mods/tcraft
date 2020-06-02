@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "GUI": 9,
     "ENTITY": 44,
-    "DIMENSION": 2
+    "DIMENSION": 2,
+    "GUI": 9
   },
   "mod_elements": [
     {
@@ -2327,6 +2327,51 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "hex_hand_gun"
+    },
+    {
+      "name": "Crater1",
+      "type": "structure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crater_1"
+    },
+    {
+      "name": "Crater2",
+      "type": "structure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crater_2"
+    },
+    {
+      "name": "SmallCrater1",
+      "type": "structure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_crater_1"
+    },
+    {
+      "name": "SmallCrater2",
+      "type": "structure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_crater_2"
+    },
+    {
+      "name": "SmallCrater3",
+      "type": "structure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_crater_3"
     }
   ],
   "variable_elements": [

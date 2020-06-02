@@ -2,23 +2,19 @@
   "_fv": 8,
   "_type": "structure",
   "definition": {
-    "structure": "labruins3",
+    "structure": "crater2",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 2000,
+    "spawnProbability": 7000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -5,
+    "spawnHeightOffset": -2,
     "spawnWorldTypes": [
       "CUSTOM:Warground"
     ],
     "restrictionBlocks": [],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:Labruins"
-      }
-    ],
+    "restrictionBiomes": [],
     "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

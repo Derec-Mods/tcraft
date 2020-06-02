@@ -41,10 +41,6 @@ public class SwissArmyKnifeItem extends TrumpcraftModElements.ModElement {
 		public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
 			if (blockstate.getBlock() == Blocks.COBWEB.getDefaultState().getBlock())
 				return 6f;
-			if (blockstate.getBlock() == Blocks.SUNFLOWER.getDefaultState().getBlock())
-				return 6f;
-			if (blockstate.getBlock() == Blocks.POPPY.getDefaultState().getBlock())
-				return 6f;
 			if (blockstate.getBlock() == Blocks.ACACIA_LEAVES.getDefaultState().getBlock())
 				return 6f;
 			if (blockstate.getBlock() == Blocks.LILY_PAD.getDefaultState().getBlock())
