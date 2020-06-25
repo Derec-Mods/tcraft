@@ -28,7 +28,7 @@ public class BurgerItem extends TrumpcraftModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(1)
+			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64)
 					.food((new Food.Builder()).hunger(5).saturation(0.300000011920929f).setAlwaysEdible().meat().build()));
 			setRegistryName("burger");
 		}

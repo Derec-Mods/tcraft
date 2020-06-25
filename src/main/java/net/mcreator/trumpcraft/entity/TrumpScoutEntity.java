@@ -14,14 +14,12 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.World;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.pathfinding.FlyingPathNavigator;
-import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
@@ -47,6 +45,8 @@ import net.mcreator.trumpcraft.procedures.IncrementTrumpSoldiersKilledProcedure;
 import net.mcreator.trumpcraft.item.TechFragmentItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
+import java.util.Random;
+
 @TrumpcraftModElements.ModElement.Tag
 public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 	public static EntityType entity = null;
@@ -61,8 +61,6 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("trumpscout")
 						.setRegistryName("trumpscout");
 		elements.entities.add(() -> entity);
-		elements.items
-				.add(() -> new SpawnEggItem(entity, -8909812, -16101757, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("trumpscout"));
 	}
 
 	@Override
@@ -95,7 +93,7 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
-			experienceValue = 5;
+			experienceValue = 4;
 			setNoAI(false);
 			this.moveController = new FlyingMovementController(this, 10, true);
 			this.navigator = new FlyingPathNavigator(this, this.world);
@@ -104,11 +102,20 @@ public class TrumpScoutEntity extends TrumpcraftModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
-			this.targetSelector.addGoal(4, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 0.8, 20) {
+				@Override
+				protected Vec3d getPosition() {
+					Random random = CustomEntity.this.getRNG();
+					double dir_x = CustomEntity.this.getPosX() + ((random.nextFloat() * 2 - 1) * 16);
+					double dir_y = CustomEntity.this.getPosY() + ((random.nextFloat() * 2 - 1) * 16);
+					double dir_z = CustomEntity.this.getPosZ() + ((random.nextFloat() * 2 - 1) * 16);
+					return new Vec3d(dir_x, dir_y, dir_z);
+				}
+			});
+			this.goalSelector.addGoal(2, new MeleeAttackGoal(this, 1.2, false));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
+			this.targetSelector.addGoal(5, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(7, new SwimGoal(this));
 		}

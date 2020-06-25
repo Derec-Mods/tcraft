@@ -2,22 +2,22 @@
   "_fv": 8,
   "_type": "mob",
   "definition": {
-    "mobName": "TestSubject3",
+    "mobName": "Trumperman",
     "mobLabel": "",
-    "mobModelName": "Modeltestsubject3",
-    "mobModelTexture": "test_subject1.png",
+    "mobModelName": "Modeltrumperman",
+    "mobModelTexture": "trumperman.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.7,
+    "modelHeight": 2.9,
+    "modelShadowSize": 0.5,
     "mountedYOffset": 0.0,
-    "hasSpawnEgg": false,
+    "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -1,
+      "value": -16777216,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -1,
+      "value": -10092442,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -44,14 +44,14 @@
     "equipmentBoots": {
       "value": ""
     },
-    "mobBehaviourType": "Creature",
+    "mobBehaviourType": "Mob",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 5,
-    "movementSpeed": 0.3,
-    "armorBaseValue": 3.0,
+    "attackStrength": 4,
+    "movementSpeed": 0.4,
+    "armorBaseValue": 2.0,
     "trackingRange": 64,
-    "health": 10,
-    "xpAmount": 3,
+    "health": 40,
+    "xpAmount": 6,
     "waterMob": false,
     "flyingMob": false,
     "disableCollisions": false,
@@ -70,13 +70,13 @@
       "value": ""
     },
     "livingSound": {
-      "value": "entity.vindication_illager.ambient"
+      "value": "entity.endermen.ambient"
     },
     "hurtSound": {
-      "value": "entity.vex.hurt"
+      "value": "entity.endermen.scream"
     },
     "deathSound": {
-      "value": "entity.zombie.death"
+      "value": "entity.endermen.death"
     },
     "spawnParticles": false,
     "particleToSpawn": {
@@ -88,7 +88,7 @@
     "particleSpawningCondition": "ALWAYS",
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"74\" y=\"43\"><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">FALSE</field><next><block type=\"watch_closest_entity\"><field name=\"radius\">6</field><field name=\"entity\">CUSTOM:LivingBomb</field><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayer</field><next><block type=\"attack_entity\"><field name=\"insight\">FALSE</field><field name=\"nearby\">FALSE</field><field name=\"entity\">EntityPlayerMP</field><next><block type=\"attack_action\"><field name=\"callhelp\">TRUE</field><next><block type=\"attack_on_collide\"><field name=\"speed\">1.2</field><field name=\"longmemory\">TRUE</field><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"/></next></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "breedTriggerItems": [],
     "ranged": false,
@@ -96,20 +96,13 @@
       "value": ""
     },
     "rangedItemType": "Default item",
-    "spawnThisMob": true,
-    "doesDespawnWhenIdle": true,
-    "spawningProbability": 20,
-    "mobSpawningType": "creature",
+    "spawnThisMob": false,
+    "doesDespawnWhenIdle": false,
+    "spawningProbability": 1,
+    "mobSpawningType": "monster",
     "minNumberOfMobsPerGroup": 1,
-    "maxNumberOfMobsPerGroup": 5,
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:WarTornPlains"
-      },
-      {
-        "value": "CUSTOM:Labruins"
-      }
-    ],
+    "maxNumberOfMobsPerGroup": 1,
+    "restrictionBiomes": [],
     "spawnInDungeons": false
   }
 }

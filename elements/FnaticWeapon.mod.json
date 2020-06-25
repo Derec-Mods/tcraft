@@ -22,8 +22,8 @@
       "value": "item.firecharge.use"
     },
     "hasGlow": false,
-    "enableMeleeDamage": false,
-    "damageVsEntity": 0.0,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 3.0,
     "bulletPower": 1.0,
     "bulletDamage": 3.0,
     "bulletKnockback": 3,

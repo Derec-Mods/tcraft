@@ -1,0 +1,50 @@
+{
+  "_fv": 8,
+  "_type": "loottable",
+  "definition": {
+    "type": "Entity",
+    "pools": [
+      {
+        "minrolls": 1,
+        "maxrolls": 3,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "Items.LEATHER"
+            },
+            "weight": 100
+          }
+        ]
+      },
+      {
+        "minrolls": 1,
+        "maxrolls": 2,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Money"
+            },
+            "weight": 95
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:MoneyBlock"
+            },
+            "weight": 5
+          }
+        ]
+      }
+    ],
+    "name": "entities/ollama",
+    "namespace": "mod"
+  }
+}

@@ -57,7 +57,7 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "WET_GRASS"
     },
     "luminance": 0.0,
     "unbreakable": false,
@@ -79,9 +79,6 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "onStartToDestroy": {
-      "name": "MoneyBlockPlayerStartsToDestroy"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

@@ -18,7 +18,6 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
@@ -33,7 +32,6 @@ import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
-import net.mcreator.trumpcraft.procedures.SpikeProcedure;
 import net.mcreator.trumpcraft.item.MoneyItem;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -138,20 +136,6 @@ public class TestSubjectEntity extends TrumpcraftModElements.ModElement {
 		}
 
 		@Override
-		public void onCollideWithPlayer(PlayerEntity sourceentity) {
-			super.onCollideWithPlayer(sourceentity);
-			Entity entity = this;
-			int x = (int) this.getPosX();
-			int y = (int) this.getPosY();
-			int z = (int) this.getPosZ();
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				SpikeProcedure.executeProcedure($_dependencies);
-			}
-		}
-
-		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -159,7 +143,7 @@ public class TestSubjectEntity extends TrumpcraftModElements.ModElement {
 			if (this.getAttribute(SharedMonsterAttributes.MAX_HEALTH) != null)
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20);
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
-				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(1);
+				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(3);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) == null)
 				this.getAttributes().registerAttribute(SharedMonsterAttributes.ATTACK_DAMAGE);
 			this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(5);

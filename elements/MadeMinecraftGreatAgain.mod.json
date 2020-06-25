@@ -3,19 +3,23 @@
   "_type": "achievement",
   "definition": {
     "achievementName": "We Made Minecraft Great Again",
-    "achievementDescription": "You sided with Trump. Minecraft is great again, thanks to you!",
+    "achievementDescription": "You sided with the Trump. Minecraft is great again, thanks to you!",
     "achievementIcon": {
       "value": "Blocks.GRASS_PATH"
     },
+    "background": "Default",
     "disableDisplay": false,
     "showPopup": true,
     "announceToChat": true,
     "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [],
+    "rewardFunction": "No function",
     "rewardXP": 0,
     "achievementType": "challenge",
     "parent": {
       "value": "CUSTOM:WeNeedToBuildAWall"
     },
-    "triggerxml": "<xml><block type=\"custom_trigger\" x=\"40\" y=\"80\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"custom_trigger\" x=\"40\" y=\"80\"><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }
 }

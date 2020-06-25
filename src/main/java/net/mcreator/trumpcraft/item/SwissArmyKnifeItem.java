@@ -34,7 +34,7 @@ public class SwissArmyKnifeItem extends TrumpcraftModElements.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(131));
+			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1560));
 		}
 
 		@Override

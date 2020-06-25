@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "layer0": "shield_base_nopattern"
+      },
+      "name": "default"
+    }
+  }
+}

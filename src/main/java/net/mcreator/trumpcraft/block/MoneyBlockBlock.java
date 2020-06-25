@@ -4,7 +4,6 @@ package net.mcreator.trumpcraft.block;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
@@ -16,14 +15,12 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.trumpcraft.procedures.MoneyBlockPlayerStartsToDestroyProcedure;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 import java.util.List;
@@ -46,7 +43,7 @@ public class MoneyBlockBlock extends TrumpcraftModElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.METAL).hardnessAndResistance(25f, 3f).lightValue(0));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.WET_GRASS).hardnessAndResistance(25f, 3f).lightValue(0));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.SOUTH));
 			setRegistryName("moneyblock");
 		}
@@ -91,22 +88,6 @@ public class MoneyBlockBlock extends TrumpcraftModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onBlockClicked(BlockState state, World world, BlockPos pos, PlayerEntity entity) {
-			super.onBlockClicked(state, world, pos, entity);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				MoneyBlockPlayerStartsToDestroyProcedure.executeProcedure($_dependencies);
-			}
 		}
 	}
 }

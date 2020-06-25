@@ -1,0 +1,6 @@
+{
+  "parent": "trumpcraft:custom/riotshield",
+  "textures": {
+    "layer0": "trumpcraft:blocks/shield_base_nopattern"
+  }
+}

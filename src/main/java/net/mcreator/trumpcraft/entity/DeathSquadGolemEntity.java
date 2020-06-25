@@ -25,7 +25,6 @@ import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.NearestAttackableTargetGoal;
 import net.minecraft.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
@@ -52,7 +51,7 @@ public class DeathSquadGolemEntity extends TrumpcraftModElements.ModElement {
 	@Override
 	public void initElements() {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 2.1f))
+				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.7999999999999999f, 2.5f))
 						.build("deathsquadgolem").setRegistryName("deathsquadgolem");
 		elements.entities.add(() -> entity);
 	}
@@ -61,10 +60,6 @@ public class DeathSquadGolemEntity extends TrumpcraftModElements.ModElement {
 	public void init(FMLCommonSetupEvent event) {
 		for (Biome biome : ForgeRegistries.BIOMES.getValues()) {
 			boolean biomeCriteria = false;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:warzone")))
-				biomeCriteria = true;
-			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:wartornplains")))
-				biomeCriteria = true;
 			if (ForgeRegistries.BIOMES.getKey(biome).equals(new ResourceLocation("trumpcraft:labruins")))
 				biomeCriteria = true;
 			if (!biomeCriteria)
@@ -101,13 +96,16 @@ public class DeathSquadGolemEntity extends TrumpcraftModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.targetSelector.addGoal(1, new HurtByTargetGoal(this));
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
-			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
-			this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 0.9, false));
-			this.goalSelector.addGoal(5, new RandomWalkingGoal(this, 0.9));
-			this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(7, new SwimGoal(this));
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, true, true));
+			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, ServerPlayerEntity.class, true, true));
+			this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, TestSubject1Entity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, TestSubjectEntity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, TestSubject3Entity.CustomEntity.class, true, true));
+			this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, TestSubject4Entity.CustomEntity.class, true, true));
+			this.goalSelector.addGoal(7, new MeleeAttackGoal(this, 0.9, false));
+			this.goalSelector.addGoal(8, new RandomWalkingGoal(this, 0.9));
+			this.goalSelector.addGoal(9, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(10, new SwimGoal(this));
 		}
 
 		@Override
@@ -126,7 +124,7 @@ public class DeathSquadGolemEntity extends TrumpcraftModElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.iron_golem.hurt"));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
 		}
 
 		@Override
