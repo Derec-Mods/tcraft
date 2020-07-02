@@ -71,6 +71,26 @@
           "weight": 50
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:riotshield_2",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:bullet",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:molotov",
+          "weight": 50
+        }
+      ]
     }
   ]
 }

@@ -104,6 +104,36 @@
             "weight": 50
           }
         ]
+      },
+      {
+        "minrolls": 1,
+        "maxrolls": 1,
+        "minbonusrolls": 1,
+        "maxbonusrolls": 1,
+        "hasbonusrolls": false,
+        "entries": [
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Riotshield2"
+            },
+            "weight": 10
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Bullet"
+            },
+            "weight": 40
+          },
+          {
+            "type": "item",
+            "item": {
+              "value": "CUSTOM:Molotov"
+            },
+            "weight": 50
+          }
+        ]
       }
     ],
     "name": "armory_chest",

@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:moneysword",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:pistol",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:m57pilum",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:swissarmyknife",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:money_assault_rifle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:hex_hand_gun",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:riotshield_2",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:assault_rifle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:trumpnade",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:magashotgun",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:moneypackpickaxe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:awp",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trumpcraft:burger",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

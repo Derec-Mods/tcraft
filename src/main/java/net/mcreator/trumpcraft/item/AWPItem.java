@@ -11,6 +11,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.World;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
@@ -32,6 +34,7 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.enchantment.EnchantmentHelper;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
@@ -41,9 +44,11 @@ import net.minecraft.client.renderer.Vector3f;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.IRenderTypeBuffer;
 
+import net.mcreator.trumpcraft.procedures.AWPReloadProcedure;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
 import java.util.Random;
+import java.util.List;
 
 import com.mojang.blaze3d.vertex.IVertexBuilder;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -89,6 +94,12 @@ public class AWPItem extends TrumpcraftModElements.ModElement {
 		}
 
 		@Override
+		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
+			super.addInformation(itemstack, world, list, flag);
+			list.add(new StringTextComponent("Boom. Headshot."));
+		}
+
+		@Override
 		public int getUseDuration(ItemStack itemstack) {
 			return 72000;
 		}
@@ -124,6 +135,15 @@ public class AWPItem extends TrumpcraftModElements.ModElement {
 							if (stack.isEmpty())
 								entity.inventory.deleteStack(stack);
 						}
+					}
+					int x = (int) entity.getPosX();
+					int y = (int) entity.getPosY();
+					int z = (int) entity.getPosZ();
+					{
+						java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("itemstack", itemstack);
+						AWPReloadProcedure.executeProcedure($_dependencies);
 					}
 				}
 			}

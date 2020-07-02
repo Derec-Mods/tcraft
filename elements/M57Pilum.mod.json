@@ -22,6 +22,9 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "RPGReload"
+    },
     "bulletPower": 1.3,
     "bulletDamage": 5.5,
     "bulletKnockback": 7,

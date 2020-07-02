@@ -42,16 +42,19 @@ public class TrumpermanRandomEncounterProcedure extends TrumpcraftModElements.Mo
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		if ((Math.random() < 0.01)) {
-			if ((((world.getDayTime()) >= 13000) && ((world.getDayTime()) <= 23000))) {
-				world.playSound((PlayerEntity) null, x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.enderman.teleport")),
-						SoundCategory.NEUTRAL, (float) 1, (float) 1);
-				if (!world.isRemote) {
-					Entity entityToSpawn = new TrumpermanEntity.CustomEntity(TrumpermanEntity.entity, world);
-					entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
-					entityToSpawn.setMotion(0, 0, 0);
-					world.addEntity(entityToSpawn);
+		if ((Math.random() < 0.1)) {
+			if ((Math.random() < 0.01)) {
+				if ((((world.getDayTime()) >= 13000) && ((world.getDayTime()) <= 23000))) {
+					if ((world.isThundering())) {
+						world.playSound((PlayerEntity) null, x, y, z, (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+								.getValue(new ResourceLocation("entity.enderman.teleport")), SoundCategory.NEUTRAL, (float) 1, (float) 1);
+						if (!world.isRemote) {
+							Entity entityToSpawn = new TrumpermanEntity.CustomEntity(TrumpermanEntity.entity, world);
+							entityToSpawn.setLocationAndAngles(x, y, z, (float) 0, (float) 0);
+							entityToSpawn.setMotion(0, 0, 0);
+							world.addEntity(entityToSpawn);
+						}
+					}
 				}
 			}
 		}

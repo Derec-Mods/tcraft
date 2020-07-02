@@ -6,7 +6,9 @@
     "texture": "awp_2",
     "customModelName": "awp:default",
     "name": "AWP",
-    "specialInfo": [],
+    "specialInfo": [
+      "Boom. Headshot."
+    ],
     "creativeTab": {
       "value": "COMBAT"
     },
@@ -22,6 +24,9 @@
     "hasGlow": false,
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "AWPReload"
+    },
     "bulletPower": 3.0,
     "bulletDamage": 10.0,
     "bulletKnockback": 3,

@@ -35,6 +35,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
 
+import net.mcreator.trumpcraft.procedures.RPGReloadProcedure;
 import net.mcreator.trumpcraft.procedures.M57PilumBulletHitsBlockProcedure;
 import net.mcreator.trumpcraft.TrumpcraftModElements;
 
@@ -117,6 +118,15 @@ public class M57PilumItem extends TrumpcraftModElements.ModElement {
 							if (stack.isEmpty())
 								entity.inventory.deleteStack(stack);
 						}
+					}
+					int x = (int) entity.getPosX();
+					int y = (int) entity.getPosY();
+					int z = (int) entity.getPosZ();
+					{
+						java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+						$_dependencies.put("entity", entity);
+						$_dependencies.put("itemstack", itemstack);
+						RPGReloadProcedure.executeProcedure($_dependencies);
 					}
 				}
 			}
