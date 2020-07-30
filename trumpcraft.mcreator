@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "DIMENSION": 2,
+    "GUI": 9,
     "ENTITY": 44,
-    "GUI": 9
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -2607,6 +2607,24 @@
           }
         ]
       }
+    },
+    {
+      "name": "PoliceGolem",
+      "type": "mob",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "police_golem"
+    },
+    {
+      "name": "MoneyStairsCraft",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "money_stairs_craft"
     }
   ],
   "variable_elements": [
@@ -2922,6 +2940,7 @@
       "block.trumpcraft_114.moneyblock": "Block of Money",
       "item.trumpcraft.demo_unit": "Demo Unit Spawn Egg",
       "item.trumpcraft.moneypackpickaxe": "Money Pickaxe",
+      "entity.trumpcraft.police_golem": "Police Golem",
       "item.hexsquadarmorlegs.name": "Hex Offensive Leggings",
       "item.hexspecalistarmorbody.name": "Hex Specalist Body",
       "item.trumpcraft.hex_hand_gun": "Hex Handgun",
@@ -2953,6 +2972,7 @@
       "item.hexsoldierpledge.name": "Hex Soldier Pledge",
       "entity.trumpcraft.sasha": "The Official",
       "block.trumpcraft.moneyblock": "Block of Money",
+      "item.trumpcraft.police_golem": "Police Golem Spawn Egg",
       "item.trumpcraft.riotshield_2": "Riot Shield",
       "entity.testsubject1.name": "TestSubject3",
       "item.warground.name": "unused",
@@ -3067,7 +3087,7 @@
   "workspaceSettings": {
     "modid": "trumpcraft",
     "modName": "Trumpcraft",
-    "version": "6.0.1.0",
+    "version": "6.0.12.0",
     "description": "We\u0027ll make Minecraft great again",
     "author": "DereC_",
     "websiteURL": "https://mcreator.net",
