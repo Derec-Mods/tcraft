@@ -1,0 +1,12 @@
+{
+  "_fv": 43,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "M",
+    "keyBindingName": "Open Stats",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "OpenStatsOnKeyPressed"
+    }
+  }
+}

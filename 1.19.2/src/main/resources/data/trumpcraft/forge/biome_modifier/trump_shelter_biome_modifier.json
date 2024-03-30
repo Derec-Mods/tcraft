@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "trumpcraft:warzone",
+    "plains"
+  ],
+  "features": "trumpcraft:trump_shelter",
+  "step": "surface_structures"
+}

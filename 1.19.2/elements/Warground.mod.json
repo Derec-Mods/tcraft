@@ -1,0 +1,59 @@
+{
+  "_fv": 43,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Warzone"
+      },
+      {
+        "value": "CUSTOM:MoneyLake"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "CUSTOM:WarTornPlains"
+      },
+      {
+        "value": "CUSTOM:Labruins"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.DIRT#1"
+    },
+    "fluidBlock": {
+      "value": "CUSTOM:LiquidMoney"
+    },
+    "airColor": {
+      "value": -5607674,
+      "falpha": 0.0
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "portalFrame": {
+      "value": "CUSTOM:WarBlock"
+    },
+    "portalParticles": {
+      "value": "END_ROD"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": ""
+    },
+    "enableIgniter": true,
+    "igniterName": "unused",
+    "igniterTab": {
+      "value": "No creative tab entry"
+    },
+    "texture": "missingtexture",
+    "portalTexture": "tnt_side",
+    "enablePortal": false
+  }
+}

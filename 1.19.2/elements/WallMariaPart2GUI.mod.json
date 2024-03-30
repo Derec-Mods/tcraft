@@ -1,0 +1,306 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 195,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 162,
+          "height": 20,
+          "x": 132,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wall_maria_patrol_part_2",
+          "text": {
+            "fixedValue": "Wall Maria Patrol Part 2"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ai_log",
+          "text": {
+            "fixedValue": "AI LOG"
+          },
+          "color": {
+            "value": -10040065,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_new_to_the_table_this_time",
+          "text": {
+            "fixedValue": "new to the table this time"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_there_are_alarms_everywhere",
+          "text": {
+            "fixedValue": "There are alarms everywhere"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sector_s42_is_under_attack",
+          "text": {
+            "fixedValue": "\"SECTOR S42 IS UNDER ATTACK!\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_this_is_not_a_drill_all_units",
+          "text": {
+            "fixedValue": "\"THIS IS NOT A DRILL! ALL UNITS,"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_enemy_is_scaling_the_wall",
+          "text": {
+            "fixedValue": "THE ENEMY IS SCALING THE WALL!\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 183
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_roar_of_their_bombers_tears",
+          "text": {
+            "fixedValue": "The roar of their bombers tears"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_interestingit_appears_that",
+          "text": {
+            "fixedValue": "Interesting...it appears that"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_our_enemy_has_brought_something",
+          "text": {
+            "fixedValue": "our enemy has brought something"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_through_the_sky_this_is_not_goo",
+          "text": {
+            "fixedValue": "through the sky. This is not good"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_walls_were_always_meant_to_b",
+          "text": {
+            "fixedValue": "The walls were always meant to be"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_more_deterrents_than_actual_wall",
+          "text": {
+            "fixedValue": "more deterrents than actual walls"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_anyway_now_the_enemy_is_at_our",
+          "text": {
+            "fixedValue": "anyway. Now the enemy is at our"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_gates_with_a_new_weapon",
+          "text": {
+            "fixedValue": "gates with a new weapon"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_a_victory_for_us_is_very_slim",
+          "text": {
+            "fixedValue": "A victory for us is very slim"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_but_they_choose_to_fight_anyway",
+          "text": {
+            "fixedValue": "But they choose to fight anyway"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_very_well_ill_cooperate",
+          "text": {
+            "fixedValue": "Very well. I'll cooperate."
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 165
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

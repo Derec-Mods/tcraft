@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "trumpcraft:labruins",
+  "features": "trumpcraft:lab_ruins_1",
+  "step": "surface_structures"
+}

@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "trumpcraft:labruins",
+  "spawners": {
+    "type": "trumpcraft:test_subject_3",
+    "weight": 10,
+    "minCount": 1,
+    "maxCount": 7
+  }
+}

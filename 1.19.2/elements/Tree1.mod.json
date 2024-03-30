@@ -1,0 +1,36 @@
+{
+  "_fv": 43,
+  "_type": "structure",
+  "definition": {
+    "structure": "tree1",
+    "randomlyRotateStructure": true,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 500,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface",
+      "CUSTOM:Warground"
+    ],
+    "restrictionBlocks": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:Labruins"
+      },
+      {
+        "value": "CUSTOM:WarTornPlains"
+      },
+      {
+        "value": "extreme_hills"
+      },
+      {
+        "value": "savanna"
+      }
+    ],
+    "ignoreBlocks": "STRUCTURE_BLOCK"
+  }
+}

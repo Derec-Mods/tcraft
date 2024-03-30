@@ -1,0 +1,261 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 200,
+    "height": 195,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wall_maria_patrol_part_1",
+          "text": {
+            "fixedValue": "Wall Maria Patrol Part 1"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_another_great_day_in_this_icy",
+          "text": {
+            "fixedValue": "\"Another great day in this icy"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_dump",
+          "text": {
+            "fixedValue": "dump\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_agreed_cant_wait_to_leave",
+          "text": {
+            "fixedValue": "\"Agreed. Can't wait to leave\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_distant_gunfire",
+          "text": {
+            "fixedValue": "(Distant Gunfire)"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_audio_recording",
+          "text": {
+            "fixedValue": "AUDIO RECORDING"
+          },
+          "color": {
+            "value": -10040065,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_looks_like_theyre_trying_to",
+          "text": {
+            "fixedValue": "\"Looks like they're trying to"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_climb_up_again",
+          "text": {
+            "fixedValue": "climb up again\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_well_you_know_the_drill_lets",
+          "text": {
+            "fixedValue": "\"Well you know the drill. Lets-\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wait",
+          "text": {
+            "fixedValue": "\"Wait.\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_what_the_hell_is_that_thing",
+          "text": {
+            "fixedValue": "\"What the hell is that... thing?\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_distant_screaming",
+          "text": {
+            "fixedValue": "(Distant Screaming)"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ah_shtbattle_stations",
+          "text": {
+            "fixedValue": "\"Ah sh*t...BATTLE STATIONS!\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_repeat_all_units_rep",
+          "text": {
+            "fixedValue": "\"I REPEAT! ALL UNITS REP-\""
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_explosion",
+          "text": {
+            "fixedValue": "(Explosion)"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 156
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 162,
+          "height": 20,
+          "x": 132,
+          "y": 192
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

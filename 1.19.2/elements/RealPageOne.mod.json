@@ -1,0 +1,98 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 195,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpskin.png",
+          "use1Xscale": false,
+          "x": 262,
+          "y": 47
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpcraft.png",
+          "use1Xscale": false,
+          "x": 127,
+          "y": 25
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 117,
+          "height": 20,
+          "x": 150,
+          "y": 192
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_link_to_lorebook",
+          "text": "Link to Lorebook",
+          "onClick": {
+            "name": "RealPageOneOnButtonClicked"
+          },
+          "width": 117,
+          "height": 20,
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_choose_a_side",
+          "text": {
+            "fixedValue": "Choose a side..."
+          },
+          "color": {
+            "value": -16737793,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_or_kill_them_all",
+          "text": {
+            "fixedValue": "or destroy them all"
+          },
+          "color": {
+            "value": -10092544,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 93
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

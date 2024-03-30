@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "trumpcraft:blocks/money",
+    "top": "trumpcraft:blocks/money",
+    "side": "trumpcraft:blocks/money"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "minecraft:bedrock"
+    },
+    "title": {
+      "translate": "advancements.we_need_to_build_a_wall.title"
+    },
+    "description": {
+      "translate": "advancements.we_need_to_build_a_wall.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "we_need_to_build_a_wall": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "trumpcraft:warground"
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "trumpcraft:blocks/tnt_side",
+    "up": "trumpcraft:blocks/moneyblock",
+    "north": "trumpcraft:blocks/maga",
+    "east": "trumpcraft:blocks/tnt_top",
+    "south": "trumpcraft:blocks/bed_feet_top",
+    "west": "trumpcraft:blocks/tnt_top_old",
+    "particle": "trumpcraft:blocks/tnt_side"
+  }
+}

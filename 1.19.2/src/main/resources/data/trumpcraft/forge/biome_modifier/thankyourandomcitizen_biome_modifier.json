@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "trumpcraft:money_land",
+  "spawners": {
+    "type": "trumpcraft:thankyourandomcitizen",
+    "weight": 20,
+    "minCount": 3,
+    "maxCount": 15
+  }
+}

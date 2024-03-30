@@ -1,0 +1,143 @@
+{
+  "_fv": 43,
+  "_type": "biome",
+  "definition": {
+    "name": "Labruins",
+    "groundBlock": {
+      "value": "Blocks.STONE"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.STONE"
+    },
+    "airColor": {
+      "value": -7490817,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -16725210,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -16725210,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -16776961,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -16776961,
+      "falpha": 0.0
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particlesProbability": 0.0,
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.1,
+      "max": 0.1
+    },
+    "genHumidity": {
+      "min": -0.1,
+      "max": 0.1
+    },
+    "genContinentalness": {
+      "min": 0.41000000000000003,
+      "max": 0.61
+    },
+    "genErosion": {
+      "min": 0.7000000000000001,
+      "max": 0.9
+    },
+    "genWeirdness": {
+      "min": -0.13260735162449291,
+      "max": 0.0673926483755071
+    },
+    "treesPerChunk": 0,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 1,
+    "treeStem": {
+      "value": "Blocks.AIR"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "defaultFeatures": [
+      "Caves",
+      "MonsterRooms",
+      "Ores",
+      "FrozenTopLayer",
+      "ForestGrass",
+      "DesertFeatures"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": [
+      {
+        "entity": {
+          "value": "CUSTOM:TestSubject1"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:TestSubject"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:TestSubject3"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
+      },
+      {
+        "entity": {
+          "value": "CUSTOM:TestSubject4"
+        },
+        "minGroup": 1,
+        "maxGroup": 15,
+        "weight": 15,
+        "spawnType": "creature"
+      }
+    ]
+  }
+}

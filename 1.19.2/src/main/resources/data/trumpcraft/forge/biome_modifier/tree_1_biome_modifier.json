@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "trumpcraft:labruins",
+    "plains",
+    "savanna",
+    "trumpcraft:war_torn_plains"
+  ],
+  "features": "trumpcraft:tree_1",
+  "step": "surface_structures"
+}

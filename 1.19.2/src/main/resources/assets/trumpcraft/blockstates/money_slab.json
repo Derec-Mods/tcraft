@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "trumpcraft:block/money_slab"
+    },
+    "type=top": {
+      "model": "trumpcraft:block/money_slab_top"
+    },
+    "type=double": {
+      "model": "trumpcraft:block/money_slab_full"
+    }
+  }
+}

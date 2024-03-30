@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "trumpcraft:money_fence",
+    "trumpcraft:money_slab",
+    "trumpcraft:money_wall",
+    "trumpcraft:money_chair"
+  ]
+}

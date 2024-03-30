@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "trumpcraft:money_block"
+    },
+    {
+      "item": "trumpcraft:money_block"
+    },
+    {
+      "item": "trumpcraft:money_block"
+    }
+  ],
+  "result": {
+    "item": "trumpcraft:money_slab",
+    "count": 1
+  }
+}

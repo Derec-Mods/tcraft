@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bed_feet_top",
+        "1": "anvil_base",
+        "2": "iron_block"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "trumpcraft:blocks/moneyblocktop",
+    "particle": "trumpcraft:blocks/moneyblocktop"
+  },
+  "render_type": "solid"
+}

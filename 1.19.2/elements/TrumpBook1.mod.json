@@ -1,0 +1,306 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 225,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_so_you_want_to_hear",
+          "text": {
+            "fixedValue": "So, you want to hear"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_another_story_eh",
+          "text": {
+            "fixedValue": "another story, eh?"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 21
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_one_where_the_fate_of_pan",
+          "text": {
+            "fixedValue": "One where the fate of Pan-"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_oops_wrong_story",
+          "text": {
+            "fixedValue": "oops. Wrong story"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_channeling_my",
+          "text": {
+            "fixedValue": "(channeling my"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_nonexistent_improv_skills",
+          "text": {
+            "fixedValue": "nonexistent improv skills)"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_aight_here_we_go_4th_wall_will",
+          "text": {
+            "fixedValue": "Aight. Here we go. 4th wall will not break anymore after this line"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 60,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_oh_so_you_do_wanna_hear_a_story",
+          "text": {
+            "fixedValue": "oh, so you DO wanna hear a story"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_im_gonna_assume_youre",
+          "text": {
+            "fixedValue": "I'm gonna assume you're"
+          },
+          "color": {
+            "value": -16764058,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_someone_who_got_that_joke",
+          "text": {
+            "fixedValue": "someone who got that joke"
+          },
+          "color": {
+            "value": -16764058,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_then_turn_the_page",
+          "text": {
+            "fixedValue": "then turn the page"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 185
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_theres_a_budget",
+          "text": {
+            "fixedValue": "there's a budget"
+          },
+          "color": {
+            "value": -3407872,
+            "falpha": 0.0
+          },
+          "x": 211,
+          "y": 198
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_so_since_ive_wasted",
+          "text": {
+            "fixedValue": "so... since I've wasted"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_most_of_the_page_ill_just",
+          "text": {
+            "fixedValue": "most of the page I'll just"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_introduce_myself_with_this_line",
+          "text": {
+            "fixedValue": "introduce myself with this line"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_im_the_dev_aka_your_narrator",
+          "text": {
+            "fixedValue": "i'm the dev. Aka your narrator"
+          },
+          "color": {
+            "value": -16750900,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_tell_the_story",
+          "text": {
+            "fixedValue": "I tell the story"
+          },
+          "color": {
+            "value": -16738048,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 147
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_im_also_bad_at_that",
+          "text": {
+            "fixedValue": "I'm also bad at that"
+          },
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 156
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_for_your_convenience",
+          "text": "for your convenience",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 200,
+          "height": 20,
+          "x": 115,
+          "y": 209
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "trumpcraft:liquid_money_feature",
+  "step": "lakes"
+}

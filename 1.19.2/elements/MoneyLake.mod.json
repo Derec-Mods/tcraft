@@ -1,0 +1,104 @@
+{
+  "_fv": 43,
+  "_type": "biome",
+  "definition": {
+    "name": "Money Lake",
+    "groundBlock": {
+      "value": "CUSTOM:LiquidMoney"
+    },
+    "undergroundBlock": {
+      "value": "CUSTOM:MoneyBlock"
+    },
+    "airColor": {
+      "value": -16448512,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -15049216,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -15049216,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -9286141,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -9286141,
+      "falpha": 0.0
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particlesProbability": 0.0,
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.1,
+      "max": 0.1
+    },
+    "genHumidity": {
+      "min": -1.1,
+      "max": -0.9
+    },
+    "genContinentalness": {
+      "min": 0.41000000000000003,
+      "max": 0.61
+    },
+    "genErosion": {
+      "min": 0.7500000000000001,
+      "max": 0.9500000000000001
+    },
+    "genWeirdness": {
+      "min": -0.8266473759433227,
+      "max": -0.6266473759433228
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 7,
+    "treeStem": {
+      "value": "CUSTOM:LiquidMoney"
+    },
+    "treeBranch": {
+      "value": "Blocks.AIR"
+    },
+    "treeVines": {
+      "value": "Blocks.AIR"
+    },
+    "treeFruits": {
+      "value": "Blocks.AIR"
+    },
+    "defaultFeatures": [
+      "Caves",
+      "MonsterRooms",
+      "Ores",
+      "FrozenTopLayer"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
+  }
+}

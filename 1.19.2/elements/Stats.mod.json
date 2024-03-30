@@ -1,0 +1,118 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 250,
+    "height": 173,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_trump_allies_slain",
+          "text": {
+            "fixedValue": "Trump Allies Slain"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 48
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_hex_allies_slain",
+          "text": {
+            "fixedValue": "Hex Allies Slain"
+          },
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_vartrumpsoldierskilled",
+          "text": {
+            "fixedValue": "<VAR:TrumpSoldiersKilled>"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_varhexsoldierskilled",
+          "text": {
+            "fixedValue": "<VAR:HexSoldiersKilled>"
+          },
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 84
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpskin.png",
+          "use1Xscale": false,
+          "x": 232,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trumpsoldierskin.png",
+          "use1Xscale": false,
+          "x": 287,
+          "y": 57
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hexskin1.png",
+          "use1Xscale": false,
+          "x": 150,
+          "y": 100
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hexsalute.png",
+          "use1Xscale": false,
+          "x": 97,
+          "y": 112
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

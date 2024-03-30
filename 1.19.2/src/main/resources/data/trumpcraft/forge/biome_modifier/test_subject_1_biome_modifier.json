@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "trumpcraft:labruins",
+    "trumpcraft:war_torn_plains"
+  ],
+  "spawners": {
+    "type": "trumpcraft:test_subject_1",
+    "weight": 20,
+    "minCount": 1,
+    "maxCount": 5
+  }
+}

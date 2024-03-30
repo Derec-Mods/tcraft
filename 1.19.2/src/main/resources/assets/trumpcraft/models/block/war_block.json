@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "trumpcraft:blocks/blockofwar2",
+    "up": "trumpcraft:blocks/blockofwar2",
+    "north": "trumpcraft:blocks/blockofwar3",
+    "east": "trumpcraft:blocks/blockofwar1",
+    "south": "trumpcraft:blocks/blockofwar3",
+    "west": "trumpcraft:blocks/blockofwar1",
+    "particle": "trumpcraft:blocks/blockofwar2"
+  },
+  "render_type": "solid"
+}

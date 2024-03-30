@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "trumpcraft:block/murica_portal_ew"
+    },
+    "axis=x": {
+      "model": "trumpcraft:block/murica_portal_ns"
+    }
+  }
+}

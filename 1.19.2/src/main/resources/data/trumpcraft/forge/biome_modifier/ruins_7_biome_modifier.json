@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "trumpcraft:ruins_7",
+  "step": "surface_structures"
+}

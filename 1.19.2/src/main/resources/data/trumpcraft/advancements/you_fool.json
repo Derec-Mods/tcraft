@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "trumpcraft:swiss_army_knife"
+    },
+    "title": {
+      "translate": "advancements.you_fool.title"
+    },
+    "description": {
+      "translate": "advancements.you_fool.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "you_fool": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "trumpcraft:converter",
+    "trumpcraft:war_block",
+    "trumpcraft:fragmentof_wall_block"
+  ]
+}

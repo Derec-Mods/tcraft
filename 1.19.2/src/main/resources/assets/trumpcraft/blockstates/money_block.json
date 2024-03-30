@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "trumpcraft:block/money_block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "trumpcraft:block/money_block"
+    },
+    "axis=z": {
+      "model": "trumpcraft:block/money_block",
+      "x": 90
+    }
+  }
+}

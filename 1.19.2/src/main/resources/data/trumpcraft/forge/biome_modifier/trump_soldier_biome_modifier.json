@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "trumpcraft:warzone",
+    "trumpcraft:labruins",
+    "trumpcraft:money_lake",
+    "trumpcraft:war_torn_plains"
+  ],
+  "spawners": {
+    "type": "trumpcraft:trump_soldier",
+    "weight": 20,
+    "minCount": 3,
+    "maxCount": 10
+  }
+}

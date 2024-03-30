@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "trumpcraft:rocket"
+    },
+    "title": {
+      "translate": "advancements.trumpsidefirst.title"
+    },
+    "description": {
+      "translate": "advancements.trumpsidefirst.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "trumpsidefirst": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "trumpcraft:we_need_to_build_a_wall"
+}

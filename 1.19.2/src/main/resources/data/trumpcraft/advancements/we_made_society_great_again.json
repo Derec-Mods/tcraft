@@ -1,0 +1,23 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "advancements.we_made_society_great_again.title"
+    },
+    "description": {
+      "translate": "advancements.we_made_society_great_again.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "we_made_society_great_again": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "parent": "trumpcraft:we_need_to_build_a_wall"
+}

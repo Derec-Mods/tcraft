@@ -1,0 +1,321 @@
+{
+  "_fv": 43,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 255,
+    "height": 240,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_pledge_to_the_hex_the_coalition",
+          "text": {
+            "fixedValue": "PLEDGE TO THE HEX, THE COALITION,"
+          },
+          "color": {
+            "value": -16724737,
+            "falpha": 0.0
+          },
+          "x": 132,
+          "y": 3
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_and_the_sixteenth_legion",
+          "text": {
+            "fixedValue": "AND THE SIXTEENTH LEGION"
+          },
+          "color": {
+            "value": -16724737,
+            "falpha": 0.0
+          },
+          "x": 150,
+          "y": 12
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_swear_to_the_sixteenth_this_s",
+          "text": {
+            "fixedValue": "\"I swear to the sixteenth this sacred oath to"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 21
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_the_leaders_of_the_16th_legion",
+          "text": {
+            "fixedValue": "the Leaders of the 16th Legion, the Big 6, and"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 30
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_the_people",
+          "text": {
+            "fixedValue": "to the people.� "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_shall_give_unconditional_obed",
+          "text": {
+            "fixedValue": "�I shall give unconditional obedience, and as a"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 57
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_brave_soldier_i_shall_at_all_tim",
+          "text": {
+            "fixedValue": "brave soldier I shall at all times be prepared "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_to_give_my_life_for_this_cause",
+          "text": {
+            "fixedValue": "to give my life for this cause.�"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_declare_that_i_renounce_all_a",
+          "text": {
+            "fixedValue": "�I declare that I renounce all allegiance and"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 93
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fidelity_to_any_foreign_figure",
+          "text": {
+            "fixedValue": "fidelity to any foreign figure, state, or "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sovereignty_of_whom_or_which_i_w",
+          "text": {
+            "fixedValue": "sovereignty of whom or which I was a subject of.�"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 111
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_will_support_and_defend_the_1",
+          "text": {
+            "fixedValue": "�I will support and defend the 16th against "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_all_enemies_trump_related_or_fo",
+          "text": {
+            "fixedValue": "all enemies, Trump related or foreign.� "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_will_bear_arms_on_behalf_of_t",
+          "text": {
+            "fixedValue": "�I will bear arms on behalf of the 16th; I will "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_perform_service_in_the_armed_for",
+          "text": {
+            "fixedValue": "perform service in the Armed Forces of the Hex;"
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 165
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_will_perform_work_of_organizat",
+          "text": {
+            "fixedValue": "I will perform work of organizational importance� "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_i_take_this_responsibility_free",
+          "text": {
+            "fixedValue": "�I take this responsibility freely without any "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 192
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mental_reservation_or_purpose_of",
+          "text": {
+            "fixedValue": "mental reservation or purpose of evasion."
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 91,
+          "y": 201
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_glory_to_the_sixteenth",
+          "text": {
+            "fixedValue": "Glory to the sixteenth.� "
+          },
+          "color": {
+            "value": -16737844,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 210
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_back",
+          "text": "Back",
+          "onClick": {
+            "name": "OpenContents1"
+          },
+          "width": 144,
+          "height": 20,
+          "x": 142,
+          "y": 219
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

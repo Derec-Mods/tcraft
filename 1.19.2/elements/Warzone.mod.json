@@ -1,0 +1,105 @@
+{
+  "_fv": 43,
+  "_type": "biome",
+  "definition": {
+    "name": "Warzone",
+    "groundBlock": {
+      "value": "Blocks.DIRT#1"
+    },
+    "undergroundBlock": {
+      "value": "Blocks.STONEBRICK"
+    },
+    "airColor": {
+      "value": -10877177,
+      "falpha": 0.0
+    },
+    "grassColor": {
+      "value": -12505853,
+      "falpha": 0.0
+    },
+    "foliageColor": {
+      "value": -12505853,
+      "falpha": 0.0
+    },
+    "waterColor": {
+      "value": -2457592,
+      "falpha": 0.0
+    },
+    "waterFogColor": {
+      "value": -2457592,
+      "falpha": 0.0
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particlesProbability": 0.0,
+    "rainingPossibility": 0.0,
+    "temperature": 0.5,
+    "spawnBiome": false,
+    "spawnInCaves": false,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.4,
+      "max": 0.4
+    },
+    "genHumidity": {
+      "min": -1.4,
+      "max": -0.6
+    },
+    "genContinentalness": {
+      "min": 0.10999999999999999,
+      "max": 0.91
+    },
+    "genErosion": {
+      "min": -0.4,
+      "max": 0.4
+    },
+    "genWeirdness": {
+      "min": 0.02413902033619919,
+      "max": 0.8241390203361992
+    },
+    "treesPerChunk": 1,
+    "vanillaTreeType": "Birch trees",
+    "treeType": 1,
+    "minHeight": 10,
+    "treeStem": {
+      "value": "Blocks.SANDSTONE"
+    },
+    "treeBranch": {
+      "value": "Blocks.STONE"
+    },
+    "treeVines": {
+      "value": "Blocks.FLOWING_LAVA"
+    },
+    "treeFruits": {
+      "value": "Blocks.NETHERRACK"
+    },
+    "defaultFeatures": [
+      "Caves",
+      "MonsterRooms",
+      "Ores",
+      "FrozenTopLayer",
+      "ForestGrass"
+    ],
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
+    "spawnMineshaftMesa": false,
+    "spawnPillagerOutpost": true,
+    "villageType": "none",
+    "spawnWoodlandMansion": false,
+    "spawnJungleTemple": false,
+    "spawnDesertPyramid": false,
+    "spawnSwampHut": false,
+    "spawnIgloo": false,
+    "spawnOceanMonument": false,
+    "spawnShipwreck": false,
+    "spawnShipwreckBeached": false,
+    "spawnBuriedTreasure": false,
+    "oceanRuinType": "NONE",
+    "spawnNetherBridge": false,
+    "spawnNetherFossil": false,
+    "spawnBastionRemnant": false,
+    "spawnEndCity": false,
+    "spawnRuinedPortal": "NONE",
+    "spawnEntries": []
+  }
+}

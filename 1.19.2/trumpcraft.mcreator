@@ -1,0 +1,3204 @@
+{
+  "mod_elements": [
+    {
+      "name": "Trump",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trumpwannabe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trumpwannabe_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TrumpRenderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpEntity.java",
+          "src/main/resources/assets/trumpcraft/models/item/trumpwannabe_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "Money",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/money.json",
+          "src/main/java/net/mcreator/trumpcraft/item/MoneyItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MoneyBlock",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/money_block.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_block.json",
+          "src/main/resources/assets/trumpcraft/blockstates/money_block.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneyBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "Moneycrafting",
+      "type": "recipe",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/moneycrafting.json"
+        ]
+      }
+    },
+    {
+      "name": "WarBlock",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/block/war_block.json",
+          "src/main/java/net/mcreator/trumpcraft/block/WarBlockBlock.java",
+          "src/main/resources/assets/trumpcraft/blockstates/war_block.json",
+          "src/main/resources/assets/trumpcraft/models/item/war_block.json"
+        ]
+      }
+    },
+    {
+      "name": "LiquidMoneyMobplayerColidesBlock",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/LiquidMoneyMobplayerColidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Warzone",
+      "type": "biome",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/biome/WarzoneBiome.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/WarzoneTrunkDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/WarzoneFruitDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/WarzoneLeaveDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "TrumpSoldier",
+      "type": "livingentity",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/trump_soldier_spawn_egg.json",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_soldier_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpSoldierEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TrumpSoldierRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Warground",
+      "type": "dimension",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/dimension/warground.json",
+          "src/main/java/net/mcreator/trumpcraft/world/dimension/WargroundDimension.java",
+          "src/main/resources/data/trumpcraft/dimension_type/warground.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyLake",
+      "type": "biome",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/MoneyLakeTrunkDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/MoneyLakeLeaveDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/biome/MoneyLakeBiome.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/MoneyLakeFruitDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "MoneyLand",
+      "type": "biome",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/biome/MoneyLandBiome.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/MoneyLandTrunkDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/MoneyLandFruitDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/MoneyLandLeaveDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "Thankyourandomcitizen",
+      "type": "livingentity",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/ThankyourandomcitizenRenderer.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/thankyourandomcitizen_biome_modifier.json",
+          "src/main/resources/assets/trumpcraft/models/item/thankyourandomcitizen_spawn_egg.json",
+          "src/main/java/net/mcreator/trumpcraft/entity/ThankyourandomcitizenEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "MURICAPortalTriggerUsed",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/MURICAPortalTriggerUsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MURICA",
+      "type": "dimension",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/teleporter/MURICATeleporter.java",
+          "src/main/java/net/mcreator/trumpcraft/world/teleporter/MURICAPortalShape.java",
+          "src/main/resources/assets/trumpcraft/models/block/murica_portal_ew.json",
+          "src/main/resources/assets/trumpcraft/models/item/murica.json",
+          "src/main/java/net/mcreator/trumpcraft/world/dimension/MURICADimension.java",
+          "src/main/java/net/mcreator/trumpcraft/item/MURICAItem.java",
+          "src/main/java/net/mcreator/trumpcraft/block/MURICAPortalBlock.java",
+          "src/main/resources/data/trumpcraft/dimension_type/murica.json",
+          "src/main/resources/data/trumpcraft/dimension/murica.json",
+          "src/main/resources/assets/trumpcraft/blockstates/murica_portal.json",
+          "src/main/resources/assets/trumpcraft/models/block/murica_portal_ns.json"
+        ]
+      }
+    },
+    {
+      "name": "Bullet",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/BulletItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/bullet.json"
+        ]
+      }
+    },
+    {
+      "name": "BulletCraft",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/bulletcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Pistol",
+      "type": "rangeditem",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/PistolEntity.java",
+          "src/main/resources/assets/trumpcraft/models/item/pistol.json",
+          "src/main/java/net/mcreator/trumpcraft/item/PistolItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TrumpShelter",
+      "type": "structure",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/TrumpShelterFeature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_shelter_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Trumpshelter2",
+      "type": "structure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Trumpshelter2Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trumpshelter_2_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "TrumpShelter3",
+      "type": "structure",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/TrumpShelter3Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_shelter_3_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Highway1",
+      "type": "structure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/highway_1_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Highway1Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "AWP",
+      "type": "rangeditem",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/AWPItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/awp.json",
+          "src/main/java/net/mcreator/trumpcraft/entity/AWPEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "Bunker4",
+      "type": "structure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/bunker_4_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Bunker4Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "SummonTrump",
+      "type": "procedure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/SummonTrumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FragmentofWallBlock",
+      "type": "block",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/block/FragmentofWallBlockBlock.java",
+          "src/main/resources/assets/trumpcraft/models/block/fragmentof_wall_block.json",
+          "src/main/resources/assets/trumpcraft/models/item/fragmentof_wall_block.json",
+          "src/main/resources/assets/trumpcraft/blockstates/fragmentof_wall_block.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyBlockBack",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/moneyblockback.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruins2",
+      "type": "structure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins2Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_2_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "RealRuins2",
+      "type": "structure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/RealRuins2Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/real_ruins_2_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Iftrump",
+      "type": "procedure",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/IftrumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AntiTrumpTool",
+      "type": "rangeditem",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/AntiTrumpToolEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/item/AntiTrumpToolItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/anti_trump_tool.json"
+        ]
+      }
+    },
+    {
+      "name": "Burgerfoodeaten",
+      "type": "procedure",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/BurgerfoodeatenProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trumpsquadarmor",
+      "type": "armor",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/trumpsquadarmor_helmet.json",
+          "src/main/resources/assets/trumpcraft/models/item/trumpsquadarmor_chestplate.json",
+          "src/main/java/net/mcreator/trumpcraft/item/TrumpsquadarmorItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/trumpsquadarmor_leggings.json",
+          "src/main/resources/assets/trumpcraft/models/item/trumpsquadarmor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "Explode",
+      "type": "procedure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/ExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LivingBomb",
+      "type": "livingentity",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/LivingBombRenderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/LivingBombEntity.java",
+          "src/main/resources/assets/trumpcraft/models/item/living_bomb_spawn_egg.json",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/living_bomb_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "ConverterOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/ConverterOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Converter",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/block/ConverterBlock.java",
+          "src/main/resources/assets/trumpcraft/blockstates/converter.json",
+          "src/main/resources/assets/trumpcraft/models/item/converter.json",
+          "src/main/resources/assets/trumpcraft/models/block/converter.json"
+        ]
+      }
+    },
+    {
+      "name": "EmeraldBlockConvert",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/EmeraldBlockConvertProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpSquad1",
+      "type": "livingentity",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpSquad1Entity.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_squad_1_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TrumpSquad1Renderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TrumpSquad2",
+      "type": "livingentity",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpSquad2Entity.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_squad_2_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TrumpSquad2Renderer.java"
+        ]
+      }
+    },
+    {
+      "name": "M57PilumBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/M57PilumBulletHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "M57Pilum",
+      "type": "rangeditem",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/M57PilumEntity.java",
+          "src/main/resources/assets/trumpcraft/models/item/m_57_pilum.json",
+          "src/main/java/net/mcreator/trumpcraft/item/M57PilumItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Rocket",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/rocket.json",
+          "src/main/java/net/mcreator/trumpcraft/item/RocketItem.java"
+        ]
+      }
+    },
+    {
+      "name": "RocketCraft",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/rocketcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "TrumpSquad3",
+      "type": "livingentity",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_squad_3_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TrumpSquad3Renderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpSquad3Entity.java"
+        ]
+      }
+    },
+    {
+      "name": "Ruins3",
+      "type": "structure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_3_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins3Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Ruins4",
+      "type": "structure",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins4Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_4_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruins5",
+      "type": "structure",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins5Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_5_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruins6",
+      "type": "structure",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins6Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_6_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruins7",
+      "type": "structure",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins7Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_7_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruins8",
+      "type": "structure",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins8Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_8_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Ruins9",
+      "type": "structure",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins9Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_9_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "WarTornPlains",
+      "type": "biome",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/biome/WarTornPlainsBiome.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/WarTornPlainsFruitDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/WarTornPlainsTrunkDecorator.java",
+          "src/main/java/net/mcreator/trumpcraft/world/features/treedecorators/WarTornPlainsLeaveDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "DropRockets",
+      "type": "procedure",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/DropRocketsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ArmoredTrumpSoldier",
+      "type": "livingentity",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/armored_trump_soldier_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/ArmoredTrumpSoldierRenderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/ArmoredTrumpSoldierEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "MoneyBlockPlayerStartsToDestroy",
+      "type": "procedure",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/MoneyBlockPlayerStartsToDestroyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoneyCutter",
+      "type": "tool",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/money_cutter.json",
+          "src/main/java/net/mcreator/trumpcraft/item/MoneyCutterItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TestSubject1",
+      "type": "livingentity",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TestSubject1Entity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TestSubject1Renderer.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/test_subject_1_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "TestSubject",
+      "type": "livingentity",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/test_subject_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/entity/TestSubjectEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TestSubjectRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Spike",
+      "type": "procedure",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/SpikeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MAGAShotgun",
+      "type": "rangeditem",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/MAGAShotgunEntity.java",
+          "src/main/resources/assets/trumpcraft/models/item/maga_shotgun.json",
+          "src/main/java/net/mcreator/trumpcraft/item/MAGAShotgunItem.java"
+        ]
+      }
+    },
+    {
+      "name": "TestSubject3",
+      "type": "livingentity",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TestSubject3Entity.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/test_subject_3_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TestSubject3Renderer.java"
+        ]
+      }
+    },
+    {
+      "name": "LabRuins1",
+      "type": "structure",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/lab_ruins_1_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/LabRuins1Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Labruins2",
+      "type": "structure",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Labruins2Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/labruins_2_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "LabRuins3",
+      "type": "structure",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/lab_ruins_3_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/LabRuins3Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "LabRuins4",
+      "type": "structure",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/LabRuins4Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/lab_ruins_4_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "LabRuins5",
+      "type": "structure",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/lab_ruins_5_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/LabRuins5Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Lab1",
+      "type": "structure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Lab1Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/lab_1_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "WeNeedToBuildAWall",
+      "type": "achievement",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/advancements/we_need_to_build_a_wall.json"
+        ]
+      }
+    },
+    {
+      "name": "MadeMinecraftGreatAgain",
+      "type": "achievement",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/advancements/made_minecraft_great_again.json"
+        ]
+      }
+    },
+    {
+      "name": "WeMadeSocietyGreatAgain",
+      "type": "achievement",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/advancements/we_made_society_great_again.json"
+        ]
+      }
+    },
+    {
+      "name": "KilledTrump",
+      "type": "procedure",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/KilledTrumpProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "DestroyedHex",
+      "type": "procedure",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/DestroyedHexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PathAchivements",
+      "type": "procedure",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/PathAchivementsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpSummonSquad75",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/TrumpSummonSquad75Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheTrump",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TheTrumpEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TheTrumpRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "TestSubject4",
+      "type": "livingentity",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TestSubject4Renderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/TestSubject4Entity.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/test_subject_4_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Trumpsidefirst",
+      "type": "achievement",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/advancements/trumpsidefirst.json"
+        ]
+      }
+    },
+    {
+      "name": "Hexsidefirst",
+      "type": "achievement",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/advancements/hexsidefirst.json"
+        ]
+      }
+    },
+    {
+      "name": "TrumpIncrement",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/TrumpIncrementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexIncrement",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/HexIncrementProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "YouFool",
+      "type": "achievement",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/advancements/you_fool.json"
+        ]
+      }
+    },
+    {
+      "name": "SwissArmyKnife",
+      "type": "tool",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/swiss_army_knife.json",
+          "src/main/java/net/mcreator/trumpcraft/item/SwissArmyKnifeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Ruins10",
+      "type": "structure",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_10_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins10Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Ruins11",
+      "type": "structure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_11_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins11Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Ruins12",
+      "type": "structure",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/Ruins12Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/ruins_12_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Farm1",
+      "type": "structure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/farm_1_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Farm1Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Farm2",
+      "type": "structure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/farm_2_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Farm2Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Labruins",
+      "type": "biome",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/biome/LabruinsBiome.java"
+        ]
+      }
+    },
+    {
+      "name": "Tree1",
+      "type": "structure",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/tree_1_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Tree1Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Sparkofwarcraftingrecipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/sparkofwarcraftingrecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SparkofWarRightClickedOnBlock",
+      "type": "procedure",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/SparkofWarRightClickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SparkofWar",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/SparkofWarItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/sparkof_war.json"
+        ]
+      }
+    },
+    {
+      "name": "TrumpScout",
+      "type": "livingentity",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpScoutEntity.java",
+          "src/main/resources/assets/trumpcraft/models/item/trump_scout_spawn_egg.json",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TrumpScoutRenderer.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/trump_scout_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneySword",
+      "type": "tool",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/money_sword.json",
+          "src/main/java/net/mcreator/trumpcraft/item/MoneySwordItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MoneySwordCraft",
+      "type": "recipe",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/moneyswordcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "Tree2",
+      "type": "structure",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/tree_2_biome_modifier.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/Tree2Feature.java"
+        ]
+      }
+    },
+    {
+      "name": "Sasha",
+      "type": "livingentity",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/SashaEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/SashaRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "Eva",
+      "type": "livingentity",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/EvaRenderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/EvaEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "LabRuins6",
+      "type": "structure",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/features/LabRuins6Feature.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/lab_ruins_6_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "Stats",
+      "type": "gui",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/StatsMenu.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/StatsScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenStatsOnKeyPressed",
+      "type": "procedure",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/OpenStatsOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenStats",
+      "type": "keybind",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/network/OpenStatsMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "StatsCommand",
+      "type": "command",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/command/StatsCommandCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "ConverterGUI",
+      "type": "gui",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/network/ConverterGUIButtonMessage.java",
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/ConverterGUIMenu.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/ConverterGUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "ConverterGUIOnButtonClickedOnButtonClicked",
+      "type": "procedure",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/ConverterGUIOnButtonClickedOnButtonClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpIncrementOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/TrumpIncrementOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TheFnatic",
+      "type": "livingentity",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/TheFnaticEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/TheFnaticRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "HexSquadArmor",
+      "type": "armor",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/hex_squad_armor_leggings.json",
+          "src/main/resources/assets/trumpcraft/models/item/hex_squad_armor_chestplate.json",
+          "src/main/resources/assets/trumpcraft/models/item/hex_squad_armor_helmet.json",
+          "src/main/java/net/mcreator/trumpcraft/item/HexSquadArmorItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/hex_squad_armor_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "RealPageOne",
+      "type": "gui",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/client/gui/RealPageOneScreen.java",
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/RealPageOneMenu.java",
+          "src/main/java/net/mcreator/trumpcraft/network/RealPageOneButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Gotopage1",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/Gotopage1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TrumpBook1",
+      "type": "gui",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/TrumpBook1Menu.java",
+          "src/main/java/net/mcreator/trumpcraft/network/TrumpBook1ButtonMessage.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/TrumpBook1Screen.java"
+        ]
+      }
+    },
+    {
+      "name": "OpenTrumpBook",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/OpenTrumpBookProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Trumpbook",
+      "type": "command",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/command/TrumpbookCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "TableOfContents1",
+      "type": "gui",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/TableOfContents1Menu.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/TableOfContents1Screen.java",
+          "src/main/java/net/mcreator/trumpcraft/network/TableOfContents1ButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "NadeCountDown",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/NadeCountDownProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NadeTimer",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/NadeTimerProcedure.java"
+        ],
+        "dependencies": []
+      }
+    },
+    {
+      "name": "TrumpNade",
+      "type": "rangeditem",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/trump_nade.json",
+          "src/main/java/net/mcreator/trumpcraft/item/TrumpNadeItem.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/TrumpNadeEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "NadeExplode",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/NadeExplodeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Page2",
+      "type": "gui",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/Page2Menu.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/Page2Screen.java",
+          "src/main/java/net/mcreator/trumpcraft/network/Page2ButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "GotoPage2",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/GotoPage2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CheckPages",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/CheckPagesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenFakeIntro",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/OpenFakeIntroProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenContents1",
+      "type": "procedure",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/OpenContents1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMaria1Used",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/WallMaria1UsedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMariaAudioRecording",
+      "type": "item",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/WallMariaAudioRecordingItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/wall_maria_audio_recording.json"
+        ]
+      }
+    },
+    {
+      "name": "Lore",
+      "type": "tab",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "WallMariaAudioRecording2RightClickedInAir",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/WallMariaAudioRecording2RightClickedInAirProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMariaAudioRecording2",
+      "type": "item",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/wall_maria_audio_recording_2.json",
+          "src/main/java/net/mcreator/trumpcraft/item/WallMariaAudioRecording2Item.java"
+        ]
+      }
+    },
+    {
+      "name": "RealPageOneOnButtonClicked",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/RealPageOneOnButtonClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WallMariaPart2GUI",
+      "type": "gui",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/network/WallMariaPart2GUIButtonMessage.java",
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/WallMariaPart2GUIMenu.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/WallMariaPart2GUIScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "RealIntroUnlock",
+      "type": "item",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/real_intro_unlock.json",
+          "src/main/java/net/mcreator/trumpcraft/item/RealIntroUnlockItem.java"
+        ]
+      }
+    },
+    {
+      "name": "UnlockedPage1",
+      "type": "procedure",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/UnlockedPage1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexSoldierPledgeRightClick",
+      "type": "procedure",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/HexSoldierPledgeRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexSoldierPledge",
+      "type": "item",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/hex_soldier_pledge.json",
+          "src/main/java/net/mcreator/trumpcraft/item/HexSoldierPledgeItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DeathSquadGolem",
+      "type": "livingentity",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/entity/DeathSquadGolemEntity.java",
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/DeathSquadGolemRenderer.java",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/death_squad_golem_biome_modifier.json"
+        ]
+      }
+    },
+    {
+      "name": "GotoWallMariaPart2",
+      "type": "procedure",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/GotoWallMariaPart2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OpenHexPledge",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/OpenHexPledgeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HexPledge",
+      "type": "gui",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/world/inventory/HexPledgeMenu.java",
+          "src/main/java/net/mcreator/trumpcraft/client/gui/HexPledgeScreen.java",
+          "src/main/java/net/mcreator/trumpcraft/network/HexPledgeButtonMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Vlad",
+      "type": "livingentity",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/client/renderer/VladRenderer.java",
+          "src/main/java/net/mcreator/trumpcraft/entity/VladEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "HexSpecalistArmor",
+      "type": "armor",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/hex_specalist_armor_chestplate.json",
+          "src/main/resources/assets/trumpcraft/models/item/hex_specalist_armor_helmet.json",
+          "src/main/resources/assets/trumpcraft/models/item/hex_specalist_armor_boots.json",
+          "src/main/resources/assets/trumpcraft/models/item/hex_specalist_armor_leggings.json",
+          "src/main/java/net/mcreator/trumpcraft/item/HexSpecalistArmorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "HexBeforeAttack1",
+      "type": "item",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/HexBeforeAttack1Item.java",
+          "src/main/resources/assets/trumpcraft/models/item/hex_before_attack_1.json"
+        ]
+      }
+    },
+    {
+      "name": "HexBeforeAttack1RightClicked",
+      "type": "procedure",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/HexBeforeAttack1RightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MoneypackPickaxe",
+      "type": "tool",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/MoneypackPickaxeItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/moneypack_pickaxe.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneypackPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/moneypackpickaxerecipe.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneypackPickaxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/procedures/MoneypackPickaxeBlockDestroyedWithToolProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LiquidMoney",
+      "type": "fluid",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/block/liquid_money.json",
+          "src/main/java/net/mcreator/trumpcraft/fluid/LiquidMoneyFluid.java",
+          "src/main/resources/assets/trumpcraft/models/item/liquid_money_bucket.json",
+          "src/main/java/net/mcreator/trumpcraft/fluid/types/LiquidMoneyFluidType.java",
+          "src/main/java/net/mcreator/trumpcraft/block/LiquidMoneyBlock.java",
+          "src/main/resources/assets/trumpcraft/blockstates/liquid_money.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyFence",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/block/money_fence.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_fence_inventory.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneyFenceBlock.java",
+          "src/main/resources/assets/trumpcraft/models/block/money_fence_post.json",
+          "src/main/resources/assets/trumpcraft/blockstates/money_fence.json",
+          "src/main/resources/assets/trumpcraft/models/item/money_fence.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneySlab",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/blockstates/money_slab.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_slab.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneySlabBlock.java",
+          "src/main/resources/assets/trumpcraft/models/item/money_slab.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_slab_full.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_slab_top.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyWall",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/money_wall.json",
+          "src/main/resources/assets/trumpcraft/blockstates/money_wall.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneyWallBlock.java",
+          "src/main/resources/assets/trumpcraft/models/block/money_wall_side_tall.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_wall.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_wall_post.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_wall_inventory.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneySlabCraft",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/recipes/moneyslabcraft.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyStairs",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/item/money_stairs.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_stairs_outer.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_stairs.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneyStairsBlock.java",
+          "src/main/resources/assets/trumpcraft/blockstates/money_stairs.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_stairs_inner.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyTrapDoor",
+      "type": "block",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/models/block/money_trap_door_top.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_trap_door.json",
+          "src/main/resources/assets/trumpcraft/models/block/money_trap_door_open.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneyTrapDoorBlock.java",
+          "src/main/resources/assets/trumpcraft/models/item/money_trap_door.json",
+          "src/main/resources/assets/trumpcraft/blockstates/money_trap_door.json"
+        ]
+      }
+    },
+    {
+      "name": "MoneyChair",
+      "type": "block",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/trumpcraft/blockstates/money_chair.json",
+          "src/main/java/net/mcreator/trumpcraft/block/MoneyChairBlock.java",
+          "src/main/resources/assets/trumpcraft/models/block/money_chair.json",
+          "src/main/resources/assets/trumpcraft/models/item/money_chair.json"
+        ]
+      }
+    },
+    {
+      "name": "LiquidMoneyFeature",
+      "type": "feature",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "liquid_money_feature",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/trumpcraft/worldgen/placed_feature/liquid_money_feature.json",
+          "src/main/resources/data/trumpcraft/forge/biome_modifier/liquid_money_feature_biome_modifier.json",
+          "src/main/resources/data/trumpcraft/worldgen/configured_feature/liquid_money_feature.json",
+          "src/main/java/net/mcreator/trumpcraft/world/features/LiquidMoneyFeatureFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "Burger",
+      "type": "item",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burger",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trumpcraft/item/BurgerItem.java",
+          "src/main/resources/assets/trumpcraft/models/item/burger.json"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "KilledTheTrump",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "KilledTheHex",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "TrumpSoldiersKilled",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "HexSoldiersKilled",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ChaoticNeutral",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "HasTrumpBeenKilled",
+      "type": "string",
+      "scope": "map",
+      "value": " "
+    },
+    {
+      "name": "HasHexBeenKilled",
+      "type": "string",
+      "scope": "map",
+      "value": " "
+    },
+    {
+      "name": "TrumpStage",
+      "type": "number",
+      "scope": "map",
+      "value": "1"
+    },
+    {
+      "name": "hasopenedbook",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "Page1",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "Page2",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "Page3",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "UnlockedPage1",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "UnlockedWallMariaPatrol1",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "UnlockedWallMariaPatrol2",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "UnlockedHexSoldierPledge",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "HexSoldierPledge",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    },
+    {
+      "name": "UnlockedHexBeforeAttack1",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "BeforeAttack1",
+      "type": "string",
+      "scope": "map",
+      "value": "Locked"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "awp",
+      "files": [
+        "awp"
+      ],
+      "category": "master"
+    },
+    {
+      "name": "magashotgun",
+      "files": [
+        "magashotgun"
+      ],
+      "category": "master"
+    },
+    {
+      "name": "armoreddeath",
+      "files": [
+        "armoreddeath"
+      ],
+      "category": "master"
+    },
+    {
+      "name": "hail",
+      "files": [
+        "trumpdeath"
+      ],
+      "category": "master"
+    },
+    {
+      "name": "pilumlaunch",
+      "files": [
+        "pilumlaunch"
+      ],
+      "category": "master"
+    },
+    {
+      "name": "theevadeath",
+      "files": [
+        "theevadeath"
+      ],
+      "category": "master"
+    },
+    {
+      "name": "attattack",
+      "files": [
+        "att"
+      ],
+      "category": "master"
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "item.pistol.name": "Pistol",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_more_deterrents_than_actual_wall": "more deterrents than actual walls",
+      "item.trumpcraft_114.liquidmoney_bucket": "LiquidMoney Bucket",
+      "item.trumpcraft_114.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "advancements.mademinecraftgreatagain.title": "We Made Minecraft Great Again",
+      "item.trumpcraft.m_57_pilum": "M57 Pilum",
+      "biome.trumpcraft.money_land": "Money Land",
+      "item.trumpcraft.m57pilum": "M57 Pilum",
+      "item.money.name": "Money",
+      "item.trumpcraft_114.trumpscout": "Trump Scout Spawn Egg",
+      "item.trumpcraft_114.magashotgun": "MAGA Shotgun",
+      "entity.trumpwannabe.name": "Trump Wannabe",
+      "entity.trumpcraft.trump_soldier": "Trump Soldier",
+      "gui.trumpcraft.hex_pledge.label_glory_to_the_sixteenth": "Glory to the sixteenth.� ",
+      "entity.armoredtrumpsoldier.name": "Armored Trump Soldier",
+      "item.trumpcraft.trumpsoldier": "Trump Soldier Spawn Egg",
+      "item.rocket.name": "Rocket",
+      "item.trumpcraft_114.armoredtrumpsoldier": "Armored Trump Soldier Spawn Egg",
+      "advancements.we_need_to_build_a_wall.title": "We Need To Build A Wall",
+      "gui.trumpcraft.trump_book_1.label_another_story_eh": "another story, eh?",
+      "gui.trumpcraft.page_2.label_well_you_know_the_drill_lets": "\"Well you know the drill. Lets-\"",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_very_well_ill_cooperate": "Very well. I\u0027ll cooperate.",
+      "item.trumpcraft.money_cutter": "Money Cutter",
+      "gui.trumpcraft.hex_pledge.label_and_the_sixteenth_legion": "AND THE SIXTEENTH LEGION",
+      "item.trumpcraft_114.testsubject3": "TestSubject3 Spawn Egg",
+      "item.trumpcraft_114.testsubject4": "Test Subject 4 Spawn Egg",
+      "entity.trumpcraft.the_fnatic": "The Fanatic",
+      "item.trumpcraft.armoredtrumpsoldier": "Armored Trump Soldier Spawn Egg",
+      "block.trumpcraft_114.moneychair": "Money Chair",
+      "gui.trumpcraft.trump_book_1.label_so_you_want_to_hear": "So, you want to hear",
+      "gui.trumpcraft.hex_pledge.label_i_declare_that_i_renounce_all_a": "�I declare that I renounce all allegiance and",
+      "item.trumpcraft_114.testsubject1": "TestSubject3 Spawn Egg",
+      "entity.trumpcraft.eva": "The EVA",
+      "item.trumpcraft_114.hexspecalistarmorhelmet": "Hex Specalist Helmet",
+      "item.trumpcraft_114.trumpsoldier": "Trump Soldier Spawn Egg",
+      "block.trumpcraft_114.moneywall": "Money Wall",
+      "item.trumpcraft.pistol": "Pistol",
+      "gui.trumpcraft.page_2.label_climb_up_again": "climb up again\"",
+      "item.trumpcraft.deathsquadgolem": "Death Squad Golem Spawn Egg",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_the_roar_of_their_bombers_tears": "The roar of their bombers tears",
+      "gui.trumpcraft.hex_pledge.label_sovereignty_of_whom_or_which_i_w": "sovereignty of whom or which I was a subject of.�",
+      "item.wallmariaaudiorecording2.name": "Wall Maria 2",
+      "entity.trumpsquad3.name": "Trump Squad(3)",
+      "item.trumpcraft.trump_soldier_spawn_egg": "Trump Soldier Spawn Egg",
+      "entity.trumpcraft.trumpsoldier": "Trump Soldier",
+      "item.trumpcraft_114.hexsquadarmorboots": "Hex Offensive Boots",
+      "biome.trumpcraft.money_lake": "Money Lake",
+      "entity.trumpcraft.trump_squad_1": "Trump Squad(1)",
+      "block.trumpcraft.fragmentof_wall_block": "Fragment of the Wall",
+      "entity.trumpcraft.trump_squad_2": "Trump Squad(2)",
+      "entity.trumpcraft.trump_squad_3": "Trump Squad(3)",
+      "gui.trumpcraft.page_2.label_distant_gunfire": "(Distant Gunfire)",
+      "item.trumpcraft.hex_squad_armor_helmet": "Hex Offensive Helmet",
+      "item.trumpcraft.trumpsquadarmorlegs": "Trump Squad Leggings",
+      "item.trumpcraft_114.trumpsquadarmorhelmet": "Trump Squad Helmet",
+      "block.trumpcraft.moneywall": "Money Wall",
+      "item.trumpcraft_114.swissarmyknife": "Swiss Army Knife",
+      "entity.trumpscout.name": "Trump Scout",
+      "entity.trumpcraft.thefnatic": "The Fanatic",
+      "gui.trumpcraft.trump_book_1.label_oops_wrong_story": "oops. Wrong story",
+      "entity.trumpcraft.trumpsquad2": "Trump Squad(2)",
+      "entity.trumpcraft.trumpsquad1": "Trump Squad(1)",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_anyway_now_the_enemy_is_at_our": "anyway. Now the enemy is at our",
+      "entity.trumpcraft.trumpsquad3": "Trump Squad(3)",
+      "item.swissarmyknife.name": "Swiss Army Knife",
+      "gui.trumpcraft.page_2.label_wall_maria_patrol_part_1": "Wall Maria Patrol Part 1",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_there_are_alarms_everywhere": "There are alarms everywhere",
+      "item.trumpcraft_114.m57pilum": "M57 Pilum",
+      "item.trumpcraft.hexsquadarmorbody": "Hex Offensive Plate",
+      "advancements.youfool.descr": "Who\u0027s side are you on?...",
+      "biome.trumpcraft_114.warzone": "Warzone",
+      "item.trumpcraft_114.pistol": "Pistol",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_a_victory_for_us_is_very_slim": "A victory for us is very slim",
+      "advancements.you_fool.title": "Switzerland",
+      "block.trumpcraft.moneytrapdoor": "Money Trap Door",
+      "gui.trumpcraft.trump_book_1.label_someone_who_got_that_joke": "someone who got that joke",
+      "entity.sasha.name": "The Official",
+      "item.trumpcraft.trumpsquadarmor_boots": "Trump Squad Boots",
+      "tile.fragmentofwallblock.name": "Fragment of the Wall",
+      "item.trumpcraft_114.thetrump": "Donald Trump Spawn Egg",
+      "item.trumpcraft_114.wallmariaaudiorecording2": "Wall Maria 2",
+      "gui.trumpcraft.stats.label_trump_allies_slain": "Trump Allies Slain",
+      "entity.trumpcraft.testsubject4": "Test Subject 4",
+      "entity.trumpcraft.testsubject3": "TestSubject3",
+      "block.trumpcraft.money_trap_door": "Money Trap Door",
+      "entity.trumpcraft.testsubject1": "TestSubject3",
+      "biome.trumpcraft.war_torn_plains": "War Torn Plains",
+      "biome.trumpcraft.wartornplains": "War Torn Plains",
+      "item.trumpcraft.hex_squad_armor_leggings": "Hex Offensive Leggings",
+      "item.trumpcraft_114.trumpsquad1": "Trump Squad(1) Spawn Egg",
+      "item.trumpcraft_114.trumpsquad2": "Trump Squad(2) Spawn Egg",
+      "item.trumpcraft_114.trumpsquad3": "Trump Squad(3) Spawn Egg",
+      "item.trumpsquadarmorbody.name": "Trump Squad Plate",
+      "item.hexsquadarmorbody.name": "Hex Offensive Plate",
+      "item.hexspecalistarmorlegs.name": "Hex Specalist Leggings",
+      "biome.trumpcraft.moneyland": "Murica",
+      "item.trumpcraft_114.livingbomb": "Mobile Tnt Spawn Egg",
+      "item.trumpcraft.moneycutter": "Money Cutter",
+      "tile.converter.name": "Converter",
+      "block.trumpcraft.money_stairs": "Money Stairs",
+      "item.moneysword.name": "Money Sword",
+      "gui.trumpcraft.real_page_one.label_choose_a_side": "Choose a side...",
+      "item.trumpcraft.wall_maria_audio_recording": "Wall Maria 1",
+      "item.trumpcraft_114.hexsquadarmorlegs": "Hex Offensive Leggings",
+      "item.trumpcraft.hexspecalistarmorhelmet": "Hex Specalist Helmet",
+      "gui.trumpcraft.page_2.label_ah_shtbattle_stations": "\"Ah sh*t...BATTLE STATIONS!\"",
+      "gui.trumpcraft.real_page_one.button_link_to_lorebook": "Link to Lorebook",
+      "item.trumpcraft_114.warground": "unused",
+      "gui.trumpcraft.table_of_contents_1.button_before_the_fall_1": "Before The Fall 1:            ",
+      "entity.trumpcraft.death_squad_golem": "Death Squad Golem",
+      "item.trumpcraft_114.deathsquadgolem": "Death Squad Golem Spawn Egg",
+      "item.wallmariaaudiorecording.name": "Wall Maria 1",
+      "item.hexsquadarmorlegs.name": "Hex Offensive Leggings",
+      "item.hexspecalistarmorbody.name": "Hex Specalist Body",
+      "gui.trumpcraft.trump_book_1.label_im_also_bad_at_that": "I\u0027m also bad at that",
+      "item.trumpcraft.testsubject1": "TestSubject3 Spawn Egg",
+      "item.trumpcraft_114.awp": "AWP",
+      "item.trumpcraft.testsubject3": "TestSubject3 Spawn Egg",
+      "item.trumpcraft.testsubject4": "Test Subject 4 Spawn Egg",
+      "entity.trumpcraft_114.thetrump": "Donald Trump",
+      "advancements.wemadesocietygreatagain.descr": "You sided with the allies. Society is saved thanks to you! #161616161616161",
+      "item.trumpcraft_114.trumpsquadarmorbody": "Trump Squad Plate",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_gates_with_a_new_weapon": "gates with a new weapon",
+      "item.trumpcraft.trumpsquadarmor_chestplate": "Trump Squad Plate",
+      "item.trumpcraft.trumpsquadarmorbody": "Trump Squad Plate",
+      "gui.trumpcraft.table_of_contents_1.label_varpage3": "\u003cVAR:Page3\u003e",
+      "item.trumpcraft.thetrump": "Donald Trump Spawn Egg",
+      "gui.trumpcraft.table_of_contents_1.label_varpage2": "\u003cVAR:Page2\u003e",
+      "item.trumpcraft_114.thankyourandomcitizen": "Random Citizen Spawn Egg",
+      "gui.trumpcraft.table_of_contents_1.label_varpage1": "\u003cVAR:Page1\u003e",
+      "item.trumpcraft_114.trumpsquadarmorboots": "Trump Squad Boots",
+      "gui.trumpcraft.trump_book_1.label_i_tell_the_story": "I tell the story",
+      "entity.trumpcraft.sasha": "The Official",
+      "gui.trumpcraft.hex_pledge.label_all_enemies_trump_related_or_fo": "all enemies, Trump related or foreign.� ",
+      "item.trumpcraft.money_sword": "Money Sword",
+      "entity.testsubject1.name": "TestSubject3",
+      "item.warground.name": "unused",
+      "item.trumpcraft.trumpwannabe": "Trump Wannabe Spawn Egg",
+      "entity.trumpcraft_114.deathsquadgolem": "Death Squad Golem",
+      "gui.trumpcraft.hex_pledge.label_to_give_my_life_for_this_cause": "to give my life for this cause.�",
+      "item.trumpcraft.real_intro_unlock": "IntroTest",
+      "block.trumpcraft.moneystairs": "Money Stairs",
+      "item.hexbeforeattack1.name": "Before the Fall 1",
+      "item.trumpcraft_114.vlad": "Vlad Spawn Egg",
+      "gui.trumpcraft.trump_book_1.label_theres_a_budget": "there\u0027s a budget",
+      "item.trumpcraft.moneysword": "Money Sword",
+      "item.trumpcraft_114.money": "Money",
+      "item.trumpcraft.trumpsquadarmor_helmet": "Trump Squad Helmet",
+      "gui.trumpcraft.stats.label_varhexsoldierskilled": "\u003cVAR:HexSoldiersKilled\u003e",
+      "item.trumpcraft.liquidmoney_bucket": "LiquidMoney Bucket",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_interestingit_appears_that": "Interesting...it appears that",
+      "item.trumpcraft.wallmariaaudiorecording2": "Wall Maria 2",
+      "gui.trumpcraft.hex_pledge.label_pledge_to_the_hex_the_coalition": "PLEDGE TO THE HEX, THE COALITION,",
+      "item.trumpcraft_114.hexsquadarmorbody": "Hex Offensive Plate",
+      "item.trumpcraft.hexspecalistarmorlegs": "Hex Specalist Leggings",
+      "item.trumpcraft.sasha": "The Official Spawn Egg",
+      "entity.trumpcraft.trump_scout": "Trump Scout",
+      "item.antitrumptool.name": "ATT",
+      "entity.trumpcraft_114.eva": "The EVA",
+      "item.trumpsquadarmorhelmet.name": "Trump Squad Helmet",
+      "gui.trumpcraft.page_2.label_agreed_cant_wait_to_leave": "\"Agreed. Can\u0027t wait to leave\"",
+      "gui.trumpcraft.table_of_contents_1.label_varhexsoldierpledge": "\u003cVAR:HexSoldierPledge\u003e",
+      "item.trumpcraft.hex_soldier_pledge": "Hex Soldier Pledge",
+      "entity.eva.name": "The EVA",
+      "gui.trumpcraft.table_of_contents_1.label_varbeforeattack1": "\u003cVAR:BeforeAttack1\u003e",
+      "block.trumpcraft.liquid_money": "Liquid Money",
+      "gui.trumpcraft.trump_book_1.label_im_gonna_assume_youre": "I\u0027m gonna assume you\u0027re",
+      "item.bullet.name": "Bullet",
+      "gui.trumpcraft.trump_book_1.label_most_of_the_page_ill_just": "most of the page I\u0027ll just",
+      "block.trumpcraft.money_wall": "Money Wall",
+      "gui.trumpcraft.hex_pledge.label_i_will_support_and_defend_the_1": "�I will support and defend the 16th against ",
+      "item.trumpnade.name": "Trump Grenade",
+      "item.trumpcraft.wallmariaaudiorecording": "Wall Maria 1",
+      "gui.trumpcraft.hex_pledge.label_i_shall_give_unconditional_obed": "�I shall give unconditional obedience, and as a",
+      "item.trumpcraft.eva": "The EVA Spawn Egg",
+      "item.trumpcraft_114.trumpsquadarmorlegs": "Trump Squad Leggings",
+      "advancements.you_fool.descr": "Who\u0027s side are you on?...",
+      "block.trumpcraft_114.moneystairs": "Money Stairs",
+      "entity.livingbomb.name": "Mobile Tnt",
+      "item.hexsquadarmorboots.name": "Hex Offensive Boots",
+      "itemGroup.tablore": "Trumpcraft Lore",
+      "item.trumpcraft_114.thefnatic": "The Fanatic Spawn Egg",
+      "item.trumpcraft.realintrounlock": "IntroTest",
+      "advancements.hexsidefirst.descr": "You\u0027ve killed 16 Trump soldiers",
+      "advancements.made_minecraft_great_again.title": "We Made Minecraft Great Again",
+      "item.trumpcraft.trumpsquadarmor_leggings": "Trump Squad Leggings",
+      "item.trumpcraft.wall_maria_audio_recording_2": "Wall Maria 2",
+      "entity.trumpcraft_114.livingbomb": "Mobile Tnt",
+      "item.trumpcraft.sparkofwar": "Spark of War",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_through_the_sky_this_is_not_goo": "through the sky. This is not good",
+      "item.trumpcraft.trumpnade": "Trump Grenade",
+      "entity.trumpsoldier.name": "Trump Soldier",
+      "item.trumpcraft.vlad": "Vlad Spawn Egg",
+      "advancements.mademinecraftgreatagain.descr": "You sided with Trump. Minecraft is great again, thanks to you!",
+      "entity.vlad.name": "Vlad",
+      "item.burger.name": "Burger",
+      "entity.trumpcraft.the_trump": "Donald Trump",
+      "item.trumpcraft_114.wallmariaaudiorecording": "Wall Maria 1",
+      "entity.trumpcraft.trumpscout": "Trump Scout",
+      "item.trumpcraft.hex_specalist_armor_helmet": "Hex Specalist Helmet",
+      "block.trumpcraft.moneychair": "Money Chair",
+      "block.trumpcraft.fragmentofwallblock": "Fragment of the Wall",
+      "gui.trumpcraft.page_2.label_looks_like_theyre_trying_to": "\"Looks like they\u0027re trying to",
+      "item.trumpcraft.trumpsquadarmorhelmet": "Trump Squad Helmet",
+      "gui.trumpcraft.real_page_one.label_or_kill_them_all": "or destroy them all",
+      "biome.trumpcraft_114.wartornplains": "War Torn Plains",
+      "gui.trumpcraft.trump_book_1.label_channeling_my": "(channeling my",
+      "block.trumpcraft.money_chair": "Money Chair",
+      "gui.trumpcraft.trump_book_1.label_nonexistent_improv_skills": "nonexistent improv skills)",
+      "entity.trumpcraft.armored_trump_soldier": "Armored Trump Soldier",
+      "item.trumpcraft.hex_specalist_armor_chestplate": "Hex Specalist Body",
+      "gui.trumpcraft.trump_book_1.label_oh_so_you_do_wanna_hear_a_story": "oh, so you DO wanna hear a story",
+      "block.trumpcraft_114.moneyslab": "Money Slab",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_this_is_not_a_drill_all_units": "\"THIS IS NOT A DRILL! ALL UNITS,",
+      "item.trumpcraft.hex_specalist_armor_boots": "Hex Specalist Boots",
+      "item.trumpcraft.hexsquadarmorlegs": "Hex Offensive Leggings",
+      "advancements.hexsidefirst.title": "First Blood (Hex)",
+      "block.trumpcraft.moneyslab": "Money Slab",
+      "item.trumpcraft_114.hexsoldierpledge": "Hex Soldier Pledge",
+      "entity.trumpcraft.livingbomb": "Mobile Tnt",
+      "item.trumpcraft_114.antitrumptool": "ATT",
+      "advancements.youfool.title": "Switzerland",
+      "item.hexspecalistarmorhelmet.name": "Hex Specalist Helmet",
+      "item.trumpcraft.burger": "Burger",
+      "item.trumpcraft_114.moneypackpickaxe": "Money Pickaxe",
+      "entity.trumpcraft.test_subject_3": "TestSubject3",
+      "entity.trumpcraft.test_subject_4": "Test Subject 4",
+      "item.trumpcraft.trump_nade": "Trump Grenade",
+      "entity.trumpcraft.test_subject_1": "TestSubject3",
+      "item.trumpcraft.hex_specalist_armor_leggings": "Hex Specalist Leggings",
+      "entity.deathsquadgolem.name": "Death Squad Golem",
+      "item.trumpcraft_114.moneycutter": "Money Cutter",
+      "block.trumpcraft_114.fragmentofwallblock": "Fragment of the Wall",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_wall_maria_patrol_part_2": "Wall Maria Patrol Part 2",
+      "item.awp.name": "AWP",
+      "item.trumpsquadarmorboots.name": "Trump Squad Boots",
+      "gui.trumpcraft.page_2.label_explosion": "(Explosion)",
+      "gui.trumpcraft.hex_pledge.button_back": "Back",
+      "item.trumpcraft.maga_shotgun": "MMGA Shotgun",
+      "item.trumpcraft_114.trumpnade": "Trump Grenade",
+      "gui.trumpcraft.trump_book_1.label_im_the_dev_aka_your_narrator": "i\u0027m the dev. Aka your narrator",
+      "entity.trumpcraft.deathsquadgolem": "Death Squad Golem",
+      "entity.testsubject4.name": "Test Subject 4",
+      "item.trumpcraft_114.burger": "Burger",
+      "key.trumpcraft.open_stats": "Open Stats",
+      "gui.trumpcraft.page_2.label_audio_recording": "AUDIO RECORDING",
+      "advancements.trumpsidefirst.title": "First Blood (Trump)",
+      "entity.trumpcraft_114.testsubject1": "TestSubject3",
+      "item.trumpcraft.trump_scout_spawn_egg": "Trump Scout Spawn Egg",
+      "item.trumpcraft_114.sasha": "The Official Spawn Egg",
+      "gui.trumpcraft.page_2.label_distant_screaming": "(Distant Screaming)",
+      "entity.trumpcraft.living_bomb": "Mobile Tnt",
+      "gui.trumpcraft.table_of_contents_1.button_intro": "Intro",
+      "item.moneycutter.name": "Money Cutter",
+      "block.trumpcraft_114.moneytrapdoor": "Money Trap Door",
+      "gui.trumpcraft.table_of_contents_1.button_the_hex_pledge": "The Hex Pledge:               ",
+      "gui.trumpcraft.hex_pledge.label_i_will_perform_work_of_organizat": "I will perform work of organizational importance� ",
+      "advancements.we_need_to_build_a_wall.descr": "We need to go dee- I mean build a wall",
+      "item.trumpcraft_114.hexbeforeattack1": "Before the Fall 1",
+      "item.trumpcraft.hexsquadarmorhelmet": "Hex Offensive Helmet",
+      "entity.trumpsquad2.name": "Trump Squad(2)",
+      "item.trumpcraft_114.hexspecalistarmorbody": "Hex Specalist Body",
+      "gui.trumpcraft.stats.label_hex_allies_slain": "Hex Allies Slain",
+      "gui.trumpcraft.trump_book_1.label_then_turn_the_page": "then turn the page",
+      "gui.trumpcraft.page_2.label_another_great_day_in_this_icy": "\"Another great day in this icy",
+      "item.sparkofwar.name": "Spark of War",
+      "item.trumpcraft.trumpscout": "Trump Scout Spawn Egg",
+      "item.trumpcraft.hex_before_attack_1": "Before the Fall 1",
+      "block.trumpcraft.moneyfence": "Money Fence",
+      "item.trumpcraft.testsubject": "TestSubject1 Spawn Egg",
+      "gui.trumpcraft.trump_book_1.button_for_your_convenience": "for your convenience",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_the_walls_were_always_meant_to_b": "The walls were always meant to be",
+      "entity.trumpcraft_114.testsubject4": "Test Subject 4",
+      "block.trumpcraft.warblock": "War Block",
+      "entity.trumpcraft_114.testsubject3": "TestSubject3",
+      "gui.trumpcraft.hex_pledge.label_i_take_this_responsibility_free": "�I take this responsibility freely without any ",
+      "gui.trumpcraft.hex_pledge.label_to_the_people": "to the people.� ",
+      "entity.trumpsquad1.name": "Trump Squad(1)",
+      "gui.trumpcraft.real_page_one.button_back": "Back",
+      "item.trumpcraft.anti_trump_tool": "ATT",
+      "item.trumpcraft.thankyourandomcitizen": "Random Citizen Spawn Egg",
+      "gui.trumpcraft.table_of_contents_1.button_real_intro": "Real Intro:                   ",
+      "gui.trumpcraft.hex_pledge.label_the_leaders_of_the_16th_legion": "the Leaders of the 16th Legion, the Big 6, and",
+      "item.magashotgun.name": "MAGA Shotgun",
+      "entity.trumpcraft.test_subject": "TestSubject1",
+      "item.trumpcraft.hexbeforeattack1": "Before the Fall 1",
+      "biome.trumpcraft.labruins": "Labruins",
+      "tile.moneyblock.name": "Block of Money",
+      "entity.trumpcraft.vlad": "Vlad",
+      "entity.trumpcraft_114.thefnatic": "The Fanatic",
+      "item.trumpcraft_114.bullet": "Bullet",
+      "gui.trumpcraft.stats.label_vartrumpsoldierskilled": "\u003cVAR:TrumpSoldiersKilled\u003e",
+      "entity.trumpcraft_114.sasha": "The Official",
+      "item.trumpcraft.hexspecalistarmorbody": "Hex Specalist Body",
+      "gui.trumpcraft.page_2.label_i_repeat_all_units_rep": "\"I REPEAT! ALL UNITS REP-\"",
+      "gui.trumpcraft.hex_pledge.label_fidelity_to_any_foreign_figure": "fidelity to any foreign figure, state, or ",
+      "biome.trumpcraft_114.moneyland": "Murica",
+      "entity.testsubject3.name": "TestSubject3",
+      "block.trumpcraft.converter": "Converter",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_our_enemy_has_brought_something": "our enemy has brought something",
+      "item.trumpcraft.swiss_army_knife": "Swiss Army Knife",
+      "block.trumpcraft_114.moneyblock": "Block of Money",
+      "item.trumpcraft.sparkof_war": "Spark of War",
+      "item.trumpcraft.moneypackpickaxe": "Money Pickaxe",
+      "gui.trumpcraft.page_2.button_back": "Back",
+      "item.trumpcraft.trumpwannabe_spawn_egg": "Trump Wannabe Spawn Egg",
+      "block.trumpcraft_114.moneyfence": "Money Fence",
+      "entity.trumpcraft.thankyourandomcitizen": "Random Citizen",
+      "item.trumpcraft.thankyourandomcitizen_spawn_egg": "Random Citizen Spawn Egg",
+      "item.trumpsquadarmorlegs.name": "Trump Squad Leggings",
+      "item.trumpcraft_114.sparkofwar": "Spark of War",
+      "advancements.made_minecraft_great_again.descr": "You sided with Trump. Minecraft is great again, thanks to you!",
+      "entity.trumpcraft_114.trumpsquad1": "Trump Squad(1)",
+      "block.trumpcraft.war_block": "War Block",
+      "entity.trumpcraft_114.trumpsquad2": "Trump Squad(2)",
+      "block.trumpcraft_114.warblock": "War Block",
+      "entity.trumpcraft_114.trumpsquad3": "Trump Squad(3)",
+      "item.realintrounlock.name": "IntroTest",
+      "biome.trumpcraft_114.labruins": "Lab Ruins",
+      "entity.thetrump.name": "Donald Trump",
+      "entity.thefnatic.name": "The Fanatic",
+      "item.trumpcraft_114.murica": "Flag",
+      "item.hexsoldierpledge.name": "Hex Soldier Pledge",
+      "block.trumpcraft.moneyblock": "Block of Money",
+      "gui.trumpcraft.page_2.label_wait": "\"Wait.\"",
+      "key.mcreator.openstats": "Open Stats",
+      "advancements.we_made_society_great_again.title": "We Made Society Great Again",
+      "entity.testsubject.name": "TestSubject1",
+      "gui.trumpcraft.table_of_contents_1.button_wall_maria_2": "Wall Maria 2:                 ",
+      "item.trumpcraft_114.rocket": "Rocket",
+      "gui.trumpcraft.table_of_contents_1.button_wall_maria_1": "Wall Maria 1:                 ",
+      "block.trumpcraft.money_fence": "Money Fence",
+      "item.trumpcraft_114.trumpwannabe": "Trump Wannabe Spawn Egg",
+      "tile.warblock.name": "War Block",
+      "biome.trumpcraft_114.moneylake": "Money Lake",
+      "entity.trumpcraft_114.armoredtrumpsoldier": "Armored Trump Soldier",
+      "entity.trumpcraft_114.trumpscout": "Trump Scout",
+      "item.trumpcraft.swissarmyknife": "Swiss Army Knife",
+      "gui.trumpcraft.trump_book_1.label_introduce_myself_with_this_line": "introduce myself with this line",
+      "entity.thankyourandomcitizen.name": "Random Citizen",
+      "item.trumpcraft_114.hexspecalistarmorboots": "Hex Specalist Boots",
+      "advancements.weneedtobuildawall.title": "We Need To Build A Wall",
+      "item.trumpcraft_114.realintrounlock": "IntroTest",
+      "gui.trumpcraft.trump_book_1.label_aight_here_we_go_4th_wall_will": "Aight. Here we go. 4th wall will not break anymore after this line",
+      "item.trumpcraft.hexsquadarmorboots": "Hex Offensive Boots",
+      "item.trumpcraft.hex_squad_armor_boots": "Hex Offensive Boots",
+      "item.trumpcraft_114.hexsquadarmorhelmet": "Hex Offensive Helmet",
+      "item.trumpcraft.hexsoldierpledge": "Hex Soldier Pledge",
+      "entity.trumpcraft_114.trumpsoldier": "Trump Soldier",
+      "biome.trumpcraft.moneylake": "Money Lake",
+      "item.trumpcraft.livingbomb": "Mobile Tnt Spawn Egg",
+      "entity.trumpcraft.thetrump": "Donald Trump",
+      "fluid.liquidmoney": "LiquidMoney",
+      "item.trumpcraft.moneypack_pickaxe": "Money Pickaxe",
+      "item.trumpcraft.rocket": "Rocket",
+      "item.trumpcraft.money": "Money",
+      "item.murica.name": "Flag",
+      "gui.trumpcraft.hex_pledge.label_perform_service_in_the_armed_for": "perform service in the Armed Forces of the Hex;",
+      "entity.trumpcraft_114.trumpwannabe": "Trump Wannabe",
+      "gui.trumpcraft.page_2.label_what_the_hell_is_that_thing": "\"What the hell is that... thing?\"",
+      "entity.trumpcraft_114.vlad": "Vlad",
+      "item.trumpcraft_114.moneysword": "Money Sword",
+      "block.trumpcraft.money_block": "Block of Money",
+      "item.trumpcraft.hex_squad_armor_chestplate": "Hex Offensive Plate",
+      "gui.trumpcraft.page_2.label_dump": "dump\"",
+      "fluid.trumpcraft.liquid_money": "Liquid Money",
+      "gui.trumpcraft.trump_book_1.label_so_since_ive_wasted": "so... since I\u0027ve wasted",
+      "item.trumpcraft.awp": "AWP",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_sector_s42_is_under_attack": "\"SECTOR S42 IS UNDER ATTACK!\"",
+      "item.trumpcraft.living_bomb_spawn_egg": "Mobile Tnt Spawn Egg",
+      "gui.trumpcraft.wall_maria_part_2_gui.button_back": "Back",
+      "item.trumpcraft_114.eva": "The EVA Spawn Egg",
+      "advancements.wemadesocietygreatagain.title": "We Made Society Great Again",
+      "item.trumpcraft.bullet": "Bullet",
+      "entity.trumpcraft_114.thankyourandomcitizen": "Random Citizen",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_the_enemy_is_scaling_the_wall": "THE ENEMY IS SCALING THE WALL!\"",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_ai_log": "AI LOG",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_new_to_the_table_this_time": "new to the table this time",
+      "item.trumpcraft.trumpsquadarmorboots": "Trump Squad Boots",
+      "entity.trumpcraft.armoredtrumpsoldier": "Armored Trump Soldier",
+      "gui.trumpcraft.hex_pledge.label_i_swear_to_the_sixteenth_this_s": "\"I swear to the sixteenth this sacred oath to",
+      "advancements.weneedtobuildawall.descr": "We need to go dee- I mean build a wall",
+      "gui.trumpcraft.converter_gui.button_convert": "Convert!",
+      "entity.trumpcraft.trumpwannabe": "Trump Wannabe",
+      "block.trumpcraft_114.converter": "Converter",
+      "advancements.trumpsidefirst.descr": "Kill a hex soldier",
+      "item.m57pilum.name": "M57 Pilum",
+      "gui.trumpcraft.hex_pledge.label_i_will_bear_arms_on_behalf_of_t": "�I will bear arms on behalf of the 16th; I will ",
+      "entity.trumpcraft.testsubject": "TestSubject1",
+      "item.trumpcraft.thefnatic": "The Fanatic Spawn Egg",
+      "item.trumpcraft.antitrumptool": "ATT",
+      "item.trumpcraft.trumpsquad3": "Trump Squad(3) Spawn Egg",
+      "item.trumpcraft.trumpsquad2": "Trump Squad(2) Spawn Egg",
+      "gui.trumpcraft.hex_pledge.label_mental_reservation_or_purpose_of": "mental reservation or purpose of evasion.",
+      "item.trumpcraft.trumpsquad1": "Trump Squad(1) Spawn Egg",
+      "item.trumpcraft.murica": "Flag",
+      "entity.trumpcraft_114.testsubject": "TestSubject1",
+      "item.hexspecalistarmorboots.name": "Hex Specalist Boots",
+      "item.hexsquadarmorhelmet.name": "Hex Offensive Helmet",
+      "item.trumpcraft_114.testsubject": "TestSubject1 Spawn Egg",
+      "item.trumpcraft.hexspecalistarmorboots": "Hex Specalist Boots",
+      "gui.trumpcraft.trump_book_1.label_one_where_the_fate_of_pan": "One where the fate of Pan-",
+      "biome.trumpcraft.warzone": "Warzone",
+      "gui.trumpcraft.hex_pledge.label_brave_soldier_i_shall_at_all_tim": "brave soldier I shall at all times be prepared ",
+      "advancements.we_made_society_great_again.descr": "You sided with the allies. Society is saved thanks to you! #161616161616161",
+      "item.trumpcraft.magashotgun": "MAGA Shotgun",
+      "block.trumpcraft.money_slab": "Money Slab",
+      "gui.trumpcraft.wall_maria_part_2_gui.label_but_they_choose_to_fight_anyway": "But they choose to fight anyway"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "trumpcraft",
+    "modName": "Trumpcraft",
+    "version": "5.0.2.0",
+    "description": "We\u0027ll make Minecraft great again",
+    "author": "Derex",
+    "websiteURL": "https://www.curseforge.com/minecraft/mc-mods/trumpcraft",
+    "license": "Not specified",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "image",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Derex",
+    "modElementsPackage": "net.mcreator.trumpcraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}
